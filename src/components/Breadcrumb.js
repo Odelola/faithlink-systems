@@ -8,7 +8,7 @@ function Breadcrumb({ leadingRoutes = ["homepage"] }) {
         return (
             leadingRoutes.map(item => {
                 return (
-                    <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" className='list-item'>
+                    <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" className='list-item' key={item}>
                         <a itemScope="" itemType="http://schema.org/Thing" itemProp="item" href="/en">
                             <span itemProp="name" className='text-white leading-3 text-[12px]'>{item.toUpperCase()}</span>
                         </a>
