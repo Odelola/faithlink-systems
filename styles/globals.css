@@ -1,55 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300..600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .site-max-width{
-    @apply max-w-[1800px]
-  }
-  .container{
-    @apply w-full max-w-[1800px] h-auto mx-auto px-5
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  a {
+    @apply font-nunito font-medium text-[14px]
   }
+
+  span {
+    @apply font-nunito
+  }
+
   body {
-    color: white;
-    background: black;
+    @apply text-darkBlue
   }
-} */
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat
+  }
+
+  h1 {
+    @apply font-bold leading-3 mb-4 text-[2em]
+  }
+
+  h1 {
+    @apply font-medium leading-8 mb-4 text-[2em]
+  }
+
+  h2 {
+    @apply font-medium mb-4 text-[1.5em]
+  }
+
+  h3 {
+    @apply font-medium mb-4 text-[1em]
+  }
+
+  .site-max-width {
+    @apply max-w-[1800px]
+  }
+
+  .container {
+    @apply w-full max-w-[1800px] h-auto mx-auto px-5
+  }
+
+  .container-lg {
+    @apply max-w-[1200px]
+  }
+
+  img {
+    @apply object-cover max-w-full align-middle h-auto
+  }
+
+  .page-header{
+    
+  }
+}

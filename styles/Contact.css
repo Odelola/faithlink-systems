@@ -1,0 +1,23 @@
+.contact-title {
+    @apply text-textGray text-[20px] leading-7 mb-[20px]
+}
+
+.contact-form-item {
+    @apply w-full h-12 mb-3
+}
+
+.contact-input {
+    @apply bg-[#eef2f5] border border-[#ccdbe7] h-full px-[18px] text-darkBlue resize-none leading-6 w-full outline-none
+}
+
+.contact-disclaimer {
+    @apply relative pl-[35px] mb-[12px] leading-5 text-[12px] text-darkBlue cursor-pointer
+}
+
+.contact-disclaimer input {
+    @apply absolute opacity-0 cursor-pointer invisible
+}
+
+.contact-button {
+    @apply flex items-center justify-center w-[170px] h-[50px] bg-borderColor border border-borderColor text-center text-white leading-3 hover:bg-white hover:text-borderColor
+}

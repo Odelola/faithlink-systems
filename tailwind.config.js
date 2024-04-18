@@ -12,9 +12,16 @@ module.exports = {
     extend: {
       colors: {
         "primary": "#8DECB4",
-        "borderColor": "#004b85"
+        "borderColor": "#004b85",
+        "blueLinkColor": "#00b1e8",
+        "textGray": "#0c1622",
+        "darkBlue": "#5b6987"
       },
-    },
+      fontFamily: {
+        "montserrat": ["Montserrat", "sans-serif"],
+        "nunito": ["Nunito", "sans-serif"]
+      }
+      },
   },
   plugins: [],
 }

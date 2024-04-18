@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/Contact.css'
 import Layout from '../src/components/Layout'
 
 

@@ -4,7 +4,7 @@ import Link from "next/link"
 function Navbar() {
   return (
     <header className="fixed w-full z-[9999] bg-white transition-transform">
-      <div className="flex justify-end bg-white">
+      <div className="hidden justify-end bg-white">
         <div className="container">
           <div className="flex justify-end">
             <nav className="relative">
@@ -24,20 +24,19 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="container flex justify-between">
+      <div className="container flex justify-between items-center">
         <div className="header__left">
           <div className="header__brand">
             <Link href="/">
-              <h1>FAITH</h1>
+              <h1 className='text-[28px]'>FAITH</h1>
             </Link>
           </div>
         </div>
-        <div className="flex items-center">
-          <div className="header__nav">
+        <div className="flex items-center gap-x-4">
             <nav className="main-nav" aria-label="Main">
-              <ul className="flex items-center">
+              <ul className="flex items-center gap-x-6">
                 <li className="relative">
-                  <Link href="#" className="text-[10px] p-4">
+                  <Link href="#" className="">
                     CORPORATE
                   </Link>
                   <ul className="absolute left-0 invisible opacity-0 transition-all">
@@ -86,7 +85,7 @@ function Navbar() {
                   </ul>
                 </li>
                 <li className="relative">
-                  <Link href="#" className="text-[10px] p-4">
+                  <Link href="#" className="">
                     ACTIVITY FIELDS
                   </Link>
                   <ul className="absolute left-0 invisible opacity-0 transition-all">
@@ -135,7 +134,7 @@ function Navbar() {
                   </ul>
                 </li>
                 <li className="relative">
-                  <Link href="#" className="text-[10px] p-4">
+                  <Link href="#" className="">
                     SUSTAINBILITY
                   </Link>
                   <ul className="absolute left-0 invisible opacity-0 transition-all">
@@ -184,7 +183,7 @@ function Navbar() {
                   </ul>
                 </li>
                 <li className="relative">
-                  <Link href="#" className="text-[10px] p-4">
+                  <Link href="#" className="">
                     CAREER
                   </Link>
                   <ul className="absolute left-0 invisible opacity-0 transition-all">
@@ -233,7 +232,7 @@ function Navbar() {
                   </ul>
                 </li>
                 <li className="relative">
-                  <Link href="#" className="text-[10px] p-4">
+                  <Link href="#" className="">
                     MEDIA CENTER
                   </Link>
                   <ul className="absolute left-0 invisible opacity-0 transition-all">
@@ -283,8 +282,7 @@ function Navbar() {
                 </li>
               </ul>
             </nav>
-          </div>
-          <div className="header__search">
+          <div className="flex">
             <button type="button" className="search-button js-main-search" data-main-search="show">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.98644 1.99319C10.2986 1.9936 11.5842 2.36305 12.6958 3.05921C13.8075 3.75538 14.7004 4.75012 15.2721 5.9295C15.8439 7.10889 16.0715 8.42525 15.9289 9.72781C15.7862 11.0304 15.279 12.2665 14.4655 13.2946L13.9765 13.9523L13.3377 14.4606C12.4629 15.1451 11.4372 15.6112 10.3457 15.8204C9.25425 16.0295 8.12857 15.9756 7.06215 15.6632C5.99574 15.3507 5.01937 14.7886 4.21413 14.0237C3.4089 13.2588 2.79803 12.3131 2.43227 11.2651C2.06651 10.2171 1.95641 9.09714 2.11112 7.99814C2.26582 6.89913 2.68086 5.85285 3.32178 4.94618C3.96269 4.0395 4.81098 3.2986 5.79618 2.78502C6.78139 2.27143 7.87509 1.99997 8.98644 1.99319ZM8.98644 1.07967e-06C7.55268 -0.000701346 6.13958 0.341351 4.86528 0.997563C3.59098 1.65378 2.4925 2.60508 1.66169 3.77194C0.830878 4.93881 0.291868 6.28733 0.0897225 7.70476C-0.112423 9.1222 0.0281689 10.5674 0.499746 11.9194C0.971323 13.2715 1.76018 14.4912 2.80037 15.4766C3.84056 16.4619 5.10186 17.1843 6.47882 17.5833C7.85578 17.9824 9.30839 18.0464 10.7152 17.7701C12.122 17.4939 13.4422 16.8853 14.5653 15.9953L18.3777 19.8023C18.5115 19.9239 18.6858 19.9914 18.8667 19.9917C19.1693 19.98 19.4556 19.8514 19.6651 19.6329C19.8423 19.4741 19.9568 19.2572 19.9879 19.0214C20.0191 18.7857 19.9647 18.5466 19.8347 18.3473L16.0224 14.5403C17.0709 13.2192 17.7253 11.6297 17.9107 9.95415C18.096 8.27861 17.8048 6.58482 17.0703 5.06699C16.3358 3.54917 15.1879 2.26875 13.7581 1.37255C12.3283 0.476355 10.6746 0.000657044 8.98644 1.07967e-06Z" fill="#004B85"></path>
@@ -292,7 +290,7 @@ function Navbar() {
             </button>
           </div>
         </div>
-        <div className="header__action js-menu-toggle">
+        <div className="header__action hidden">
           <button type="button" className="hamburger-button">
             <span className="hamburger-button__span">MENU</span>
             <div className="hamburger-button__lines">
