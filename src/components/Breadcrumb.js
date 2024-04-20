@@ -22,7 +22,7 @@ function Breadcrumb({ leadingRoutes = ["homepage"] }) {
         )
     }
     return (
-        <ol className="absolute flex items-center bg-borderColor h-[50px] pl-10 pr-[15px] min-w-[600px] bottom-[-25px] m-0" itemScope itemType="http://schema.org/BreadcrumbList">
+        <ol className="absolute flex items-center bg-borderColor h-[50px] pl-10 pr-[15px] md:min-w-[600px] bottom-[-25px] m-0 xs:max-md:w-full xs:max-md:left-0" itemScope itemType="http://schema.org/BreadcrumbList">
             {/* <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" className='list-item'>
                 <a itemScope="" itemType="http://schema.org/Thing" itemProp="item" href="/en">
                     <span itemProp="name" className='text-white leading-3 text-[10px]'>HOMEPAGE</span>

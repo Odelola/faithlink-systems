@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
@@ -21,7 +22,20 @@ module.exports = {
         "montserrat": ["Montserrat", "sans-serif"],
         "nunito": ["Nunito", "sans-serif"]
       }
-      },
+    },
+    screens: {
+      'xxs': '250px',
+      'xs': '320px',
+      'sm': '576px',
+      // 'sm': {'min': '576px', 'max': '767px'},
+      ...defaultTheme.screens,
+
+    }
+    // screens: {
+    //   'xxs': {'min': '250px', 'max': '319px'},
+    //   'xs': {'min': '320px', 'max': '575px'},
+    //   'sm': {'min': '576px', 'max': '767px'}
+    // }
   },
   plugins: [],
 }

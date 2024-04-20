@@ -3,11 +3,11 @@
 }
 
 .contact-form-item {
-    @apply w-full h-12 mb-3
+    @apply w-full mb-3
 }
 
 .contact-input {
-    @apply bg-[#eef2f5] border border-[#ccdbe7] h-full px-[18px] text-darkBlue resize-none leading-6 w-full outline-none
+    @apply bg-[#eef2f5] border border-[#ccdbe7]  h-12 px-[18px] text-darkBlue resize-none leading-6 w-full outline-none xs:max-md:placeholder:text-[11px] font-nunito
 }
 
 .contact-disclaimer {

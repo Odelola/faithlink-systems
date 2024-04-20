@@ -22,16 +22,16 @@
     @apply text-darkBlue
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  p, h1, h2, h3, h4, h5, h6, div {
     @apply font-montserrat
   }
 
-  h1 {
-    @apply font-bold leading-3 mb-4 text-[2em]
+  p {
+    @apply font-normal
   }
 
   h1 {
-    @apply font-medium leading-8 mb-4 text-[2em]
+    @apply font-medium leading-8 mb-4 md:text-[2em] text-[1.5em]
   }
 
   h2 {
@@ -39,7 +39,7 @@
   }
 
   h3 {
-    @apply font-medium mb-4 text-[1em]
+    @apply font-medium md:mb-4 md:text-[1em] mb-1
   }
 
   .site-max-width {
@@ -58,7 +58,5 @@
     @apply object-cover max-w-full align-middle h-auto
   }
 
-  .page-header{
-    
-  }
+  .page-header {}
 }
