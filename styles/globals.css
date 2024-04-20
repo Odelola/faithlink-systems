@@ -27,7 +27,7 @@
   }
 
   p {
-    @apply font-normal
+    @apply font-normal text-[13px]
   }
 
   h1 {
@@ -58,5 +58,8 @@
     @apply object-cover max-w-full align-middle h-auto
   }
 
+  section{
+    @apply pb-20
+  }
   .page-header {}
 }

@@ -2,13 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from "next/router"
 import { useEffect } from 'react';
+import { ActivityFields, OtherDetails, ProductionNetwork, Sustainability } from '../src/components/pages';
 
 export default function Home() {
   const router = useRouter();
-  useEffect(() => {
-    router.push("/contact")
-  }, [])
-  
+  // useEffect(() => {
+  //   router.push("/contact")
+  // }, [])
+
   return (
     <div>
       <Head>
@@ -17,6 +18,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <main>
+        <ActivityFields />
+        <Sustainability />
+        <OtherDetails />
+        <ProductionNetwork />
+      </main>
     </div>
   )
 }

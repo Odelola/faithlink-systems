@@ -18,19 +18,22 @@ function Footer() {
   return (
 
     <footer className="bg-[#f3f3f3]">
-      <div className="relative z-[1] md:top-[35px] top-0">
+      <div className="relative z-[1] top-0">
+        {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">
           <div className="container">
-            <div className="flex lg:flex-row md:justify-between lg:px-24 py-12 border-t-[24px] border-borderColor bg-white rounded-[3px] flex-col px-4 gap-y-3">
+            <div className="flex lg:flex-row md:justify-between lg:px-24 py-12 border-t-[24px] border-borderColor bg-white rounded-[3px] flex-col px-4 gap-x-4 gap-y-3">
               <div className="basis-[20%]">
-                <Link href="/en" className="footer__brand">
-                  <h1>Faith Link Systems</h1>
+                <Link href="/" className="footer__brand">
+                  {/* <h1>Faith Link Systems</h1> */}
+                  <img src="/brandLogo.png" className="h-[80px]" alt="Brand Logo" />
+
                 </Link>
               </div>
-              <nav className="grid xs:grid-cols-2 grid-cols-1 md:grid-cols-4 md:basis-[80%] gap-y-6">
-              {/* <nav className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4"> */}
+              <nav className="grid sm:grid-cols-2 xxs:grid-cols-1 md:grid-cols-4 md:basis-[80%] gap-y-6">
+                {/* <nav className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4"> */}
                 <div className="basis-[17%]">
-                  <h3>
+                  <h3 className="text-textGray">
                     CORPORATE
                   </h3>
                   <ul>
@@ -38,7 +41,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="basis-[17%]">
-                  <h3>
+                  <h3 className="text-textGray">
                     ACTIVITY FIELDS
                   </h3>
                   <ul>
@@ -46,7 +49,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="basis-[17%]">
-                  <h3>
+                  <h3 className="text-textGray">
                     SUSTAINABILITY
                   </h3>
                   <ul>
@@ -54,7 +57,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="basis-[17%] flex flex-col">
-                  <h3>
+                  <h3 className="text-textGray">
                     MEDIA CENTER
                   </h3>
                   <ul>
@@ -145,10 +148,11 @@ function Footer() {
 
         </div>
       </div>
-      <div className="flex items-end text-white md:mt-4 bg-primary h-[70px] pb-3">
+      {/* <div className="flex items-end text-white md:mt-4 bg-primary py-3"> */}
+      <div className="flex items-end text-white bg-primary py-3">
         <div className="container">
           <div className="flex justify-between md:px-24 sm:flex-row flex-col px-4">
-            <p className="font-bold">
+            <p className="font-bold xxs:max-md:text-center">
               Copyright © Faith Link Systems. All rights reserved.
             </p>
             <div className="flex gap-x-10">
