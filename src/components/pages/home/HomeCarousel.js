@@ -51,7 +51,7 @@ export default function HomeCarousel() {
                 <div className="container h-full">
                     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                         <SwiperSlide>
-                            <video playsinline="playsinline" muted="muted" loop="loop" autoplay="autoplay">
+                            <video playsInline="playsinline" muted="muted" loop="loop" autoplay="autoplay">
                                 <source type="video/mp4" src="/video.mp4" />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
@@ -61,7 +61,7 @@ export default function HomeCarousel() {
                             <HomeCarouselText textItem={carouselText[1]} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://media.istockphoto.com/id/121084625/photo/powerlines-at-sunset.jpg?s=2048x2048&w=is&k=20&c=NGVdGNCDE8UcLe4ZVUt35Zu6P8VkMDJRHkNbjx-N5Nw=" alt="" />
+                            <img src={"https://media.istockphoto.com/id/121084625/photo/powerlines-at-sunset.jpg?s=2048x2048&w=is&k=20&c=NGVdGNCDE8UcLe4ZVUt35Zu6P8VkMDJRHkNbjx-N5Nw="}alt="" />
                             <HomeCarouselText textItem={carouselText[2]} />
                         </SwiperSlide>
                     </Swiper>
