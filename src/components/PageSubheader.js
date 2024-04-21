@@ -2,7 +2,7 @@ import Breadcrumb from "./Breadcrumb"
 
 function PageSubheader({ imgUrl, alt, pageName, leadingRoutes }) {
   return (
-    <section className='relative lg:h-[400px] xs:h-[200px] md:h-[300px]'>
+    <section className='relative h-[400px] xs:max-md:h-[200px] md:max-lg:h-[300px]'>
     <div className="container h-full xs:max-md:p-0">
       <picture className="flex h-full">
         <img src={imgUrl} alt={alt} />

@@ -29,12 +29,12 @@ function ActivityFields() {
     return (
       data.map((item, index) => {
         return (
-          <div className="basis-[23%] group" key={index} role="group" ariaLabel={`${index + 1} / 4`}>
+          <div className="md:basis-[23%] flex-shrink-0 group" key={index} role="group" ariaLabel={`${index + 1} / 4`}>
             <div className="card-item aos-init aos-animate relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <figure className="w-full h-full relative">
                 <img src={item.image} width="430" height="700" className="rounded-md" loading="lazy" />
               </figure>
-              <article class="absolute bottom-[-22.5%] left-0 w-full flex flex-col justify-end p-8 text-white group-hover:bottom-0 transition-[bottom] duration-300">
+              <article class="absolute bottom-[-29%] left-0 w-full flex flex-col justify-end p-8 text-white group-hover:bottom-0 transition-[bottom] duration-300">
                 <div class="card-item__content">
                   <h2 class="text-[25px]">
                     {item.title}
@@ -61,8 +61,8 @@ function ActivityFields() {
     <section>
       <div className="container">
         <HomeImageHeading headingTitle="activity fields" headingText="Here you can take a closer look at the business lines that FaithLink systems operates in." />
-        <article>
-          <div className="flex justify-between mt-8">
+        <article className="max-md:overflow-x-scroll flex">
+          <div className="flex justify-between mt-8 gap-x-6 max-md:overflow-x-scroll">
             <ActivityCarousel data={activityData} />
           </div>
         </article>

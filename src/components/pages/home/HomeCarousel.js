@@ -14,7 +14,7 @@ export default function HomeCarousel() {
     const about_gallery_item = "grid gap-[20px]"
     const carouselText = [
         {
-            title: "WE KEEEP INVESTING IN FAITH LINK",
+            title: "WE KEEP INVESTING IN FAITH LINK",
             text: "Wind power plants (WPPs), resembling a wind rose with their aesthetic appearance, are an environmentally friendly and sustainable option as they produce energy from renewable resources but can be quite challenging to build."
         },
         {
@@ -29,11 +29,11 @@ export default function HomeCarousel() {
     function HomeCarouselText({ textItem }) {
         return (
 
-            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white justify-end">
+            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full">
                 <h1 className="text-[2em] mb-4" data-swiper-animation="animate__fadeInLeft" data-duration=".9s" data-delay=".3s">
                     {textItem.title}
                 </h1>
-                <p>
+                <p className='my-6'>
                     {textItem.text}
                 </p>
                 <Link href="/" target="_blank" className="button">
@@ -46,10 +46,10 @@ export default function HomeCarousel() {
     return (
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20'>
-                <div className="container h-full">
+                <div className="container h-full max-md:p-0">
                     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                         <SwiperSlide>
-                            <video playsInline="playsinline" muted="muted" loop="loop" autoplay="autoplay">
+                            <video playsInline="playsinline" muted="muted" loop="loop" autoplay="autoplay" className=''>
                                 <source type="video/mp4" src="/video.mp4" />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
@@ -67,10 +67,10 @@ export default function HomeCarousel() {
             </section>
             <section>
                 <div className="container">
-                    <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8'>
-                        <aside>
-                            <blockquote className='ml-20 mb-8'>Cengiz Holding, one of Türkiye&apos;s largest industrial companies, is a pioneer in all its activity fields thanks to nonstop R&D and technology investments. We are aware of our responsibility towards the world and the environment. The production activities in all our plants are carried out with sustainable environmental awareness.</blockquote>
-                            <div className="grid grid-cols-5 gap-5 w-auto relative">
+                    <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1'>
+                        <aside className='max-md:flex max-md:flex-col-reverse'>
+                            <blockquote className='ml-20 mb-8 max-md:m-0'>Cengiz Holding, one of Türkiye&apos;s largest industrial companies, is a pioneer in all its activity fields thanks to nonstop R&D and technology investments. We are aware of our responsibility towards the world and the environment. The production activities in all our plants are carried out with sustainable environmental awareness.</blockquote>
+                            <div className="grid grid-cols-5 gap-5 w-auto relative max-md:pb-[20%]">
                                 <div className={`${about_gallery_item} place-items-center`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
                                         <img src="https://cengizholding.com.tr/Content/images/small/1.png" width="186" height="188" alt="" loading="lazy" />

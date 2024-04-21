@@ -17,7 +17,7 @@ function Footer() {
 
   return (
 
-    <footer className="bg-[#f3f3f3]">
+    <footer className="bg-[#f3f3f3] mt-12">
       <div className="relative z-[1] top-0">
         {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">

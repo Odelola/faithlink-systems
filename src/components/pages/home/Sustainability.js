@@ -25,7 +25,7 @@ function Sustainability() {
 <img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
             </picture> */}
             <div class="container relative">
-                <div class="px-8 w-1/2">
+                <div class="px-8 w-1/2 max-md:w-full">
                     <article class="showcase__article">
                         <h2 class="text-[2.5em] text-white aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             SUSTAINABILITY
@@ -34,7 +34,7 @@ function Sustainability() {
                             We aim for sustainable development through efficient use of resources. We are committed to programming our future in all its economic, environmental, social and cultural aspects, with a particular focus on people.
                         </p>
                     </article>
-                    <div class="flex mt-11">
+                    <div class="flex mt-11 max-md:hidden">
                         <ul class="flex gap">
                             <GenerateLinks links={["FOR A BETTER FUTURE", "SAFE WORKPLACE", "REPORTS & POLICIES"]} />
                         </ul>

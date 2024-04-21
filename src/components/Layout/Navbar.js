@@ -1,11 +1,32 @@
 import Link from "next/link"
 
 function Navbar() {
-  const mainNavLinkStyle = "px-5 py-4"
+  const mainNavLinkStyle = ""
+
+  function MenuLinks({ linkName, subLinks }) {
+    return (
+      <li className="relative group">
+        <div>
+
+          <Link href="#" className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white">
+            {linkName}
+            <i class="md:hidden">
+              <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.99547 5.40398C5.97441 5.18743 5.88579 4.98266 5.74185 4.81791L1.89746 0.391259C1.80764 0.281897 1.69653 0.191402 1.5707 0.125117C1.44486 0.0588321 1.30684 0.0180988 1.16479 0.00532431C1.02274 -0.0074511 0.879538 0.0079908 0.743634 0.0507373C0.60773 0.0934829 0.481879 0.162666 0.373512 0.254206C0.265144 0.345744 0.176456 0.457783 0.112682 0.583707C0.0489074 0.709631 0.0113393 0.846889 0.0021959 0.987378C-0.00694753 1.12787 0.0125188 1.26874 0.0594454 1.40168C0.106372 1.53463 0.179808 1.65694 0.275419 1.76141L3.52599 5.50261L0.275419 9.24417C0.180586 9.34877 0.107875 9.471 0.0615518 9.6037C0.015229 9.7364 -0.00377228 9.8769 0.00566298 10.0169C0.0150982 10.157 0.0527804 10.2938 0.116497 10.4192C0.180214 10.5447 0.268683 10.6564 0.376712 10.7477C0.484741 10.8389 0.610154 10.908 0.745592 10.9508C0.88103 10.9936 1.02376 11.0092 1.16542 10.9969C1.30707 10.9845 1.4448 10.9443 1.5705 10.8787C1.69621 10.813 1.80737 10.7233 1.89746 10.6147L5.74185 6.18806C5.83525 6.08084 5.90584 5.95617 5.94941 5.82147C5.99299 5.68676 6.00865 5.54479 5.99547 5.40398Z" fill="white"></path>
+              </svg>
+            </i>
+          </Link>
+        </div>
+        <SubMenu subLinks={subLinks} />
+      </li>
+    )
+  }
+
+
   function SubMenu({ subLinks, className = "" }) {
     return (
-      <ul className={"absolute left-0 z-50 invisible opacity-0 transition-all group-hover:visible group-hover:opacity-100 " + className}>
-        {subLinks.map(item => (
+      <ul className={"absolute left-0 z-50 invisible opacity-0 transition-all group-hover:visible group-hover:opacity-100 max-md:hidden" + className}>
+        {subLinks?.map(item => (
           <li className="" key={item}>
             <Link href="/corporate/about-us" className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3]">
               <figure className="flex items-center gap-[17px]">
@@ -54,52 +75,27 @@ function Navbar() {
           <div className="header__left">
             <div className="header__brand">
               <Link href="/">
-                <img src="/brandLogo.png" className="h-[80px]" alt="Brand Logo" />
+                <img src="/brandLogo.png" className="h-[80px] max-md:w-60" alt="Brand Logo" />
               </Link>
             </div>
           </div>
           <div className="flex items-center gap-x-4">
-            <nav className="main-nav" aria-label="Main">
-              <ul className="flex items-center gap-x-6">
-                <li className="relative group">
-                  <Link href="#" className={mainNavLinkStyle}>
-                    CORPORATE
-                  </Link>
-                  <SubMenu subLinks={["about us", "chairman's message", "milestones"]} />
-                </li>
-                <li className="relative group">
-                  <Link href="#" className={mainNavLinkStyle}>
-                    ACTIVITY FIELDS
-                  </Link>
-                  <SubMenu subLinks={["industry", "energy", "construction", "other", "companies"]} />
-                </li>
-                <li className="relative group">
-                  <Link href="#" className={mainNavLinkStyle}>
-                    SUSTAINBILITY
-                  </Link>
-                  <SubMenu subLinks={["safe workkplace", "reports and policies"]} />
-                </li>
-                <li className="relative group">
-                  <Link href="#" className={mainNavLinkStyle}>
-                    CAREER
-                  </Link>
-                </li>
-                <li className="relative group">
-                  <Link href="#" className={mainNavLinkStyle}>
-                    MEDIA CENTER
-                  </Link>
-                  {/* <SubMenu subLinks={["news", "photo gallery"]} className="-left-[100%]"/> */}
-                  <SubMenu subLinks={["news", "photo gallery"]} />
-                </li>
+            <nav className="max-md:w-full max-md:h-screen max-md:fixed max-md:left-0 max-md:top-0 max-md:z-[9999] bg-primaryColor max-md:overflow-y-scroll max-md:hidden" aria-label="Main">
+              <ul className="flex items-center gap-x-6 max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start">
+                <MenuLinks linkName="CORPORATE" subLinks={["about us", "chairman's message", "milestones"]} />
+                <MenuLinks linkName="ACTIVITY FIELDS" subLinks={["industry", "energy", "construction", "other", "companies"]} />
+                <MenuLinks linkName="SUSTAINABILITY" subLinks={[]} />
+                <MenuLinks linkName="CAREER" />
+                <MenuLinks linkName="MEDIA CENTER" subLinks={["news", "photo gallery"]} />
               </ul>
             </nav>
-            <div className="flex">
+            {/* <div className="flex">
               <button type="button" className="search-button js-main-search" data-main-search="show">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.98644 1.99319C10.2986 1.9936 11.5842 2.36305 12.6958 3.05921C13.8075 3.75538 14.7004 4.75012 15.2721 5.9295C15.8439 7.10889 16.0715 8.42525 15.9289 9.72781C15.7862 11.0304 15.279 12.2665 14.4655 13.2946L13.9765 13.9523L13.3377 14.4606C12.4629 15.1451 11.4372 15.6112 10.3457 15.8204C9.25425 16.0295 8.12857 15.9756 7.06215 15.6632C5.99574 15.3507 5.01937 14.7886 4.21413 14.0237C3.4089 13.2588 2.79803 12.3131 2.43227 11.2651C2.06651 10.2171 1.95641 9.09714 2.11112 7.99814C2.26582 6.89913 2.68086 5.85285 3.32178 4.94618C3.96269 4.0395 4.81098 3.2986 5.79618 2.78502C6.78139 2.27143 7.87509 1.99997 8.98644 1.99319ZM8.98644 1.07967e-06C7.55268 -0.000701346 6.13958 0.341351 4.86528 0.997563C3.59098 1.65378 2.4925 2.60508 1.66169 3.77194C0.830878 4.93881 0.291868 6.28733 0.0897225 7.70476C-0.112423 9.1222 0.0281689 10.5674 0.499746 11.9194C0.971323 13.2715 1.76018 14.4912 2.80037 15.4766C3.84056 16.4619 5.10186 17.1843 6.47882 17.5833C7.85578 17.9824 9.30839 18.0464 10.7152 17.7701C12.122 17.4939 13.4422 16.8853 14.5653 15.9953L18.3777 19.8023C18.5115 19.9239 18.6858 19.9914 18.8667 19.9917C19.1693 19.98 19.4556 19.8514 19.6651 19.6329C19.8423 19.4741 19.9568 19.2572 19.9879 19.0214C20.0191 18.7857 19.9647 18.5466 19.8347 18.3473L16.0224 14.5403C17.0709 13.2192 17.7253 11.6297 17.9107 9.95415C18.096 8.27861 17.8048 6.58482 17.0703 5.06699C16.3358 3.54917 15.1879 2.26875 13.7581 1.37255C12.3283 0.476355 10.6746 0.000657044 8.98644 1.07967e-06Z" fill="#004B85"></path>
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="header__action hidden">
             <button type="button" className="hamburger-button">
