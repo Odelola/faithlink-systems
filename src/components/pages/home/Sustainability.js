@@ -5,7 +5,7 @@ function Sustainability() {
         return (
             links.map((link, index) => {
                 return (
-                    <li key={index} className={`py-2 px-4 aos-init aos-animate ${!(links.indexOf(link) == links.length - 1) && "border-r border-r-[rgba(255,255,255,.2)]" }`} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <li key={index} className={`py-2 px-4 aos-init aos-animate ${!(links.indexOf(link) == links.length - 1) && "border-r border-r-[rgba(255,255,255,.2)]"}`} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <Link href="/sustainability/for-a-better-future" className="text-white tex-[16px] group hover:text-blueLinkColor flex gap-x-2 items-center">
                             <span className="link-item__span">
                                 {link}
@@ -22,7 +22,7 @@ function Sustainability() {
     return (
         <section className="bg-[image:url(https://cengizholding.com.tr/Content/images/showcase/1.png)] h-[600px] bg-cover flex items-center">
             {/* <picture className="w-full h-full">
-                <img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
+<img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
             </picture> */}
             <div class="container relative">
                 <div class="px-8 w-1/2">

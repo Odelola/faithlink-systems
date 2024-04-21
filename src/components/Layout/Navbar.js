@@ -28,7 +28,7 @@ function Navbar() {
   }
   return (
     <>
-      <header className="fixed w-full z-[9999] bg-white transition-transform">
+      <header className="fixed w-full z-[9999] bg-white transition-transform h-20">
         <div className="hidden justify-end bg-white">
           <div className="container">
             <div className="flex justify-end">
@@ -113,7 +113,7 @@ function Navbar() {
           </div>
         </div>
       </header>
-      <section className="-left-[100%] right-auto">
+      <section className="-left-[100%] right-auto hidden">
         <div className="w-full h-full min-h-full z-[9999] flex flex-col nowrap relative">
           <div className="relative">
             <nav className="pt-4">
