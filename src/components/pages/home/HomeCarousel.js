@@ -1,5 +1,3 @@
-import { useState } from 'react';
-// import { Swiper as SwiperClass } from 'swiper/types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -61,7 +59,7 @@ export default function HomeCarousel() {
                             <HomeCarouselText textItem={carouselText[1]} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={"https://media.istockphoto.com/id/121084625/photo/powerlines-at-sunset.jpg?s=2048x2048&w=is&k=20&c=NGVdGNCDE8UcLe4ZVUt35Zu6P8VkMDJRHkNbjx-N5Nw="}alt="" />
+                            <img src={"https://media.istockphoto.com/id/121084625/photo/powerlines-at-sunset.jpg?s=2048x2048&w=is&k=20&c=NGVdGNCDE8UcLe4ZVUt35Zu6P8VkMDJRHkNbjx-N5Nw="} alt="" />
                             <HomeCarouselText textItem={carouselText[2]} />
                         </SwiperSlide>
                     </Swiper>
@@ -111,9 +109,9 @@ export default function HomeCarousel() {
                             </div>
                         </aside>
                         <aside className=''>
-                            <p>As a family of 43K people, Cengiz Holding continues to invest in energy, mining, construction, tourism, and service industries and plays a key role in closing Türkiye's current account deficit through sustainable production.
+                            <p>As a family of 43K people, Cengiz Holding continues to invest in energy, mining, construction, tourism, and service industries and plays a key role in closing Türkiye&apos;s current account deficit through sustainable production.
 
-                                Cengiz Holding has undertaken several important projects and continues to break new ground both in Türkiye and around the world with its group companies Eti Bakır, Eti Alüminyum, Cengiz Enerji, Cengiz İnşaat, Ahen Madencilik, Cengiz Turizm and its subsidiaries Kalehan Enerji, CK Enerji, and Cenal Elektrik. Cengiz Holding is the investor and operator of Istanbul Airport, Türkiye's largest single-point private sector investment, and the constructor of Türkiye's first and Europe's largest hybrid power plant in Bingöl, and at the same time the only company in Türkiye with plants capable of producing copper and aluminum from mine to end-product. The R&D activities conducted by the Cengiz Holding play a key role in the production of strategic products in Türkiye.</p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quas ipsum dolorum aut, placeat laboriosam. Ab eaque non eius molestias sed voluptatem porro magnam quisquam autem quod. Quaerat, velit veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis sunt voluptates vitae nostrum aperiam dolorem veritatis voluptatibus quidem, facilis magnam, amet ut ad impedit, eius provident vero cumque praesentium in numquam explicabo aspernatur cum? Velit, reprehenderit unde rerum alias fugit fugiat accusamus placeat, nostrum nam facilis est ratione perferendis.</p>
                             <div className="mt-7">
                                 <a href="#0">ABOUT FAITHLINK SYSTEMS</a>
                             </div>
