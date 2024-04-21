@@ -28,12 +28,11 @@ export default function HomeCarousel() {
     ]
     function HomeCarouselText({ textItem }) {
         return (
-
-            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full">
-                <h1 className="text-[2em] mb-4" data-swiper-animation="animate__fadeInLeft" data-duration=".9s" data-delay=".3s">
+            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6">
+                <h1 className="text-[2em] mb-4 max-md:text-[1em] max-sm:text-[1.4em]" data-swiper-animation="animate__fadeInLeft" data-duration=".9s" data-delay=".3s">
                     {textItem.title}
                 </h1>
-                <p className='my-6'>
+                <p className='my-6 max-sm:my-2'>
                     {textItem.text}
                 </p>
                 <Link href="/" target="_blank" className="button">
@@ -46,7 +45,7 @@ export default function HomeCarousel() {
     return (
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
-                <div className="container h-full max-md:p-0">
+                <div className="container h-full max-md:px-0">
                     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                         <SwiperSlide>
                             <video playsInline="playsinline" muted="muted" loop="loop" autoplay="autoplay" className=''>

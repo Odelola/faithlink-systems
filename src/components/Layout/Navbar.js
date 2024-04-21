@@ -8,7 +8,7 @@ function Navbar() {
       <li className="relative group">
         <div>
 
-          <Link href="#" className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white">
+          <Link href="#" className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
             {linkName}
             <i class="md:hidden">
               <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
@@ -71,11 +71,11 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-between items-center max-md:px-0">
           <div className="header__left">
             <div className="header__brand">
               <Link href="/">
-                <img src="/brandLogo.png" className="h-[80px] max-md:w-60" alt="Brand Logo" />
+                <img src="/brandLogo.png" className="h-[60px]" alt="Brand Logo" />
               </Link>
             </div>
           </div>

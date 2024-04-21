@@ -51,7 +51,7 @@ function Contact() {
                   <textarea placeholder="YOUR MESSAGE" id="Message" name="Message" required="required" className='contact-input'></textarea>
                 </div>
                 <div className="form-item my-5">
-                  <label class="cb-container">
+                  <label className="cb-container">
                   </label>
                     <div className='text-[12px]'>
                       Your personal data is processed in line with the <Link href="/privacy-notice" className='text-[16px] font-semibold'>Privacy Notice.</Link>
@@ -59,8 +59,8 @@ function Contact() {
 
                     By clicking on Send, you confirm that you have read and accept the <Link href="/privacy-notice" className='text-[16px] font-semibold'>Privacy Notice</Link> and <Link href="/cookie-policy" className='text-[16px] font-semibold'>Cookie Policy</Link>
                     </div>
-                    <input type="checkbox" id="Kvkk" name="Kvkk" class="kvkk" required="required" />
-                    <span class="checkmark"></span>
+                    <input type="checkbox" id="Kvkk" name="Kvkk" className="kvkk" required="required" />
+                    <span className="checkmark"></span>
                 </div>
                 <div className='w-[250px]'>
                   <button type="submit" className='contact-button'>SEND</button>

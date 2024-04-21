@@ -25,9 +25,9 @@ function Sustainability() {
 <img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
             </picture> */}
             <div class="container relative">
-                <div class="px-8 w-1/2 max-md:w-full">
+                <div class="px-8 w-1/2 max-md:w-full max-md:px-2">
                     <article class="showcase__article">
-                        <h2 class="text-[2.5em] text-white aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <h2 class="text-[2.5em] text-white aos-init aos-animate max-md:text-[1.5em]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             SUSTAINABILITY
                         </h2>
                         <p class="text-white aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
