@@ -29,17 +29,17 @@ function ActivityFields() {
     return (
       data.map((item, index) => {
         return (
-          <div className="md:basis-[23%] flex-shrink-0 group" key={index} role="group" ariaLabel={`${index + 1} / 4`}>
+          <div className="md:basis-[23%] max-md:basis-[45%] flex-shrink-0 group" key={index} role="group" ariaLabel={`${index + 1} / 4`}>
             <div className="card-item aos-init aos-animate relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <figure className="w-full h-full relative">
                 <img src={item.image} width="430" height="700" className="rounded-md" loading="lazy" />
               </figure>
-              <article class="absolute bottom-[-29%] left-0 w-full flex flex-col justify-end p-8 text-white group-hover:bottom-0 transition-[bottom] duration-300">
+              <article class="absolute bottom-[-29%] max-md:bottom-[-47%] left-0 w-full flex flex-col justify-end p-8 text-white group-hover:bottom-0 transition-[bottom] duration-300 max-md:p-2">
                 <div class="card-item__content">
-                  <h2 class="text-[25px]">
+                  <h2 class="text-[25px] max-md:text-[20px] max-md:mb-[5px]">
                     {item.title}
                   </h2>
-                  <p class="mb-4">
+                  <p class="mb-4 max-md:text-[10px]">
                     {item.text}
                     {item.text}
                     {item.text}

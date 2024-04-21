@@ -45,7 +45,7 @@ export default function HomeCarousel() {
 
     return (
         <>
-            <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20'>
+            <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:p-0">
                     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                         <SwiperSlide>
