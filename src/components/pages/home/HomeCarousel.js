@@ -69,7 +69,7 @@ export default function HomeCarousel() {
                 <div className="container">
                     <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8'>
                         <aside>
-                            <blockquote className='ml-20 mb-8'>Cengiz Holding, one of Türkiye's largest industrial companies, is a pioneer in all its activity fields thanks to nonstop R&D and technology investments. We are aware of our responsibility towards the world and the environment. The production activities in all our plants are carried out with sustainable environmental awareness.</blockquote>
+                            <blockquote className='ml-20 mb-8'>Cengiz Holding, one of Türkiye&apos;s largest industrial companies, is a pioneer in all its activity fields thanks to nonstop R&D and technology investments. We are aware of our responsibility towards the world and the environment. The production activities in all our plants are carried out with sustainable environmental awareness.</blockquote>
                             <div className="grid grid-cols-5 gap-5 w-auto relative">
                                 <div className={`${about_gallery_item} place-items-center`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
