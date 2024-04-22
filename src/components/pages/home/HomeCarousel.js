@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link'
+import { PrimaryButton } from '../../Button';
 
 
 
@@ -28,16 +29,14 @@ export default function HomeCarousel() {
     ]
     function HomeCarouselText({ textItem }) {
         return (
-            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6">
+            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6 ">
                 <h1 className="text-[2em] mb-4 max-md:text-[1em] max-sm:text-[1.4em]" data-swiper-animation="animate__fadeInLeft" data-duration=".9s" data-delay=".3s">
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2'>
                     {textItem.text}
                 </p>
-                <Link href="/" target="_blank" className="button">
-                    SHOW MORE
-                </Link>
+               {/* <PrimaryButton href='/' /> */}
             </article>
         )
     }

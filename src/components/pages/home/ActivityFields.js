@@ -29,23 +29,24 @@ function ActivityFields() {
     return (
       data.map((item, index) => {
         return (
-          <div className="md:basis-[23%] max-md:basis-[55%] flex-shrink-0 group" key={index} role="group" aria-label={`${index + 1} / 4`}>
+          <div className="md:basis-[23%] max-md:basis-[55%] flex-shrink-0 group transition-[transform]" key={index} role="group" aria-label={`${index + 1} / 4`}>
             <div className="card-item aos-init aos-animate relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <figure className="w-full h-full relative">
                 <img src={item.image} width="430" height="700" className="rounded-md" loading="lazy" />
               </figure>
-              <article class="absolute bottom-[-29%] max-md:bottom-[-47%] left-0 w-full flex flex-col justify-end p-8 text-white group-hover:bottom-0 transition-[bottom] duration-300 max-md:p-2">
-                <div class="card-item__content">
-                  <h2 class="text-[25px] max-md:text-[20px] max-md:mb-[5px]">
+              <article className="absolute left-0 w-full flex flex-col justify-end p-8 text-white bottom-0 transition-[translate] duration-300 max-md:p-2 ">
+                <div className="translate-y-[calc(100%-25px)] group-hover:translate-y-[0] max-md:translate-y-[calc(100%-45px)]">
+                  <h2 className="text-[25px] max-md:text-[20px] mb-0">
                     {item.title}
                   </h2>
-                  <p class="mb-4 max-md:text-[10px]">
+                  <p className="mb-4 max-md:text-[10px]">
+                  <p className="group-hover:hidden">{item.text}</p>
                     {item.text}
                     {item.text}
                     {item.text}
                   </p>
-                  <div class="card-item__cta">
-                    <a href="/en/areas-of-activity/industry" class="button">VIEW DETAIL</a>
+                  <div className="card-item__cta">
+                    <a href="/en/areas-of-activity/industry" className="button">VIEW DETAIL</a>
                   </div>
                 </div>
               </article>
@@ -62,7 +63,7 @@ function ActivityFields() {
       <div className="container">
         <HomeImageHeading headingTitle="activity fields" headingText="Here you can take a closer look at the business lines that FaithLink systems operates in." />
         <article className="max-md:overflow-x-scroll flex">
-          <div className="flex justify-between mt-8 gap-x-6 max-md:overflow-x-scroll">
+          <div className="flex justify-between mt-8 gap-x-6 max-md:overflow-x-scroll ">
             <ActivityCarousel data={activityData} />
           </div>
         </article>
