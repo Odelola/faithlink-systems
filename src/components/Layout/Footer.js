@@ -26,7 +26,7 @@ function Footer() {
               <div className="basis-[20%]">
                 <Link href="/" className="footer__brand">
                   {/* <h1>Faith Link Systems</h1> */}
-                  <img src="/brandLogo.png" className="h-[80px]" alt="Brand Logo" />
+                  <img src="/brandLogo.svg" className="w-[300px] h-[80px]" alt="Brand Logo" />
 
                 </Link>
               </div>

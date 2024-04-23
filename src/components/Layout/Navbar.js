@@ -1,14 +1,17 @@
 import Link from "next/link"
+import { getRoute } from '../utils'
+
 
 function Navbar() {
   const mainNavLinkStyle = ""
 
   function MenuLinks({ linkName, subLinks }) {
+
     return (
       <li className="relative group">
         <div>
 
-          <Link href="#" className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
+          <Link href={getRoute[linkName.toLowerCase()] ?? ""} className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
             {linkName}
             <i class="md:hidden">
               <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +30,8 @@ function Navbar() {
     return (
       <ul className={"absolute left-0 z-50 invisible opacity-0 transition-all group-hover:visible group-hover:opacity-100 max-md:hidden" + className}>
         {subLinks?.map(item => (
-          <li className="" key={item}>
-            <Link href="/corporate/about-us" className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3]">
+          <li key={item}>
+            <Link href={getRoute[item] ?? "/"} className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3]">
               <figure className="flex items-center gap-[17px]">
                 <figcaption className="text-nowrap">
                   {item.toUpperCase()}
@@ -75,7 +78,7 @@ function Navbar() {
           <div className="header__left">
             <div className="header__brand">
               <Link href="/">
-                <img src="/brandLogo.png" className="h-[60px]" alt="Brand Logo" />
+                <img src="/brandLogo.svg" className="h-[60px] w-[300px]" alt="Brand Logo" />
               </Link>
             </div>
           </div>
@@ -83,7 +86,7 @@ function Navbar() {
             <nav className="max-md:w-full max-md:h-screen max-md:fixed max-md:left-0 max-md:top-0 max-md:z-[9999] bg-primaryColor max-md:overflow-y-scroll max-md:hidden" aria-label="Main">
               <ul className="flex items-center gap-x-6 max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start">
                 <MenuLinks linkName="CORPORATE" subLinks={["about us", "chairman's message", "milestones"]} />
-                <MenuLinks linkName="ACTIVITY FIELDS" subLinks={["industry", "energy", "construction", "other", "companies"]} />
+                <MenuLinks linkName="ACTIVITY FIELDS" subLinks={["industry", "energy", "power", "other", "companies"]} />
                 <MenuLinks linkName="SUSTAINABILITY" subLinks={[]} />
                 <MenuLinks linkName="CAREER" />
                 <MenuLinks linkName="MEDIA CENTER" subLinks={["news", "photo gallery"]} />

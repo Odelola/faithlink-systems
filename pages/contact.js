@@ -11,28 +11,10 @@ function Contact() {
         <title>Contact - Faith Link Systems</title>
         <meta name="description" content="CONTACT" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300@500&display=swap" rel="stylesheet" />
       </Head>
 
       <main className='relative'>
-      <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/iletisim,108_big,1515_big.jpg" alt="Contact Image" pageName="contact" leadingRoutes={["homepage"]} />
-        <section className='relative h-[400px] hidden'>
-          <div className="container h-full">
-            <picture className="flex h-full">
-              <img src="https://cengizholding.com.tr/content/images/uploads/iletisim,108_big,1515_big.jpg" alt="Contact Image" />
-            </picture>
-            <div className="absolute h-full top-0 left-0 w-full">
-              <div className="container container-lg relative h-full">
-                <div className="absolute top-1/2 text-white max-w-[65%] -translate-y-1/2">
-                  <h1 className='text-[50px]'>
-                    CONTACT
-                  </h1>
-                </div>
-                <Breadcrumb />
-              </div>
-            </div>
-          </div>
-        </section>
+      <PageSubheader imgUrl="/pages/contact_us.jpg" alt="Contact Image" pageName="contact" leadingRoutes={["homepage"]} />
         <section className='pt-24 pb-16'>
           <div className="container container-lg">
             <div>

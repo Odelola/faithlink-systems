@@ -9,7 +9,7 @@ function About() {
                 <meta name="description" content="ABOUT US" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/hakkimizda,34_big,1343_big.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
+            <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
             <section className="pt-24">
                 <div className="container container-lg">
                     <div className="flex justify-between gap-x-14 flex-col md:flex-row">

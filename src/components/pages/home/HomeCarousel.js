@@ -47,7 +47,7 @@ export default function HomeCarousel() {
                 <div className="container h-full max-md:px-0">
                     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                         <SwiperSlide>
-                            <video playsInline="playsinline" muted="muted" loop="loop" autoplay="autoplay" className=''>
+                            <video playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" className=''>
                                 <source type="video/mp4" src="/video.mp4" />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
