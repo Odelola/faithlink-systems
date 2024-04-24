@@ -71,7 +71,7 @@ export default function HomeCarousel() {
                             <blockquote className='ml-20 mb-8 max-md:m-0'>At Faithlink Systems, we pride ourselves on being a team of industry specialists
                                 operating within a privately owned company, effectively serving a global market
                                 while maintaining a local presence. We understand the unique needs of your
-                                projects, and that's why we tailor our business and supply solutions to precisely
+                                projects, and that&apos;s why we tailor our business and supply solutions to precisely
                                 meet those requirements. </blockquote>
                             <div className="grid grid-cols-5 gap-5 w-auto relative max-md:pb-[20%]">
                                 <div className={`${about_gallery_item} place-items-center`}>
