@@ -10,7 +10,7 @@ function Navbar() {
       <li className="relative group">
         <div>
 
-          <Link href={getRoute[linkName.toLowerCase()] ?? ""} className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
+          <Link href={getRoute[linkName.toLowerCase()] ?? "/"} className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
             {linkName}
             <i className="md:hidden">
               <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ function Navbar() {
   }
   return (
     <>
-      <header className="fixed w-full z-[9999] bg-white transition-transform h-20">
+      <header className="fixed w-full z-[9999] bg-white transition-transform h-20 flex items-center">
         <div className="hidden justify-end bg-white">
           <div className="container">
             <div className="flex justify-end">

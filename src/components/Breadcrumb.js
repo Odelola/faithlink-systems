@@ -5,6 +5,7 @@ import { getRoute } from './utils'
 function Breadcrumb({ leadingRoutes = ["homepage"] }) {
     const router = useRouter()
     console.log(router)
+    const nameOfRoute = router.pathname.split("/").at(-1).toUpperCase();
     function GeneratePath({ leadingRoutes }) {
         return (
             leadingRoutes.map(item => {
@@ -37,11 +38,11 @@ function Breadcrumb({ leadingRoutes = ["homepage"] }) {
             <GeneratePath leadingRoutes={leadingRoutes} />
 
             <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                <span itemProp="name" className="text-primary leading-3 text-[12px]">{router.pathname.split("/").at(-1).toUpperCase()}</span>
+                <span itemProp="name" className="text-primary leading-3 text-[12px]">{nameOfRoute.includes("-") ? nameOfRoute.split("-").join(" ") : nameOfRoute}</span>
                 <meta itemProp="position" content="2" />
             </li>
         </ol>
     )
 }
 
-export default Breadcrumb
+export default Breadcrumb 

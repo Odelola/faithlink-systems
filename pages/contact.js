@@ -15,7 +15,7 @@ function Contact() {
 
       <main className='relative'>
       <PageSubheader imgUrl="/pages/contact_us.jpg" alt="Contact Image" pageName="contact" leadingRoutes={["homepage"]} />
-        <section className='pt-24 pb-16'>
+        <section className='pt-24'>
           <div className="container container-lg">
             <div>
               <h3 className="contact-title">CONTACT FORM</h3>

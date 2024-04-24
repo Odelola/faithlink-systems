@@ -16,6 +16,7 @@ module.exports = {
         "primary": "#219D49",
         // "secondary": "#004b85",
         "secondary": "#75BD59",
+        "faintWhite": "#f3f3f3",
         "blueLinkColor": "#00b1e8",
         "textGray": "#0c1622",
         "darkBlue": "#5b6987"

@@ -16,7 +16,8 @@ const getRoutes = {
     "power": "/activity-fields/power",
     "reports": "/safety-mission/reports",
     "safe workplace": "/safety-mission/safe-workplace",
-    "hse policy": "/safety-mission/hse-policy"
+    "hse policy": "/safety-mission/hse-policy",
+    "privacy policy": "/privacy-policy"
 }
 
 export default getRoutes

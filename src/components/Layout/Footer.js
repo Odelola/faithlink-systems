@@ -17,7 +17,7 @@ function Footer() {
 
   return (
 
-    <footer className="bg-[#f3f3f3] mt-12">
+    <footer className="bg-faintWhite mt-12 pt-16">
       <div className="relative z-[1] top-0">
         {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">
@@ -99,11 +99,11 @@ function Footer() {
                 </div>
                 <div className="flex mt-6 xxs:flex-col">
                   <div className="mr-7">
-                    <span className="text-[14px] text-secondary font-bold">PHONE </span>
+                    <span className="text-[14px] text-secondary font-bold">PHONE: </span>
                     <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
                   </div>
                   <div className="footer__contact">
-                    <span className="text-[14px] text-secondary font-bold">EMAIL </span>
+                    <span className="text-[14px] text-secondary font-bold">EMAIL: </span>
                     <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
                   </div>
                 </div>
@@ -137,11 +137,17 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-[.5] flex-col justify-between md:items-center items-start md:p-7 px-0 py-7 pr-0 gap-y-4">
-                <h3>EEDC, EKEDC</h3>
-                <Link href="https://www.sabancengizvakfi.org/" target="_blank">
+              {/* <div className="flex flex-[.5] flex-col justify-between md:items-center items-start md:p-7 px-0 py-7 pr-0 gap-y-4"> */}
+              <div className="grid grid-cols-3 flex-[.5] content-center md:p-7 px-0 py-7 pr-0 gap-y-4 place-content-center place-items-center">
+                <img src="/pages/ekedc.jpg" alt="EKEDC LOGO" className="w-[1500px]" />
+                <img src="/pages/ibedc.png" alt="IBEDC LOGO" className="w-[1500px]" />
+                <img src="/pages/ikeja-electric.PNg" alt="IKEJA ELECTRIC LOGO" className="w-[1500px]" />
+                <img src="/pages/kedco.jpg" alt="KEDCO LOGO" className="w-[1500px]" />
+                <img src="/pages/nemsa.jpeg" alt="NEMSA LOGO" className="w-[1500px]" />
+                {/* <h3>EEDC, EKEDC</h3> */}
+                {/* <Link href="https://www.sabancengizvakfi.org/" target="_blank">
                   <h1>NEMSA</h1>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -156,7 +162,7 @@ function Footer() {
               Copyright © Faith Link Systems. All rights reserved.
             </p>
             <div className="flex gap-x-10">
-              <Link href="privacy-notice">PRIVACY NOTICE</Link>
+              <Link href="/privacy-notice">PRIVACY NOTICE</Link>
               <Link href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11623" target="_blank">
                 INFORMATION SOCIETY SERVICES
               </Link>
