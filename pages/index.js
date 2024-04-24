@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from "next/router"
-import { useEffect } from 'react';
 import { ActivityFields, HomeCarousel, OtherDetails, ProductionNetwork, Sustainability } from '../src/components/pages';
 
 export default function Home() {

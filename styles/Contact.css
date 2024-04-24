@@ -19,5 +19,5 @@
 }
 
 .contact-button {
-    @apply flex items-center justify-center w-[170px] h-[50px] bg-borderColor border border-borderColor text-center text-white leading-3 hover:bg-white hover:text-borderColor
+    @apply flex items-center justify-center w-[170px] h-[50px] bg-secondary border border-secondary text-center text-white leading-3 hover:bg-white hover:text-secondary
 }

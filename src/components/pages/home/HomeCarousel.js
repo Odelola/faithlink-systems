@@ -6,7 +6,8 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link'
-import { PrimaryButton } from '../../Button';
+import { PrimaryButton, SecondaryButton } from '../../Button';
+import { getRoute } from "../../utils"
 
 
 
@@ -36,7 +37,7 @@ export default function HomeCarousel() {
                 <p className='my-6 max-sm:my-2'>
                     {textItem.text}
                 </p>
-               {/* <PrimaryButton href='/' /> */}
+                <PrimaryButton href='/' />
             </article>
         )
     }
@@ -67,7 +68,11 @@ export default function HomeCarousel() {
                 <div className="container">
                     <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1'>
                         <aside className='max-md:flex max-md:flex-col-reverse'>
-                            <blockquote className='ml-20 mb-8 max-md:m-0'>Cengiz Holding, one of Türkiye&apos;s largest industrial companies, is a pioneer in all its activity fields thanks to nonstop R&D and technology investments. We are aware of our responsibility towards the world and the environment. The production activities in all our plants are carried out with sustainable environmental awareness.</blockquote>
+                            <blockquote className='ml-20 mb-8 max-md:m-0'>At Faithlink Systems, we pride ourselves on being a team of industry specialists
+                                operating within a privately owned company, effectively serving a global market
+                                while maintaining a local presence. We understand the unique needs of your
+                                projects, and that's why we tailor our business and supply solutions to precisely
+                                meet those requirements. </blockquote>
                             <div className="grid grid-cols-5 gap-5 w-auto relative max-md:pb-[20%]">
                                 <div className={`${about_gallery_item} place-items-center`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
@@ -107,11 +112,37 @@ export default function HomeCarousel() {
                             </div>
                         </aside>
                         <aside className=''>
-                            <p>As a family of 43K people, Cengiz Holding continues to invest in energy, mining, construction, tourism, and service industries and plays a key role in closing Türkiye&apos;s current account deficit through sustainable production.
+                            <p>Since 2006, Faithlink Systems continues to  be a leading Power Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects. </p>
+                            <p>
+                                Specializing in Power, Telecoms and Infrastructure Development, Faithlink is capable of delivering exceptional services delivery to customers that is infused with high level of professionalism, safety and operational efficiency.
+                            </p>
+                            <p>
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
+                                more content to add here
 
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quas ipsum dolorum aut, placeat laboriosam. Ab eaque non eius molestias sed voluptatem porro magnam quisquam autem quod. Quaerat, velit veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis sunt voluptates vitae nostrum aperiam dolorem veritatis voluptatibus quidem, facilis magnam, amet ut ad impedit, eius provident vero cumque praesentium in numquam explicabo aspernatur cum? Velit, reprehenderit unde rerum alias fugit fugiat accusamus placeat, nostrum nam facilis est ratione perferendis.</p>
+
+                            </p>
                             <div className="mt-7">
-                                <a href="#0">ABOUT FAITHLINK SYSTEMS</a>
+                                <SecondaryButton href="/corporate/about-us" />
                             </div>
                         </aside>
                     </article>

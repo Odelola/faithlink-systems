@@ -12,10 +12,10 @@ function ProductionNetwork() {
                         <iframe className='border-0 w-full outline-none' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7556535558265!2d3.436507610687536!3d6.425431724268095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53d9d3294a9%3A0x6ac2bcce2301289f!2s29%20Fatai%20Durosinmi-Etiti%20Cres%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1713636889261!5m2!1sen!2sng" width="600" height="450" allowFullScreen={true} loading="lazy"></iframe>
                     </aside>
                     <aside>
-                        <ul class="p-9  pb-2">
-                            <li class="relative pb-4 mb-4 border-b border-white">
-                                <div class="relative flex justify-between z-1">
-                                    <span class="mr-4">
+                        <ul className="p-9  pb-2">
+                            <li className="relative pb-4 mb-4 border-b border-white">
+                                <div className="relative flex justify-between z-1">
+                                    <span className="mr-4">
                                         <svg width="87" height="86" viewBox="0 0 87 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M22.5527 71.8112C20.491 71.8112 18.4275 71.033 16.8579 69.4783C13.717 66.3672 13.717 61.3062 16.8579 58.1968C19.9988 55.0858 25.1083 55.0858 28.2474 58.1968C31.3883 61.3079 31.3883 66.3689 28.2474 69.4783C26.6779 71.033 24.6144 71.8112 22.5527 71.8112ZM22.5527 57.6032C20.9409 57.6032 19.3274 58.2108 18.1006 59.4277C15.6452 61.8598 15.6452 65.8153 18.1006 68.2474C20.556 70.6795 24.5494 70.6795 27.0048 68.2474C29.4602 65.8153 29.4602 61.8598 27.0048 59.4277C25.778 58.2125 24.1644 57.6032 22.5527 57.6032Z" fill="#004B85"></path>
                                             <path d="M22.5527 86C20.491 86 18.4275 85.2218 16.8579 83.6671C13.717 80.556 13.717 75.495 16.8579 72.3857C19.9988 69.2746 25.1083 69.2746 28.2474 72.3857C31.3883 75.4968 31.3883 80.5577 28.2474 83.6671C26.6779 85.2218 24.6144 86 22.5527 86ZM22.5527 71.792C20.9409 71.792 19.3274 72.3996 18.1006 73.6165C15.6452 76.0487 15.6452 80.0041 18.1006 82.4362C20.556 84.8684 24.5494 84.8684 27.0048 82.4362C29.4602 80.0041 29.4602 76.0487 27.0048 73.6165C25.778 72.4014 24.1644 71.792 22.5527 71.792Z" fill="#004B85"></path>
@@ -34,12 +34,12 @@ function ProductionNetwork() {
                                         </svg>
 
                                     </span>
-                                    <div class="mt-3">
-                                        <h5 class="flex items-center text-[31px] text-textGray">
-                                            <div class="js-count">82.000</div>
+                                    <div className="mt-3">
+                                        <h5 className="flex items-center text-[31px] text-textGray">
+                                            <div className="js-count">82.000</div>
                                             <span>TONS</span>
                                         </h5>
-                                        <h6 class="text-[12px] mb-0 leading-4">ANNUAL ALUMINUM PRODUCTION</h6>
+                                        <h6 className="text-[12px] mb-0 leading-4">ANNUAL ALUMINUM PRODUCTION</h6>
                                     </div>
                                 </div>
                             </li>

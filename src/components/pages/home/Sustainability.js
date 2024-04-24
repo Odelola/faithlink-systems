@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { getRoute } from "../../utils"
 
 function Sustainability() {
     function GenerateLinks({ links }) {
@@ -6,7 +7,7 @@ function Sustainability() {
             links.map((link, index) => {
                 return (
                     <li key={index} className={`py-2 px-4 aos-init aos-animate ${!(links.indexOf(link) == links.length - 1) && "border-r border-r-[rgba(255,255,255,.2)]"}`} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        <Link href="/sustainability/for-a-better-future" className="text-white tex-[16px] group hover:text-blueLinkColor flex gap-x-2 items-center">
+                        <Link href={getRoute[link.toLowerCase()]} className="text-white tex-[16px] group hover:text-blueLinkColor flex gap-x-2 items-center">
                             <span className="link-item__span">
                                 {link}
                             </span>
@@ -24,19 +25,23 @@ function Sustainability() {
             {/* <picture className="w-full h-full">
 <img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
             </picture> */}
-            <div class="container relative">
-                <div class="px-8 w-1/2 max-md:w-full max-md:px-2">
-                    <article class="showcase__article">
-                        <h2 class="text-[2.5em] text-white aos-init aos-animate max-md:text-[1.5em]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            SUSTAINABILITY
+            <div className="container relative">
+                <div className="px-8 w-1/2 max-md:w-full max-md:px-2">
+                    <article className="showcase__article">
+                        <h2 className="text-[2.5em] text-white aos-init aos-animate max-md:text-[1.5em]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            SAFETY MISSION
                         </h2>
-                        <p class="text-white aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                            We aim for sustainable development through efficient use of resources. We are committed to programming our future in all its economic, environmental, social and cultural aspects, with a particular focus on people.
+                        <p className="text-white w-1/2 leading-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            Our goal is to achieve zero
+                            fatality irrespective of the
+                            environment and terrain while
+                            performing services to our
+                            clients.
                         </p>
                     </article>
-                    <div class="flex mt-11 max-md:hidden">
-                        <ul class="flex gap">
-                            <GenerateLinks links={["FOR A BETTER FUTURE", "SAFE WORKPLACE", "REPORTS & POLICIES"]} />
+                    <div className="flex mt-11 max-md:hidden">
+                        <ul className="flex gap">
+                            <GenerateLinks links={["REPORTS", "SAFE WORKPLACE", "HSE POLICY"]} />
                         </ul>
                     </div>
                 </div>

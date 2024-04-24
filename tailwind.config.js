@@ -14,8 +14,8 @@ module.exports = {
       colors: {
         // "primary": "#8DECB4",
         "primary": "#219D49",
-        // "borderColor": "#004b85",
-        "borderColor": "#75BD59",
+        // "secondary": "#004b85",
+        "secondary": "#75BD59",
         "blueLinkColor": "#00b1e8",
         "textGray": "#0c1622",
         "darkBlue": "#5b6987"

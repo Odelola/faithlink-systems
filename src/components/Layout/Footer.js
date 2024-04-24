@@ -22,7 +22,7 @@ function Footer() {
         {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">
           <div className="container">
-            <div className="flex lg:flex-row md:justify-between lg:px-24 py-12 border-t-[24px] border-borderColor bg-white rounded-[3px] flex-col px-4 gap-x-4 gap-y-3">
+            <div className="flex lg:flex-row md:justify-between lg:px-24 py-12 border-t-[24px] border-secondary bg-white rounded-[3px] flex-col px-4 gap-x-4 gap-y-3">
               <div className="basis-[20%]">
                 <Link href="/" className="footer__brand">
                   {/* <h1>Faith Link Systems</h1> */}
@@ -99,11 +99,11 @@ function Footer() {
                 </div>
                 <div className="flex mt-6 xxs:flex-col">
                   <div className="mr-7">
-                    <span className="text-[14px] text-borderColor font-bold">PHONE </span>
+                    <span className="text-[14px] text-secondary font-bold">PHONE </span>
                     <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
                   </div>
                   <div className="footer__contact">
-                    <span className="text-[14px] text-borderColor font-bold">EMAIL </span>
+                    <span className="text-[14px] text-secondary font-bold">EMAIL </span>
                     <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
                   </div>
                 </div>
