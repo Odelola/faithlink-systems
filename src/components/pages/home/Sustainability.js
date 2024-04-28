@@ -21,7 +21,7 @@ function Sustainability() {
         )
     }
     return (
-        <section className="bg-[image:url(https://cengizholding.com.tr/Content/images/showcase/1.png)] h-[600px] bg-cover flex items-center">
+        <section className="bg-[image:url(https://cengizholding.com.tr/Content/images/showcase/1.png)] h-[600px] bg-center bg-cover flex items-center">
             {/* <picture className="w-full h-full">
 <img src="https://cengizholding.com.tr/Content/images/showcase/1.png" width={1860} height={660} alt="Sustainability Image" loading="lazy" />
             </picture> */}

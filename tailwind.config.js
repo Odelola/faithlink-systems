@@ -19,7 +19,8 @@ module.exports = {
         "faintWhite": "#f3f3f3",
         "blueLinkColor": "#00b1e8",
         "textGray": "#0c1622",
-        "darkBlue": "#5b6987"
+        "darkBlue": "#5b6987",
+        "footerBlue": "#004B85"
       },
       fontFamily: {
         "termina": ["Termina", "Montserrat", "sans-serif"],

@@ -56,7 +56,7 @@ html {
   } */
 
   p {
-    @apply font-normal text-[13px] mb-[1rem]
+    @apply font-normal text-[11px] mb-[1rem]
   }
 
   h1 {

@@ -1,0 +1,7 @@
+.social_list_item{
+    @apply w-5 h-5 flex justify-center items-center border border-footerBlue p-4 hover:bg-footerBlue
+}
+.social_list_item:hover svg,
+.social_list_item:hover path{
+    fill: white;
+}

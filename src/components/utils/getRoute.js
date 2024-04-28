@@ -10,7 +10,7 @@ const getRoutes = {
     "generation": "/activity-fields/generation",
     "transmission": "/activity-fields/transmission",
     "distribution": "/activity-fields/distribution",
-    "automation & control": "/activity-fields/automation-and-control",
+    "automation": "/activity-fields/automation",
     "automation and control": "/activity-fields/automation-and-control",
     "industry": "/activity-fields/industry",
     "power": "/activity-fields/power",

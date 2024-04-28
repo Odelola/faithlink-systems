@@ -22,7 +22,7 @@ function ActivityFields() {
     },
     {
       image: "/pages/automation.jpg",
-      title: "AUTOMATION & CONTROL",
+      title: "AUTOMATION",
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, rem."
     },
   ]
@@ -38,12 +38,12 @@ function ActivityFields() {
               </figure>
               <article className="absolute left-0 w-full flex flex-col justify-end p-8 text-white bottom-0 transition-[translate] duration-300 max-md:p-2 ">
                 <div className="translate-y-[calc(100%-25px)] group-hover:translate-y-[0] max-md:translate-y-[calc(100%-45px)]">
-                  <h2 className="text-[25px] max-md:text-[20px] mb-0">
+                  <h2 className="text-[25px] max-md:text-[20px] mb-0 text-nowrap">
                     {title}
                   </h2>
-                  <p className="mb-4 max-md:text-[10px]"></p>
 
                   <p className="group-hover:hidden">{text}</p>
+                  {/* <p className="mb-4 max-md:text-[10px]"></p> */}
                   <p>
 
                     {text}
