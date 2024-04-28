@@ -22,8 +22,10 @@ module.exports = {
         "darkBlue": "#5b6987"
       },
       fontFamily: {
+        "termina": ["Termina", "Montserrat", "sans-serif"],
+        "terminamedium": ["TerminaMedium", "Montserrat", "sans-serif"],
+        "terminabold": ["TerminaBold", "Montserrat", "sans-serif"],
         "montserrat": ["Montserrat", "sans-serif"],
-        "nunito": ["Nunito", "sans-serif"]
       }
     },
     screens: {

@@ -7,7 +7,7 @@
 }
 
 .contact-input {
-    @apply bg-[#eef2f5] border border-[#ccdbe7]  h-12 px-[18px] text-darkBlue resize-none leading-6 w-full outline-none xs:max-md:placeholder:text-[11px] font-nunito
+    @apply bg-[#eef2f5] border border-[#ccdbe7]  h-12 px-[18px] text-darkBlue resize-none leading-6 w-full outline-none xs:max-md:placeholder:text-[11px] font-montserrat
 }
 
 .contact-disclaimer {

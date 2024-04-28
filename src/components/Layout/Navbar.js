@@ -1,7 +1,32 @@
+import { useState, useEffect } from 'react';
 import Link from "next/link"
 import { getRoute } from '../utils'
 
 function Navbar() {
+  
+  // if(typeof window == 'undefined') return
+  
+  // if(typeof window !== 'undefined'){
+  // const [prevScroll, setPrevScroll] = useState(window?.scrollY);
+  // const [top, setTop] = useState(0);
+  // console.log("top", top)
+  // useEffect(() => {
+    
+    
+  //   const showHideNavbar = () => {
+  //     const currentScroll = window?.scrollY;
+
+  //     prevScroll < currentScroll ? setTop(0) : setTop(-50)
+  //     setPrevScroll(currentScroll)
+  //     }
+  //     window?.addEventListener("scroll", showHideNavbar)
+  //   return () => {
+  //     window?.removeEventListener("scroll", showHideNavbar)
+  //   }
+  // }, [prevScroll])
+//}
+
+
   const mainNavLinkStyle = ""
 
   function MenuLinks({ linkName, subLinks }) {
@@ -10,7 +35,7 @@ function Navbar() {
       <li className="relative group">
         <div>
 
-          <Link href={getRoute[linkName.toLowerCase()] ?? "/"} className="px-5 py-4 w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
+          <Link href={getRoute[linkName.toLowerCase()] ?? "/"} className="font-terminamedium px-4 py-4 font-medium w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white max-md:px-0">
             {linkName}
             <i className="md:hidden">
               <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
@@ -49,9 +74,10 @@ function Navbar() {
 
     )
   }
+
   return (
     <>
-      <header className="fixed w-full z-[9999] bg-white transition-transform h-20 flex items-center">
+      <header className={`fixed w-full z-[9999] bg-white transition-transform h-20 flex items-center text-textGray`}>
         <div className="hidden justify-end bg-white">
           <div className="container">
             <div className="flex justify-end">
@@ -77,13 +103,13 @@ function Navbar() {
           <div className="header__left">
             <div className="header__brand">
               <Link href="/">
-                <img src="/brandLogo.svg" className="h-[60px] w-[300px]" alt="Brand Logo" />
+                <img src="/brandLogo.png" className="w-[200px]" alt="Brand Logo" />
               </Link>
             </div>
           </div>
           <div className="flex items-center gap-x-4">
             <nav className="max-md:w-full max-md:h-screen max-md:fixed max-md:left-0 max-md:top-0 max-md:z-[9999] bg-primaryColor max-md:overflow-y-scroll max-md:hidden" aria-label="Main">
-              <ul className="flex items-center gap-x-6 max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start">
+              <ul className="flex items-center max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start">
                 <MenuLinks linkName="CORPORATE" subLinks={["about us", "chairman's message", "milestones"]} />
                 <MenuLinks linkName="ACTIVITY FIELDS" subLinks={["industry", "energy", "power", "other", "companies"]} />
                 <MenuLinks linkName="SUSTAINABILITY" subLinks={[]} />

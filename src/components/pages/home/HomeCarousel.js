@@ -46,7 +46,7 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper navigation={true} modules={[Navigation]} loop autoplay={{ delay: 3000}} className="cursor-grab">
                         <SwiperSlide>
                             <video playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" className=''>
                                 <source type="video/mp4" src="/video.mp4" />
@@ -111,7 +111,7 @@ export default function HomeCarousel() {
                                 </div>
                             </div>
                         </aside>
-                        <aside className=''>
+                        <aside className='text-justify'>
                             <p>Since 2006, Faithlink Systems continues to  be a leading Power Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects. </p>
                             <p>
                                 Specializing in Power, Telecoms and Infrastructure Development, Faithlink is capable of delivering exceptional services delivery to customers that is infused with high level of professionalism, safety and operational efficiency.
