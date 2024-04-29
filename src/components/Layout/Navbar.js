@@ -53,9 +53,11 @@ function Navbar() {
   function SubMenu({ subLinks, className = "" }) {
     return (
       <ul className={"absolute left-0 z-50 invisible opacity-0 transition-all group-hover:visible group-hover:opacity-100 max-md:hidden" + className}>
-        {subLinks?.map(item => (
-          <li key={item}>
-            <Link href={getRoute[item] ?? "/"} className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3]">
+        {subLinks?.map((item, index) => (
+          <li key={item} className={`opacity-0 invisble group-hover:visible group-hover:opacity-100 group-hover:delay-${75 * index}`} style={{transition: "all .3s ease-in-out"}}>
+            <Link href={getRoute[item] ?? "/"} 
+            
+           className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3] -translate-x-8 opacity-0 invisble group-hover:visible group-hover:opacity-100 group-hover:delay-${75 * index} group-hover:translate-x-0" style={{transition: "all .3s ease-in-out"}}>
               <figure className="flex items-center gap-[17px]">
                 <figcaption className="text-nowrap">
                   {item.toUpperCase()}

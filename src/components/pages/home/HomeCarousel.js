@@ -49,7 +49,7 @@ export default function HomeCarousel() {
                     <Swiper navigation={true} modules={[Navigation]} loop autoplay={{ delay: 3000}} className="cursor-grab">
                         <SwiperSlide>
                             <video playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" className=''>
-                                <source type="video/mp4" src="/video.mp4" />
+                                <source type="video/mp4" src="/video_.mp4" controlsList="nodownload" disablePictureInPicture />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
                         </SwiperSlide>
@@ -66,7 +66,7 @@ export default function HomeCarousel() {
             </section>
             <section>
                 <div className="container">
-                    <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1'>
+                    <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1 items-center'>
                         <aside className='max-md:flex max-md:flex-col-reverse'>
                             <blockquote className='ml-20 mb-8 max-md:m-0'>At Faithlink Systems, we pride ourselves on being a team of industry specialists
                                 operating within a privately owned company, effectively serving a global market
@@ -76,37 +76,38 @@ export default function HomeCarousel() {
                             <div className="grid grid-cols-5 gap-5 w-auto relative max-md:pb-[20%]">
                                 <div className={`${about_gallery_item} place-items-center`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/1.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-7.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
 
                                 </div>
                                 <div className={`${about_gallery_item}`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/3.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-1.jpg" width="186" height="188" alt="" loading="lazy" />
+                                        {/* <img src="/pages/elect-image-1.jpg72.png" width="186" height="188" alt="" loading="lazy" /> */}
                                     </figure>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/6.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-2.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                 </div>
                                 <div className={`${about_gallery_item} relative top-[25%]`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/5.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-3.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/8.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-1.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                 </div>
                                 <div className={`${about_gallery_item}`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/4.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-4.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/7.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-5.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                 </div>
                                 <div className={`${about_gallery_item} place-items-end`}>
                                     <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="aos-init aos-animate">
-                                        <img src="https://cengizholding.com.tr/Content/images/small/2.png" width="186" height="188" alt="" loading="lazy" />
+                                        <img src="/pages/elect-image-6.jpg" width="186" height="188" alt="" loading="lazy" />
                                     </figure>
                                 </div>
                             </div>
@@ -115,31 +116,6 @@ export default function HomeCarousel() {
                             <p>Since 2006, Faithlink Systems continues to  be a leading Power Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects. </p>
                             <p>
                                 Specializing in Power, Telecoms and Infrastructure Development, Faithlink is capable of delivering exceptional services delivery to customers that is infused with high level of professionalism, safety and operational efficiency.
-                            </p>
-                            <p>
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-                                more content to add here
-
-
                             </p>
                             <div className="mt-7">
                                 <SecondaryButton href="/corporate/about-us" />

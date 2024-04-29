@@ -25,7 +25,8 @@ function OtherDetails() {
                     </div>
                     <div className="col-span-2 relative ">
                         <picture className="pt-[65%] aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <img src="https://cengizholding.com.tr/content/images/uploads/SON,1466_big.jpg" width="1130" height="628" alt="R&amp;D AND TECHNOLOGY" loading="lazy" />
+                            {/* <img src="https://cengizholding.com.tr/content/images/uploads/SON,1466_big.jpg" width="1130" height="628" alt="HSE POLICY" loading="lazy" /> */}
+                            <img src="pages/hse-policy.jpg" width="1130" height="628" alt="HSE POLICY" loading="lazy" />
                         </picture>
                         <article className="w-[60%] p-12 absolute left-0 bottom-0 max-md:relative max-md:w-full text-white max-md:text-inherit max-md:px-0 max-md:py-2">
                             <h2 className="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">

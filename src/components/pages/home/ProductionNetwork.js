@@ -11,7 +11,7 @@ function ProductionNetwork() {
 
                         <iframe className='border-0 w-full outline-none' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7556535558265!2d3.436507610687536!3d6.425431724268095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53d9d3294a9%3A0x6ac2bcce2301289f!2s29%20Fatai%20Durosinmi-Etiti%20Cres%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1713636889261!5m2!1sen!2sng" width="600" height="450" allowFullScreen={true} loading="lazy"></iframe>
                     </aside>
-                    <aside>
+                    {/* <aside>
                         <ul className="p-9  pb-2">
                             <li className="relative pb-4 mb-4 border-b border-white">
                                 <div className="relative flex justify-between z-1">
@@ -44,7 +44,7 @@ function ProductionNetwork() {
                                 </div>
                             </li>
                         </ul>
-                    </aside>
+                    </aside> */}
                 </article>
             </div>
         </section>
