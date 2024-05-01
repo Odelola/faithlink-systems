@@ -69,7 +69,7 @@ html {
   }
 
   h1 {
-    @apply font-medium leading-8 mb-4 md:text-[2em] text-[1.5em]
+    @apply font-medium leading-8 mb-4 max-md:mb-2 md:text-[2em] text-[1.5em]
   }
 
   h2 {
@@ -98,5 +98,8 @@ html {
 
   section {
     @apply pb-20
+  }
+  .section-top{
+    @apply pt-24
   }
 }

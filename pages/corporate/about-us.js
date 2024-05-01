@@ -10,7 +10,7 @@ function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
-            <section className="pt-24">
+            <section className="section-top">
                 <div className="container container-lg">
                     <div className="flex justify-between gap-x-14 flex-col md:flex-row">
                         <aside className="basis-1/2">
