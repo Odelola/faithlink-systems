@@ -174,7 +174,7 @@ function Navbar() {
           </div> */}
           <div className={`w-9 h-9 relative flex justify-center items-center z-[3000] cursor-pointer flex-col md:hidden ${toggle ? "gap-y-0" : "gap-y-1"}`} onClick={() => setToggle(prev => !prev)}>
             {Array(3).fill("").map((_, index) => (
-              <span className={`w-8 h-1 ${toggle ? "bg-white" : "bg-primary"} rounded-sm ${(index == 0 && toggle) ? "rotate-45" : ""}${(index == 1 && toggle) ? "hidden" : ""}${(index == 2 && toggle) ? "-rotate-45 -mt-1" : ""}`}></span>
+              <span key={index} className={`w-8 h-1 ${toggle ? "bg-white" : "bg-primary"} rounded-sm ${(index == 0 && toggle) ? "rotate-45" : ""}${(index == 1 && toggle) ? "hidden" : ""}${(index == 2 && toggle) ? "-rotate-45 -mt-1" : ""}`}></span>
             ))}
           </div>
         </div>
@@ -255,7 +255,7 @@ function MobileSubMenu({ subLinks, mobileToggle, setMobileToggle, setToggle }) {
       </li>
       {subLinks.map(item => (
 
-        <li className='border-b border-[rgba(225,225,225,.5)]'>
+        <li className='border-b border-[rgba(225,225,225,.5)]' key={item}>
           <Link href={getRoute[item] ?? "/"} className='flex justify-between text-white py-5 text-[16px]'>
             {item.toUpperCase()}
           </Link>

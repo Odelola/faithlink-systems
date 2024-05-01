@@ -5,7 +5,7 @@ function ChairmansMessage() {
     return (
         <>
             <Head>
-                <title>CHAIRMAN'S MESSAGE - Faith Link Systems Limited</title>
+                <title>CHAIRMAN&apos;S MESSAGE - Faith Link Systems Limited</title>
                 <meta name="description" content="MESSAGE FROM THE CHAIRMAN" />
             </Head>
             <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="Chairman's message" alt="Chairman's message" leadingRoutes={["homepage", "corporate"]} />
