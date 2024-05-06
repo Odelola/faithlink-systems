@@ -58,7 +58,7 @@ function Footer() {
                     SUSTAINABILITY
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["for a better future", "safe workplace", "construction", "other", "companies"]} />
+                    <GetFooterLinks links={["hse policy"]} />
                   </ul>
                 </div>
                 <div className="basis-[17%] flex flex-col">

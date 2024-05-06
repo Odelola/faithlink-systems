@@ -145,7 +145,7 @@ function Navbar() {
               <ul className="flex items-center max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start">
                 <MenuLinks linkName="CORPORATE" subLinks={["about us", "chairman's message", "milestones"]} />
                 <MenuLinks linkName="ACTIVITY FIELDS" subLinks={["power sector", "engineering services", "pass / eaas", "fibre optics"]} />
-                <MenuLinks linkName="SUSTAINABILITY" subLinks={[]} />
+                <MenuLinks linkName="SUSTAINABILITY" subLinks={["hse policy"]} />
                 <MenuLinks linkName="CAREER" />
                 <MenuLinks linkName="MEDIA CENTER" subLinks={["news", "photo gallery"]} />
               </ul>

@@ -1,4 +1,4 @@
-import HomeImageHeading from "./HomeImageHeading"
+import HomeImageHeading from "../../HomeImageHeading"
 import { PrimaryButton } from '../../Button';
 import { getRoute } from "../../utils";
 
