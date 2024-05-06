@@ -4,8 +4,8 @@ function FibreOptics() {
     return (
         <>
             <Head>
-                <title>ABOUT US - Faith Link Systems Limited</title>
-                <meta name="description" content="ABOUT US" />
+                <title>FIBRE OPTICS - Faith Link Systems Limited</title>
+                <meta name="description" content="FIBRE OPTICS" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <PageSubheader imgUrl="/pages/fibre-optics-main.jpg" alt="Fibre Optics Image" pageName="fibre optics" leadingRoutes={["homepage", "activity fields"]} />
@@ -20,7 +20,7 @@ function FibreOptics() {
                         </h1>
                         <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="basis-1/2">
-                                <ul>
+                                <ul className="text-[12px]">
                                     <li>OSP ( Survey, Planning, Design)</li>
                                     <li>OSP Implementation (Last mile/Metro/Backbone)</li>
                                     <li>FTTH/FTTx</li>

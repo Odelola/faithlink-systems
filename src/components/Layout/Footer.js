@@ -50,7 +50,7 @@ function Footer() {
                     ACTIVITY FIELDS
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["power sector", "engineering services", "pass / eaas", "fibre optics",]} />
+                    <GetFooterLinks links={["power sector", "engineering services", "paas / eaas", "fibre optics",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -66,7 +66,8 @@ function Footer() {
                     MEDIA CENTER
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["press releases", "press statements", "news", "corporate logos", "photo gallery", "video gallery"]} />
+                    {/* <GetFooterLinks links={["press releases", "press statements", "news", "photo gallery", "video gallery"]} /> */}
+                    <GetFooterLinks links={["press releases", "news", "photo gallery", "video gallery"]} />
                   </ul>
                   <div className="flex flex-col mt-14 gap-y-4 items-end md:items-start">
                     <Link href="career" className="font-semibold text-[14px]">

@@ -16,12 +16,17 @@ const getRoutes = {
     "industry": "/activity-fields/industry",
     "power": "/activity-fields/power",
     "power sector": "/activity-fields/power-sector",
-    "engineering services": "/activity-fields/engineering-service",
-    "paas/eaas": "/activity-fields/paas",
+    "engineering services": "/activity-fields/engineering-services",
+    "paas / eaas": "/activity-fields/paas-and-eaas",
     "fibre optics": "/activity-fields/fibre-optics",
     "reports": "/safety-mission/reports",
     "safe workplace": "/safety-mission/safe-workplace",
-    "hse policy": "/safety-mission/hse-policy",
+    // "hse policy": "/safety-mission/hse-policy",
+    "hse policy": "/sustainability/hse-policy",
+    "news": "/media-center/news",
+    "press releases": "/media-center/press-releases",
+    "photo gallery": "/media-center/photo-gallery",
+    "video gallery": "/media-center/video-gallery",
     "privacy policy": "/privacy-policy"
 }
 
