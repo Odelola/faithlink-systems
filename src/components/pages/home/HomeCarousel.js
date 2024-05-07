@@ -4,15 +4,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // import required modules
-// import { Navigation } from 'swiper/modules';
+// import { Pagination } from 'swiper/pa';
 import Link from 'next/link'
 import { PrimaryButton, SecondaryButton } from '../../Button';
 import { getRoute } from "../../utils"
 
 
-
 export default function HomeCarousel() {
 const swiper = useSwiper();
+// const pagination = {
+//     clickable: true,
+    
+// }
     const about_gallery_item = "grid gap-[20px]"
     const carouselText = [
         {
@@ -46,7 +49,7 @@ const swiper = useSwiper();
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper navigation={true} loop grabCursor className="cursor-grab">
+                    <Swiper loop grabCursor className="cursor-grab">
                         <SwiperSlide>
                             <video playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" className=''>
                                 <source type="video/mp4" src="/video_.mp4" controlsList="nodownload" disablePictureInPicture />

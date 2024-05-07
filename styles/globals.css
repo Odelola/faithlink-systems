@@ -65,11 +65,11 @@ html {
   } */
 
   p {
-    @apply font-normal text-[11px] mb-[1rem]
+    @apply font-normal text-[14px] mb-[1rem] leading-[24px] text-justify font-montserrat
   }
 
   h1 {
-    @apply font-medium leading-8 mb-4 max-md:mb-2 md:text-[2em] text-[1.5em]
+    @apply font-medium mb-4 max-md:mb-2 md:text-[2em] text-[1.5em]
   }
 
   h2 {

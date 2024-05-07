@@ -15,7 +15,7 @@ function PowerSector() {
           <div className="container container-lg">
             <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
               <aside className="basis-1/2">
-          <h1 className="aos-init aos-animate text-[20px] text-textGray w-1/2 max-md:w-full">
+          <h1 className="aos-init aos-animate text-[20px] text-textGray">
             Demanding challenges, promising opportunities
             </h1>
                 <ul className="text-[12px]">

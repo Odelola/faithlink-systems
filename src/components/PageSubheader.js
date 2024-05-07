@@ -10,7 +10,7 @@ function PageSubheader({ imgUrl, alt, pageName, leadingRoutes }) {
       <div className="absolute h-full top-0 left-0 w-full">
         <div className="container container-lg relative h-full">
           <div className="absolute top-1/2 text-white max-w-[65%] -translate-y-1/2 px-5 lg:px-0">
-            <h1 className='lg:text-[50px]'>
+            <h1 data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300" class="aos-init aos-animate" className='lg:text-[50px]'>
               {pageName.toUpperCase()}
             </h1>
           </div>
