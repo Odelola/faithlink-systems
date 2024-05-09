@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Faith Link Systems Limited</title>
+        <title>HOMEPAGE - Faith Link Systems Limited</title>
         <meta name="description" content="The Official Homepage of Faith Link Systems Limited" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

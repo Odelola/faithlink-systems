@@ -31,8 +31,7 @@ function Footer() {
               <div className="basis-[20%]">
                 <Link href="/" className="footer__brand">
                   {/* <h1>Faith Link Systems</h1> */}
-                  <img src="/brandLogo.svg" className="w-[300px] h-[80px]" alt="Brand Logo" />
-
+                  <img src="/brandLogo.png" className="w-[200px] max-md:w-[150px]" alt="Brand Logo" />
                 </Link>
               </div>
               <nav className="grid sm:grid-cols-2 xxs:grid-cols-1 md:grid-cols-4 md:basis-[80%] gap-y-6">

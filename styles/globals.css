@@ -19,20 +19,20 @@
 @tailwind utilities;
 
 
-.slider-nav__button {
+/* .slider-nav__button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-width: 50px;
 	min-height: 50px;
 	transition: all .3s ease;
-}
+} */
 
 
 
 * {
   box-sizing: border-box;
-  transition: all .3s;
+  transition: all .3s ease;
 }
 
 html {

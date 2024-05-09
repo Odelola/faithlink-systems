@@ -13,13 +13,13 @@ function FibreOptics() {
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        <h1 className="aos-init aos-animate mb-16 text-[20px] text-textGray w-1/2 max-md:w-full">
-                            FAITHLINK offers Installation and maintenance services for Fiber Optic network nationwide.
-                            <br />
-                            Our services include the following;
-                        </h1>
                         <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="basis-1/2">
+                        <h1 className="aos-init aos-animate mb-16 text-[20px] text-textGray">
+                            FAITHLINK offers Installation and maintenance services for Fiber Optic network nationwide.
+                            <br />
+                        </h1>
+                            Our services include the following;
                                 <ul className="text-[12px]">
                                     <li>OSP ( Survey, Planning, Design)</li>
                                     <li>OSP Implementation (Last mile/Metro/Backbone)</li>
@@ -37,7 +37,7 @@ function FibreOptics() {
                             </aside>
                             <aside>
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                    <img className="w-[500px] h-[500px]" src="/pages/fibre-optics.jpg" alt="FIBRE OPTICS' IMAGE" />
+                                    <img className="w-[500px] h-[350px]" src="/pages/fibre-optics.jpg" alt="FIBRE OPTICS' IMAGE" />
                                 </div>
                             </aside>
                         </article>

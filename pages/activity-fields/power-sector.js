@@ -18,7 +18,7 @@ function PowerSector() {
           <h1 className="aos-init aos-animate text-[20px] text-textGray">
             Demanding challenges, promising opportunities
             </h1>
-                <ul className="text-[12px]">
+                <ul className="ml-3 mb-3 list-disc text-[12px]">
                   <li>Generation</li>
                   <li>Transmission</li>
                   <li>Distribution</li>

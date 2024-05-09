@@ -10,11 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "aos": "^2.3.4",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swiper": "8.4.7"
+    "swiper": "8.4.7",
+    "yet-another-react-lightbox": "^3.17.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
