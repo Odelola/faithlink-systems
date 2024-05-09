@@ -24,7 +24,7 @@ function About() {
                                 areas of activity. </p>
                         </aside>
                         <aside className="basis-1/2 flex flex-col">
-                            <p>We understand the unique needs of your projects and that's why we tailor our business and supply solutions to precisely meet those requirements. We make project easier for client by deploying the following.</p>
+                            <p>We understand the unique needs of your projects and that&apos;s why we tailor our business and supply solutions to precisely meet those requirements. We make project easier for client by deploying the following.</p>
                             <ul className="ml-3 mb-3 list-disc text-[12px]">
                                 <li>Innovation Solutions</li>
                                 <li>Expert Product Solutions</li>
