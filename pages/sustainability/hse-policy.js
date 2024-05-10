@@ -11,7 +11,8 @@ function HsePolicy() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <PageSubheader imgUrl="https://cengizholding.com.tr/Content/images/subpage-promo/baskanin-mesaji.jpg" alt="HSE POLICY Image" pageName="hse policy" />
+                {/* <PageSubheader imgUrl="https://cengizholding.com.tr/Content/images/subpage-promo/baskanin-mesaji.jpg" alt="HSE POLICY Image" pageName="hse policy" leadingRoutes={["homepage",]} /> */}
+                <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HSE POLICY Image" pageName="hse policy" leadingRoutes={["homepage", "sustainability"]} />
                 <section className="pt-24 pb-0">
                     <div className="container container-lg">
                         <h1>HSE POLICY</h1>

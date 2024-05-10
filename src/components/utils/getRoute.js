@@ -6,7 +6,7 @@ const getRoutes = {
     "chairman's message": "/corporate/chairmans-message",
     "milestones": "/corporate/milestones",
     "career": "/career",
-    "sustainability": "sustainability",
+    "sustainability": "/sustainability",
     "activity fields": "/activity-fields/industry",
     "generation": "/activity-fields/generation",
     "transmission": "/activity-fields/transmission",

@@ -8,10 +8,10 @@ function Breadcrumb({ leadingRoutes = ["homepage"] }) {
     const nameOfRoute = router.pathname.split("/").at(-1).toUpperCase();
     function GeneratePath({ leadingRoutes }) {
         return (
-            leadingRoutes.map(item => {
+            leadingRoutes.map((item, index) => {
                 return (
                     <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" className='list-item' key={item}>
-                        <Link itemScope="" itemType="http://schema.org/Thing" itemProp="item" href={getRoute[item]}>
+                        <Link itemScope="" itemType="http://schema.org/Thing" itemProp="item" href={(leadingRoutes.length == 2 && index == leadingRoutes.length - 1) ? "#" : getRoute[item] }>
                             <span itemProp="name" className='text-white leading-3'>{item.toUpperCase()}</span>
                         </Link>
                         <meta itemProp="position" content="1" />
