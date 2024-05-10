@@ -1,5 +1,6 @@
 import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
+import SubPageNavigator from "../../src/components/SubPageNavigator"
 function FibreOptics() {
     return (
         <>
@@ -44,6 +45,7 @@ function FibreOptics() {
                     </div>
                 </div>
             </section>
+            <SubPageNavigator leftLink="paas / eaas" rightLink="fibre optics" />
         </>
 
     )

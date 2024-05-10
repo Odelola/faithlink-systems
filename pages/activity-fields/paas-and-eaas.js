@@ -1,5 +1,6 @@
 import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
+import SubPageNavigator from "../../src/components/SubPageNavigator"
 
 function PaasAndEaas() {
     return (
@@ -52,6 +53,7 @@ function PaasAndEaas() {
                     </div>
                 </div>
             </section>
+            <SubPageNavigator leftLink="engineering services" rightLink="fibre optics" />
         </>
     )
 }

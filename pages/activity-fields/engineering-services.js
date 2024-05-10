@@ -1,5 +1,6 @@
 import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
+import SubPageNavigator from "../../src/components/SubPageNavigator"
 
 function EngineeringServices() {
     return (
@@ -43,7 +44,7 @@ function EngineeringServices() {
                                     FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry. We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
                                     FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.
                                 </p>
-                                
+
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                                     <img className="basis-1/2" src="/pages/greenfield-1.jpg" alt="GREENFIELD FIRST IMAGE" />
                                     <img className="basis-1/2" src="/pages/greenfield-2.jpg" alt="GREENFIELD SECOND IMAGE" />
@@ -56,7 +57,7 @@ function EngineeringServices() {
                                 <p className="mt-6">
                                     FAITHLINK provides world class Tower Auditing and Maintenance Services for Telecom Operators and Tower Companies . Services provided include: Tower Inspection, Tower Loading Analysis, Tower Re-alignment, Bolt Tightening and Torquing, Lightening and Earthing System installation and reactivation and Anti-corrosion Protective Coating.
                                 </p>
-                                
+
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                                     <img className="basis-1/2" src="/pages/tower-audit-1.jpg" alt="TOWER AUDIT FIRST IMAGE" />
                                     <img className="basis-1/2" src="/pages/tower-audit-2.jpg" alt="TOWER AUDIT SECOND IMAGE" />
@@ -67,10 +68,10 @@ function EngineeringServices() {
                                     RF INSTALLATION & MAINTENANCE
                                 </h1>
                                 <p className="mt-6">
-                                FAITHLINK  execute RF installations of fiber transmission or feeder cable from RRU to nodal equipment on 2G, 3G, 4G & 5G platform networks as well as installation and commissioning of antenna (such as Katherin, CommScope, Prose, Huawei) and microwave links. We equally execute RF drive tests on networks and also pre and post-optimization analysis of drive test results.
+                                    FAITHLINK  execute RF installations of fiber transmission or feeder cable from RRU to nodal equipment on 2G, 3G, 4G & 5G platform networks as well as installation and commissioning of antenna (such as Katherin, CommScope, Prose, Huawei) and microwave links. We equally execute RF drive tests on networks and also pre and post-optimization analysis of drive test results.
 
                                 </p>
-                                
+
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                                     <img className="basis-1/2" src="/pages/rf-installation-1.jpg" alt="RF INSTALLATION FIRST IMAGE" />
                                     <img className="basis-1/2" src="/pages/rf-installation-2.jpg" alt="RF INSTALLATION SECOND IMAGE" />
@@ -96,6 +97,7 @@ function EngineeringServices() {
                     </div>
                 </div>
             </section>
+            <SubPageNavigator leftLink="power sector" rightLink="paas / eaas" />
         </>
     )
 }

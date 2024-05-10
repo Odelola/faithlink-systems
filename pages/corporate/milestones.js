@@ -13,7 +13,9 @@ function Milestones() {
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        <h1>MILESTONES</h1>
+                        <article className={"after:absolute after:top-0 after:left-1/2 after:context-[''] after:-translate-x-1/2 after:border after:border-dashed after:border-primary after:w-[1px] after:h-full"}>
+
+                        </article>
                     </div>
                 </div>
             </section>

@@ -2,6 +2,22 @@ import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
 
 function About() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <main className="pb-6 mb-6">
             <Head>
@@ -12,7 +28,7 @@ function About() {
             <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
-                    <div className="flex justify-between gap-x-14 flex-col md:flex-row">
+                    <article className="flex justify-between gap-x-14 flex-col md:flex-row">
                         <aside className="basis-1/2">
                             <h1 className="text-textGray text-[20px]">At Faithlink Systems, we pride ourselves on being a team of industry specialists
                                 operating within a privately owned company, effectively serving a global market
@@ -38,7 +54,7 @@ function About() {
                             <p>We help actively shape the future of energy and make it a success story for all
                                 stakeholders.</p>
                         </aside>
-                    </div>
+                    </article>
                 </div>
             </section>
         </main>
