@@ -5,9 +5,9 @@ function PhotoGallery() {
 
     const PhotoGalleryCard = ({ galleryDetail }) => {
         return(
-            galleryDetail.map(item => {
+            galleryDetail.map((item, index) => {
                 return(
-                    <p>mallam</p>
+                    <p key={index}>mallam</p>
                 )
             })
         )
