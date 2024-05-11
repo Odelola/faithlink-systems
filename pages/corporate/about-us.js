@@ -1,23 +1,9 @@
 import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
+import SubPageNavigator from "../../src/components/SubPageNavigator"
+
 
 function About() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <main className="pb-6 mb-6">
             <Head>
@@ -57,6 +43,9 @@ function About() {
                     </article>
                 </div>
             </section>
+            <SubPageNavigator leftLink="about us" rightLink="our vision and values" />
+
+
         </main>
     )
 }

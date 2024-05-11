@@ -1,5 +1,7 @@
 import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
+import SubPageNavigator from "../../src/components/SubPageNavigator"
+
 
 function Milestones() {
     return (
@@ -19,6 +21,8 @@ function Milestones() {
                     </div>
                 </div>
             </section>
+            <SubPageNavigator leftLink="coo's message" rightLink="milestones" />
+
         </>
     )
 }

@@ -45,10 +45,13 @@ function ActivityFields({ data }) {
 
                   <p className="group-hover:hidden text-[10px] max-md:text-[8px] mb-0">{text}</p>
                   {/* <p className="mb-4 max-md:text-[10px]"></p> */}
-                  <p className="hidden group-hover:block  text-[10px] max-md:text-[8px]">
+                  {/* <p className="hidden group-hover:block  text-[10px] max-md:text-[8px]">
 
                     {text}
-                  </p>
+                  </p> */}
+                  <ul className="ml-3 mb-3 list-disc text-[12px]">
+                    {text.map((item, index) => (<li key={index}>{item}</li>))}
+                  </ul>
                   <div>
                     {/* <PrimaryButton href={getRoute[title.toLowerCase()] ?? "/"} buttonText="VIEW DETAIL" /> */}
                   </div>

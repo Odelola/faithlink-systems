@@ -41,7 +41,7 @@ function Footer() {
                     CORPORATE
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["about us", "our team", "chairman's message", "milestones", "our story", "our vision and values"]} />
+                    <GetFooterLinks links={["about us", "our vision and values", "our team", "coo's message", "milestones",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -57,7 +57,7 @@ function Footer() {
                     SUSTAINABILITY
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["hse policy"]} />
+                    <GetFooterLinks links={["hse policy", "safe workplace"]} />
                   </ul>
                 </div>
                 <div className="basis-[17%] flex flex-col">

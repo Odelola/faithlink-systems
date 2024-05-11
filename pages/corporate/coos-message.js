@@ -1,14 +1,16 @@
 import Head from "next/head";
 import PageSubheader from "../../src/components/PageSubheader";
+import SubPageNavigator from "../../src/components/SubPageNavigator"
 
-function ChairmansMessage() {
+
+function CoosMessage() {
     return (
         <>
             <Head>
-                <title>CHAIRMAN&apos;S MESSAGE - Faith Link Systems Limited</title>
-                <meta name="description" content="MESSAGE FROM THE CHAIRMAN" />
+                <title>COO&apos;S MESSAGE - Faith Link Systems Limited</title>
+                <meta name="description" content="MESSAGE FROM THE COO" />
             </Head>
-            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="Chairman's message" alt="Chairman's message" leadingRoutes={["homepage", "corporate"]} />
+            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="COO's message" alt="COO's message" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
@@ -58,22 +60,23 @@ function ChairmansMessage() {
                                     efficiency.
                                 </p>
                                 <div className="text-textGray mt-12 font-medium">
-
                                     <p className="text-[20px]">LAWRENCE ONYEMA</p>
                                     <p className="text-[14px]">Chief Operating Officer</p>
                                 </div>
                             </aside>
                             <aside>
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                    <img className="w-[500px] h-[700px]" src="/pages/president.jpg" alt="CHAIRMAN'S MESSAGE" />
+                                    <img className="w-[500px] h-[700px]" src="/pages/president.jpg" alt="COO'S MESSAGE" />
                                 </div>
                             </aside>
                         </article>
                     </div>
                 </div>
             </section>
+            <SubPageNavigator leftLink="our team" rightLink="milestones" />
+
         </>
     )
 }
 
-export default ChairmansMessage
+export default CoosMessage
