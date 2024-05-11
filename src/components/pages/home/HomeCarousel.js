@@ -54,14 +54,14 @@ export default function HomeCarousel() {
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
                     <Swiper modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} autoplay={{ delay: 5000 }} effect='fade' grabCursor speed={2000} className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper }}>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <video
                                 playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay">
                                 <source type="video/mp4" src="/video_.mp4" 
                                 controlsList="nodownload" disablePictureInPicture />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         <SwiperSlide>
                             <img src="/pages/banner-1.jpg" alt="Banner Image 1 - Transmission Lines" />
                             <HomeCarouselText textItem={carouselText[1]} />
