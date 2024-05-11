@@ -12,8 +12,8 @@ import {
 } from 'yet-another-react-lightbox/plugins';
 
 function PhotoGallery() {
-    const [open, setOpen] = useState(-1);
-    const [index, setIndex] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [index, setIndex] = useState(-1);
     const galleryData = [
         {
             category: "",
@@ -75,7 +75,7 @@ function PhotoGallery() {
                 <meta name="description" content="Photo Gallery" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
-            <PageSubheader src="https://images.unsplash.com/photo-1547296017-978c31e1c124?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo Gallery Image" pageName="Photo Gallery" leadingRoutes={["homepage", "media center"]} pageText="You can download the images of our plants in high -resolution JPEG FORMAT" />
+            <PageSubheader imgUrl="https://images.unsplash.com/photo-1547296017-978c31e1c124?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo Gallery Image" pageName="Photo Gallery" leadingRoutes={["homepage", "media center"]} pageText="You can download the images of our plants in high -resolution JPEG FORMAT" />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

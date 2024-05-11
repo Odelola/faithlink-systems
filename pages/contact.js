@@ -51,7 +51,7 @@ function Contact() {
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
-              <CompanyMap />
+              {/* <CompanyMap /> */}
               {/* <form action="#0" className='md:w-[calc(100%-300px)]'> */}
               <form action="#0" className=''>
                 <div className="contact-form-item">

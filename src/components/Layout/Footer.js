@@ -12,7 +12,7 @@ function Footer() {
           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
             <path d="M5.99547 5.40301C5.97441 5.18645 5.88579 4.98168 5.74185 4.81693L1.89746 0.390283C1.80764 0.28092 1.69653 0.190426 1.5707 0.124141C1.44486 0.0578555 1.30684 0.0171222 1.16479 0.00434775C1.02274 -0.00842766 0.879538 0.00701424 0.743634 0.0497608C0.60773 0.0925064 0.481879 0.16169 0.373512 0.253229C0.265144 0.344768 0.176456 0.456806 0.112682 0.58273C0.0489074 0.708654 0.0113393 0.845912 0.0021959 0.986402C-0.00694753 1.12689 0.0125188 1.26777 0.0594454 1.40071C0.106372 1.53365 0.179808 1.65596 0.275419 1.76044L3.52599 5.50163L0.275419 9.2432C0.180586 9.34779 0.107875 9.47002 0.0615518 9.60272C0.015229 9.73542 -0.00377228 9.87592 0.00566298 10.016C0.0150982 10.156 0.0527804 10.2928 0.116497 10.4183C0.180214 10.5437 0.268683 10.6554 0.376712 10.7467C0.484741 10.838 0.610154 10.907 0.745592 10.9498C0.88103 10.9926 1.02376 11.0083 1.16542 10.9959C1.30707 10.9835 1.4448 10.9433 1.5705 10.8777C1.69621 10.8121 1.80737 10.7223 1.89746 10.6137L5.74185 6.18708C5.83525 6.07986 5.90584 5.95519 5.94941 5.82049C5.99299 5.68579 6.00865 5.54381 5.99547 5.40301Z" fill="#004B85" />
           </svg>
-          <Link href={getRoute[link.toLowerCase()] ?? "/"} className="md:text-nowrap">
+          <Link href={getRoute[link.toLowerCase()] ?? "/"} className="md:text-nowrap font-semibold">
             {link.toUpperCase()}
           </Link>
         </li>
@@ -69,9 +69,9 @@ function Footer() {
                     <GetFooterLinks links={["press releases", "news", "photo gallery", "video gallery"]} />
                   </ul>
                   <div className="flex flex-col mt-14 gap-y-4 items-end md:items-start">
-                    <Link href="career" className="font-semibold text-[14px]">
+                    {/* <Link href="career" className="font-semibold text-[14px]">
                       CAREER
-                    </Link>
+                    </Link> */}
                     <Link href="/contact" className="font-semibold text-[14px]">
                       CONTACT
                     </Link>
@@ -107,12 +107,12 @@ function Footer() {
                   </div>
                 </div>
 
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <h3 className="text-[11px]">Branch Offices</h3>
 
                   <p className="text-[9px]">Kano Branch: 3, Mallam Jumbo Road Kano State</p>
                   <p className="text-[9px]">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
-                </div>
+                </div> */}
               </div>
               <div className="md:border-r border-b flex flex-[.5] flex-col justify-center md:items-center items-start md:p-7 px-0 py-7 gap-y-4">
                 <h3>SOCIAL MEDIA</h3>
@@ -198,7 +198,7 @@ function Footer() {
         <div className="container">
           <div className="flex justify-between md:px-24 sm:flex-row flex-col px-4">
             <p className="font-bold xxs:max-md:text-center">
-              Copyright © FaithLink Systems. All rights reserved.
+              © FaithLink Systems {new Date().getFullYear()}. All rights reserved.
             </p>
             <div className="flex gap-x-10">
               <Link href="/privacy-notice">PRIVACY NOTICE</Link>
