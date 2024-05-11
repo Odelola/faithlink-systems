@@ -41,7 +41,7 @@ function Footer() {
                     CORPORATE
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["about us", "chairman's message", "milestones"]} />
+                    <GetFooterLinks links={["about us", "our team", "chairman's message", "milestones", "our story", "our vision and values"]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -91,7 +91,7 @@ function Footer() {
                   <div>
                     <h3>HEAD OFFICE</h3>
                     <p className="mb-0">
-                      29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island
+                      29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island, Lagos, Nigeria
                     </p>
 
                   </div>
@@ -198,13 +198,13 @@ function Footer() {
         <div className="container">
           <div className="flex justify-between md:px-24 sm:flex-row flex-col px-4">
             <p className="font-bold xxs:max-md:text-center">
-              © FaithLink Systems {new Date().getFullYear()}. All rights reserved.
+              © {new Date().getFullYear()} FaithLink Systems. All rights reserved.
             </p>
             <div className="flex gap-x-10">
               <Link href="/privacy-notice">PRIVACY NOTICE</Link>
-              <Link href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11623" target="_blank">
+              {/* <Link href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11623" target="_blank">
                 INFORMATION SOCIETY SERVICES
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
