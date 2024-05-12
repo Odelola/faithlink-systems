@@ -49,7 +49,7 @@ function Footer() {
                     ACTIVITY FIELDS
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["power sector", "engineering services", "paas / eaas", "fibre optics",]} />
+                    <GetFooterLinks links={["power sector", "infra development", "engineering services", "paas / eaas", "fibre optics",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">

@@ -1,4 +1,3 @@
-import React from 'react'
 import HomeImageHeading from '../../HomeImageHeading'
 
 function CompanyMap() {

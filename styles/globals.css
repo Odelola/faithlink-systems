@@ -73,11 +73,11 @@ html {
   }
 
   h2 {
-    @apply font-medium mb-4 text-[1.5em]
+    @apply font-medium mb-4 text-[1.25em]
   }
 
   h3 {
-    @apply font-medium md:mb-4 md:text-[1em] mb-1
+    @apply font-medium md:mb-4 md:text-[1em] mb-1 text-[.75em]
   }
 
   .site-max-width {

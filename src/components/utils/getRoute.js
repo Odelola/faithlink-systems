@@ -19,6 +19,7 @@ const getRoutes = {
     "industry": "/activity-fields/industry",
     "power": "/activity-fields/power",
     "power sector": "/activity-fields/power-sector",
+    "infra development": "/activity-fields/infra-development",
     "engineering services": "/activity-fields/engineering-services",
     "paas / eaas": "/activity-fields/paas-and-eaas",
     "fibre optics": "/activity-fields/fibre-optics",
