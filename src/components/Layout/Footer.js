@@ -49,7 +49,7 @@ function Footer() {
                     ACTIVITY FIELDS
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["power sector", "infra development", "engineering services", "paas / eaas", "fibre optics",]} />
+                    <GetFooterLinks links={["power sector", "infra development", "engineering services", "renewable energy", "fibre optics",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -57,7 +57,7 @@ function Footer() {
                     SUSTAINABILITY
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["hse policy", "safe workplace"]} />
+                    <GetFooterLinks links={["safe workplace", "quality management system"]} />
                   </ul>
                 </div>
                 <div className="basis-[17%] flex flex-col">

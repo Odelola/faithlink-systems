@@ -97,7 +97,7 @@ function EngineeringServices() {
                     </div>
                 </div>
             </section>
-            <SubPageNavigator leftLink="power sector" rightLink="paas / eaas" />
+            <SubPageNavigator leftLink="power sector" rightLink="renewable energy" />
         </>
     )
 }

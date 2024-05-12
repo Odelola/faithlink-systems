@@ -2,15 +2,15 @@ import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
 import SubPageNavigator from "../../src/components/SubPageNavigator"
 
-function PaasAndEaas() {
+function RenewableEnergy() {
     return (
         <>
             <Head>
-                <title>PAAS/EAAS - Faith Link Systems Limited</title>
-                <meta name="description" content="PAAS/EAAS" />
+                <title>RENEWABLE ENERGY - Faith Link Systems Limited</title>
+                <meta name="description" content="RENEWABLE ENERGY" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
-            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Power Sector Image" pageName="PAAS/EAAS" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
@@ -40,7 +40,7 @@ function PaasAndEaas() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]">
-                                <img className="w-full h-[300px] mb-4" src="/pages/paas-and-eaas.png" alt="PAAS/EAAS IMAGE" />
+                                <img className="w-full h-[300px] mb-4" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
                                 {/* <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     RENEWABLE ENERGY
                                 </h1> */}
@@ -57,4 +57,4 @@ function PaasAndEaas() {
         </>
     )
 }
-export default PaasAndEaas
+export default RenewableEnergy

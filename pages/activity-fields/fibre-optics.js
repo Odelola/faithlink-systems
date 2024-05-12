@@ -45,7 +45,7 @@ function FibreOptics() {
                     </div>
                 </div>
             </section>
-            <SubPageNavigator leftLink="paas / eaas" rightLink="fibre optics" />
+            <SubPageNavigator leftLink="renewable energy" rightLink="fibre optics" />
         </>
 
     )
