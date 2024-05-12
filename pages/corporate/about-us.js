@@ -11,7 +11,7 @@ function About() {
                 <meta name="description" content="ABOUT US" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <PageSubheader imgUrl="/pages/about-us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
+            <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 flex-col md:flex-row">
@@ -20,8 +20,7 @@ function About() {
                                 operating within a privately owned company, effectively serving a global market
                                 while maintaining a local presence.</h1>
                         <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="grid w-full">
-
-                            <img className="w-full h-[350px]" src="/pages/about-us-alt.jpg" alt="POWER SECTOR IMAGE" />
+                            <img className="w-full" src="/pages/about-us-alt.jpg" alt="POWER SECTOR IMAGE" />
                             </div>
                         </aside>
                             <aside className="basis-1/2 flex flex-col">
