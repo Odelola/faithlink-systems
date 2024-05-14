@@ -49,7 +49,7 @@ function Footer() {
                     ACTIVITY FIELDS
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["power sector", "infra development", "engineering services", "renewable energy", "fibre optics",]} />
+                    <GetFooterLinks links={["infra development", "telecoms sector", "renewable energy", "fibre optics",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -57,7 +57,7 @@ function Footer() {
                     SUSTAINABILITY
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["safe workplace", "quality management system"]} />
+                    <GetFooterLinks links={["safe workplace", "integrated management system"]} />
                   </ul>
                 </div>
                 <div className="basis-[17%] flex flex-col">
@@ -194,7 +194,7 @@ function Footer() {
         </div>
       </div>
       {/* <div className="flex items-end text-white md:mt-4 bg-primary py-3"> */}
-      <div className="flex items-end text-white bg-primary py-3">
+      <div className="flex items-end text-white bg-secondary py-3">
         <div className="container">
           <div className="flex justify-between md:px-24 sm:flex-row flex-col px-4">
             <p className="font-bold xxs:max-md:text-center">

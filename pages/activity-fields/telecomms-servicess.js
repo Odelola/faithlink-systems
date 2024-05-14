@@ -2,19 +2,19 @@ import Head from "next/head"
 import PageSubheader from "../../src/components/PageSubheader"
 import SubPageNavigator from "../../src/components/SubPageNavigator"
 
-function EngineeringServices() {
+function TelecommsServices() {
     return (
         <>
             <Head>
-                <title>ENGINEERING SERVICES - Faith Link Systems Limited</title>
-                <meta name="description" content="Engineering Services" />
+                <title>TELECOMMS SERVICES - Faith Link Systems Limited</title>
+                <meta name="description" content="TELECOMMS Services" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
-            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Engineering Services Image" pageName="ENGINEERING SERVICES" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="TELECOMMS Services Image" pageName="telecomms services" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        {/* <h1>ENGINEERING SERVICES</h1> */}
+                        {/* <h1>TELECOMMS SERVICES</h1> */}
                         <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="basis-[45%]">
                                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
@@ -101,4 +101,4 @@ function EngineeringServices() {
         </>
     )
 }
-export default EngineeringServices
+export default TelecommsServices

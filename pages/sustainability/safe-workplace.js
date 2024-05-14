@@ -55,7 +55,7 @@ function SafeWorkplace() {
                     </section>
                 </div>
             </section>
-            <SubPageNavigator leftLink="safe workplace" rightLink="quality management system" />
+            <SubPageNavigator leftLink="safe workplace" rightLink="integrated management system" />
 
         </>
     )

@@ -47,12 +47,12 @@ function Contact() {
 
 
             {/* <div className="flex justify-between md:flex-col flex-col gap-y-3"> */}
-            <div className="grid grid-cols-[2.2fr_1fr] gap-10 max-md:grid-cols-1 mt-12">
+            <div className="grid grid-cols-[1fr_2fr] gap-36 max-md:grid-cols-1 mt-12">
               <div className='md:w-[250px] w-full hidden'>
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
-              <form action="#0" className=''>
+              <form action="#0" className='order-4'>
                 <div className="contact-form-item">
                   <label for="Subject">Subject</label>
                   <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' />
