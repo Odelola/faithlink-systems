@@ -10,7 +10,7 @@ function RenewableEnergy() {
                 <meta name="description" content="RENEWABLE ENERGY" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
-            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

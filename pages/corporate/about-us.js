@@ -11,7 +11,9 @@ function About() {
                 <meta name="description" content="ABOUT US" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
+      {/* <PageSubheader imgUrl="/pages/infra-development-banner.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
+
+            <PageSubheader imgUrl="/pages/about_us.jpg" alt="About Image" pageName="telecoms services" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 flex-col md:flex-row">
