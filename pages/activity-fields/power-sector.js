@@ -10,6 +10,7 @@ function PowerSector() {
       image: "https://images.unsplash.com/photo-1587127831640-7423ae037873?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "GENERATION",
       // text: "Faithlink provides Embedded Power, Captive Power, Step-up Transformer and Turbine Engines"
+      introText: "We provide these generation activities",
       text: ["Embedded Power", "Captive Power", "Step-up Transformer", "Turbine Engines"],
     },
     {
@@ -17,6 +18,7 @@ function PowerSector() {
       image: "https://images.unsplash.com/photo-1588339251392-e1405faa28bd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "TRANSMISSION",
       // text: "This consists of Transmission Cables, Soil test and Technical Site Survey, 760KV Super Grid, 330KV lines, 132KV lines, "
+      introText: "We provide these transmission activities",
       text: ["Transmission Cables", "Soil test and Technical Site Survey", "760KV Super Grid", "330KV lines", "132KV lines", "InjectionSubstation", "Pylons", "Switch Gears", "Civil works"]
     },
     {
@@ -24,6 +26,7 @@ function PowerSector() {
       image: "https://images.unsplash.com/photo-1591164811435-2b8a547039de?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "DISTRIBUTION",
       // text: "Focusing its energy on distribution, Faithlink provides Soil test and Technical Site Survey, Step-down Transformers, 33/11kv Injector Substations, Smart Prepaid Meters"
+      introText: "We provide these distribution activities",
       text: ["Soil test and Technical Site Survey", "Step-down Transformers", "33/11kv Injector Substations", "Smart Prepaid Meters", "Distribution power lines", "Distribution fuse Assemblies", "Transformer Refurbishment ", "Feeder Pillars", "Substation fencing", "33/11kv Feeder Pillars", "Civil works"]
 
     },
@@ -32,6 +35,7 @@ function PowerSector() {
       image: "/pages/service-offering-automation-and-control-2.jpg",
       title: "AUTOMATION / CONTROL",
       // text: "In Automation and Control, We deal with SCADA System, ATS, AMF, IPMS, Energy Management and Energy Optimization"
+      introText: "We provide these for automation/control",
       text: ["SCADA System", "ATS", "AMF", "IPMS", "Energy Management", "Energy Optimization"]
     },
   ]
@@ -42,7 +46,8 @@ function PowerSector() {
         <meta name="description" content="POWER SECTOR" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} />
+      {/* <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} /> */}
+      <PageSubheader imgUrl="https://images.unsplash.com/photo-1509390559807-3144e7d29097?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} greenOverlay={true} />
 
       <section className="section-top">
         <div className="container">

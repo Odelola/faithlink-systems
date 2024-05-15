@@ -29,9 +29,9 @@ function ActivityFields({ data }) {
 
   function ActivityCarousel({ carouseldata }) {
     return (
-      carouseldata.map(({ text, title, image }, index) => {
+      carouseldata.map(({ text, introText, title, image }, index) => {
         return (
-          <div className="md:basis-[23%] max-md:basis-[70%]  max-md:flex-shrink-0 group ease-in" key={index} role="group" aria-label={`${index + 1} / 4`}>
+          <div class="card-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={300 * index} className="md:basis-[23%] max-md:basis-[70%]  max-md:flex-shrink-0 group ease-in" key={index} role="group" aria-label={`${index + 1} / 4`}>
             <div className="card-item aos-init aos-animate relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <figure className="w-full h-full relative">
                 <img src={image} className="rounded-md h-[400px]" loading="lazy" />
@@ -43,15 +43,18 @@ function ActivityFields({ data }) {
                     {title}
                   </h2>
 
-                  <p className="group-hover:hidden text-[10px] max-md:text-[8px] mb-0">{text}</p>
+                  <p className="group-hover:hidden text-[10px] max-md:text-[8px] mb-0">{introText}</p>
                   {/* <p className="mb-4 max-md:text-[10px]"></p> */}
                   {/* <p className="hidden group-hover:block  text-[10px] max-md:text-[8px]">
 
-                    {text}
-                  </p> */}
-                  <ul className="ml-3 mb-3 list-disc text-[12px]">
-                    {text.map((item, index) => (<li key={index}>{item}</li>))}
-                  </ul>
+{text}
+</p> */}
+                  <div>
+                    <p className="text-[10px] max-md:text-[8px] mb-0">{introText}</p>
+                    <ul className="ml-3 mb-3 list-disc text-[12px]">
+                      {text.map((item, index) => (<li key={index}>{item}</li>))}
+                    </ul>
+                  </div>
                   <div>
                     {/* <PrimaryButton href={getRoute[title.toLowerCase()] ?? "/"} buttonText="VIEW DETAIL" /> */}
                   </div>

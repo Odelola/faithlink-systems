@@ -40,7 +40,7 @@ function Navbar() {
       <li className="relative group px-4 py-4 max-md:px-0">
         {/* <div> */}
 
-        <Link href={"#"} className="font-terminamedium font-medium w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white">
+        <Link href={linkName.toLowerCase() == "career" ? "/career" : "#"} className="font-terminamedium font-medium w-full max-md:flex max-md:items-center max-md:justify-between max-md:text-white">
           {linkName}
           <i className="md:hidden">
             <svg width="6" height="11" viewBox="0 0 6 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">

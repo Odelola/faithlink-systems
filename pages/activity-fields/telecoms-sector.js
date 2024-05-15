@@ -10,7 +10,7 @@ function TelcomsSector() {
                 <meta name="description" content="Telcoms Sector" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
-            <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="/pages/telecoms-sector.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
