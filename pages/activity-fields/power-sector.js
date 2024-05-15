@@ -95,7 +95,7 @@ function PowerSector() {
           </div>
         </div>
       </section>
-      <SubPageNavigator leftLink="power sector" rightLink="infra" />
+      <SubPageNavigator leftLink="power sector" rightLink="infra development" />
     </>
   )
 }
