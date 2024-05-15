@@ -13,8 +13,8 @@ function SafeWorkplace() {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <div>
-                    {/* <PageSubheader imgUrl="https://cengizholding.com.tr/Content/images/subpage-promo/baskanin-mesaji.jpg" alt="SAFE WORKPLACE Image" pageName="SAFE WORKPLACE" leadingRoutes={["homepage",]} /> */}
-                    <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} />
+                    <PageSubheader imgUrl="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={true} />
+                    {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={true} /> */}
                     <section className="pt-24 pb-0">
                         <div className="container container-lg">
                             <h1>SAFE WORKPLACE</h1>

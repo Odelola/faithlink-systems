@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div>
       <Head>
-        <title>Contact - Faith Link Systems</title>
+        <title>CONTACT - Faith Link Systems</title>
         <meta name="description" content="CONTACT" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -20,7 +20,7 @@ function Contact() {
           <div className="container container-lg">
             <div>
               {/* <h1 className="text-center text-textGray text-[22px]">CONTACT</h1> */}
-              <h1 className="text-center text-textGray">CONTACT</h1>
+              {/* <h1 className="text-center text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1> */}
             </div>
 
             <div className='hidden justify-center'>
@@ -47,27 +47,26 @@ function Contact() {
 
 
             {/* <div className="flex justify-between md:flex-col flex-col gap-y-3"> */}
-            <div className="grid grid-cols-[1fr_2fr] gap-36 max-md:grid-cols-1 mt-12">
+            <div className="grid grid-cols-[1fr_2fr] gap-36 max-md:grid-cols-1 mt-12 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">
               <div className='md:w-[250px] w-full hidden'>
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
               <form action="#0" className='order-4'>
+              <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
-                  <label for="Subject">Subject</label>
+                  {/* <label for="Subject">Subject</label> */}
                   <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' />
                 </div>
                 {/* <div className="contact-form-item flex justify-between xs:max-sm:flex-col xs:max-sm:h-24"> */}
-                <div className="contact-form-item">
-                  <label for="Name">Name</label>
-                  <input type="text" placeholder="John Doe" id="Name" name="Name" required="required" className='contact-input basis-[45%]' />
+                <div className="contact-form-item flex justify-between gap-x-4">
+                  {/* <label for="Name">Name</label> */}
+                  <input type="text" placeholder="Your Name" id="Name" name="Name" required="required" className='contact-input' />
+                  {/* <label for="Email">Email</label> */}
+                  <input type="text" placeholder="Enter your email address" id="Email" name="Email" required="required" className='contact-input' />
                 </div>
                 <div className="contact-form-item">
-                  <label for="Email">Email</label>
-                  <input type="text" placeholder="Enter your email address" id="Email" name="Email" required="required" className='contact-input basis-[45%]' />
-                </div>
-                <div className="contact-form-item">
-                  <label for="Message">Your Message</label>
+                  {/* <label for="Message">Your Message</label> */}
                   <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'></textarea>
                 </div>
                 <div className="form-item">
@@ -88,21 +87,24 @@ function Contact() {
                 </div>
               </form>
               <div className='bg-[rgba(245,245,245,.91)]'>
-                <div className='py-8 px-12 flex flex-col gap-y-6'>
-
+                <div className='py-8 px-12'>
                   <h2 className='text-textGray text-[1em]'>CONTACT DETAILS</h2>
+<div className='flex flex-col gap-y-12'>
 
                   <div>
                     <h3 className='text-primary'>HEAD OFFICE</h3>
                     <p className="mb-0">
                       29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island, Lagos, Nigeria
                     </p>
+                      <a href="mailto:info@faithlinkltd.com" className='hover:underline'>info@faithlinkltd.com</a>
                   </div>
                   <div>
                     <h3 className='text-primary'>BRANCH OFFICES</h3>
                     <p className="">Kano Branch: 3, Mallam Jumbo Road Kano State</p>
                   <p className="">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
                   </div>
+</div>
+
                   <div className='text-[13px] hidden'>
                     <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
                     <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
