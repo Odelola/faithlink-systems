@@ -61,9 +61,9 @@ function Navbar() {
     // -translate-x-8 group-hover:delay-${75 * index} group-hover:translate-x-0
     if (subLinks?.length == 0 || !subLinks) return; 
     return (
-     subLinks?.length !== 0  && <ul className={"absolute left-0 top-[100%] z-50 min-w-[300px] overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:h-max bg-white max-md:hidden border-t-[3px] border-primary h-0" + className} style={{ transition: "height 3s linear, opacity .2s ease-in, visibility .2s ease-in" }}>
+     subLinks?.length !== 0  && <ul className={"absolute left-0 top-[97%] z-50 min-w-[300px] overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:h-max bg-white max-md:hidden border-t-[3px] border-primary h-0" + className} style={{ transition: "height 3s linear, opacity .2s ease-in, visibility .2s ease-in" }}>
         {subLinks?.map((item, index) => (
-          <li key={item} className={`invisible translate-x-[-8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-0 group-hover:visible origin-center`} style={{ transitionDelay: `${index * .1}s`, }}>
+          <li key={item} className={`invisible translate-x-[-8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-0 group-hover:visible origin-center`} style={{ transitionDelay: `${index * .15}s`, }}>
             <Link href={getRoute[item] ?? "/"}
 
               className={`flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3] -translate-x-8 group-hover:translate-x-0`} style={{ transition: "all .3s ease-in-out" }}>
@@ -113,7 +113,7 @@ function Navbar() {
 
   return (
     <>
-      <header className={`fixed w-full z-[1000] bg-white transition-transform h-20 flex items-center text-textGray`}>
+      <header className={`fixed w-full z-[1000] bg-white transition-transform h-20 flex text-textGray`}>
         <div className="hidden justify-end bg-white">
           <div className="container">
             <div className="flex justify-end">

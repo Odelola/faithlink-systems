@@ -76,7 +76,7 @@ function Milestones() {
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>1
             {/* <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} /> */}
-            <PageSubheader imgUrl="https://media.istockphoto.com/id/528723134/photo/milestone-signpost.jpg?s=612x612&w=0&k=20&c=gmxRBVYPYmej1G23AfHZwSIVIIHpJBdLPKRg3BA0s_A=" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={true} />
+            <PageSubheader imgUrl="https://media.istockphoto.com/id/528723134/photo/milestone-signpost.jpg?s=612x612&w=0&k=20&c=gmxRBVYPYmej1G23AfHZwSIVIIHpJBdLPKRg3BA0s_A=" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

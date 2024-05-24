@@ -17,7 +17,7 @@ function About() {
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 flex-col md:flex-row">
-                        <aside className="basis-1/2">
+                        <aside className="basis-1/2 text-justify">
                             <h1 className="text-textGray text-[20px]">At Faithlink Systems, we pride ourselves on being a team of industry specialists
                                 operating within a privately owned company, effectively serving a global market
                                 while maintaining a local presence.</h1>

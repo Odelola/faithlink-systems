@@ -13,10 +13,10 @@ function SafeWorkplace() {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <div>
-                    <PageSubheader imgUrl="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={true} />
-                    {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={true} /> */}
+                    <PageSubheader imgUrl="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={false} />
+                    {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={false} /> */}
                     <section className="pt-24 pb-0">
-                        <div className="container container-lg">
+                        <div className="container container-lg text-justify">
                             <h1>SAFE WORKPLACE</h1>
                             <p className="tracking-[.2em] hidden">
                                 This is the Health, Safety, Environment, and Security Policy for FAITHLINK SYSTEM LIMITED. It sets out management’s commitment to ensuring the HSE and welfare of all interested parties (Clients, employees, contractors, customers, and the general public) It sets out FAITHLINK continual improvement and co-ordinates the management of activities relating to actual and potential hazards and risks within her operations. The policy defines responsibilities for Health, Safety, Environment & Security (HSE) and how the company is organized to ensure compliance with legislation and relevant standards. It defines how HSE is implemented, performance measured, audited, and reviewed, and the methods to ensure that objectives are identified; targets are set and performance is monitored.

@@ -15,7 +15,7 @@ function FibreOptics() {
                 <div className="container">
                     <div className="container container-lg">
                         <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
-                            <aside className="basis-1/2">
+                            <aside className="basis-1/2 text-justify">
                         <h1 className="aos-init aos-animate mb-16 text-[20px] text-textGray">
                             FAITHLINK offers Installation and maintenance services for Fiber Optic network nationwide.
                             <br />
