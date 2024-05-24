@@ -10,7 +10,7 @@ function CoosMessage() {
                 <title>COO&apos;S MESSAGE - Faith Link Systems Limited</title>
                 <meta name="description" content="MESSAGE FROM THE COO" />
             </Head>
-            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="COO's message" alt="COO's message" leadingRoutes={["homepage", "corporate"]} />
+            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="COO's message" alt="COO's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={true} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

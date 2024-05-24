@@ -42,6 +42,11 @@ function About() {
                                     <li>Competitive Pricing</li>
                                     <li>Performance and Improvement</li>
                                 </ul>
+                                <p>Our consulting service offerings include strategies to reduce or shift electricity usage during peak periods in response to grid comditions or financial incentives</p>
+                                {/* <p>We offer Solutions to enhance the power grid'sefficiency, reliability, and flexibility through adcanced technologies and data analytics.</p> */}
+                                {/* <p>We also offer improvements to exisiting systems and infrastructure to enhance energy efficiency, automation systems for monitoring and controlling building services like lighting,
+                                    HVAC and security.
+                                </p> */}
                                 <p>We help actively shape the future of energy and make it a success story for all
                                     stakeholders.</p>
                             </aside>

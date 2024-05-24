@@ -27,7 +27,11 @@ module.exports = {
         "terminamedium": ["TerminaMedium", "Montserrat", "sans-serif"],
         "terminabold": ["TerminaBold", "Montserrat", "sans-serif"],
         "montserrat": ["Montserrat", "sans-serif"],
+      },
+      transitionProperty: {
+        'height': 'height'
       }
+      
     },
     screens: {
       'xxs': '250px',

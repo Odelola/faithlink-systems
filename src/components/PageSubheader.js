@@ -1,7 +1,9 @@
 import Breadcrumb from "./Breadcrumb"
 
 function PageSubheader({ imgUrl, alt, pageName, pageText = "", leadingRoutes, greenOverlay = false }) {
-  const greenOverlayStyles = "after:content-[''] after:bg-primary after:opacity-80 after:absolute after:left-0 after:top-0 after:w-full after:h-full"
+  // const greenOverlayStyles = "after:content-[''] after:bg-primary after:opacity-80 after:absolute after:left-0 after:top-0 after:w-full after:h-full"
+  const greenOverlayStyles = "after:content-[''] after:bg-gradient-to-l after:-[rgb(53,82,63)] after:to-[rgb(14,113,68)]   after:to-[rgb(14,113,68)] after:to-[rgb(32,138,74)]  after:via-[rgb(14,113,68)]   after:via-[rgb(14,113,68)] after:via-[rgb(32,138,74)]                  after:from-[rgb(14,113,68)] after:from-[rgb(32,138,74)] after:via-[rgb(14,113,68)] after:opacity-90 after:absolute after:left-0 after:top-0 after:w-full after:h-full"
+  // bg-gradient-to-t [rgb(0,0,0)] to-[rgba(255,255,255,.8)
   return (
     <article className='relative h-[400px] xs:max-md:h-[200px] md:max-lg:h-[300px] w-full '>
       <div className="container h-full xs:max-md:p-0">

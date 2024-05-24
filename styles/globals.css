@@ -65,7 +65,7 @@ html {
   } */
 
   p {
-    @apply font-normal text-[14px] mb-[1rem] leading-[24px] text-justify font-montserrat
+    @apply font-normal text-[14px] mb-[1rem] leading-[24px] text-justify
   }
 
   h1 {

@@ -23,7 +23,7 @@ function InfraDevelopment() {
                   In this division, we execute various projects, some of the projects includes:
                 </p>
                 <ul className="ml-3 mb-3 list-disc text-[12px]">
-                  <li> Solar Power PlantsRoad Construction And Maintenance </li>
+                  <li> Road Construction And Maintenance </li>
                   <li>Building construction and maintenance </li>
                   <li>Drainage constructions</li>
                   <li>Real Estate Development and projects</li>
