@@ -2,7 +2,7 @@ import HomeImageHeading from "../../HomeImageHeading"
 import { PrimaryButton } from '../../Button';
 import { getRoute } from "../../utils";
 
-function ActivityFields({ data }) {
+function ActivityFields({ data, headingTitle, headingText}) {
 
   const activityData = [
     {
@@ -52,7 +52,7 @@ function ActivityFields({ data }) {
                   <div>
                     <p className="text-[10px] max-md:text-[8px] mb-0">{introText}</p>
                     <ul className="ml-3 mb-3 list-disc text-[12px]">
-                      {text.map((item, index) => (<li key={index}>{item}</li>))}
+                      {/* {text.map((item, index) => (<li key={index}>{item}</li>))} */}
                     </ul>
                   </div>
                   <div>
@@ -72,7 +72,7 @@ function ActivityFields({ data }) {
     <section>
       {/* <div className="container"> */}
       <div className="">
-        <HomeImageHeading headingTitle="service offering" headingText="Take a look at the service offerings offered by Faithlink in the power sector" />
+        <HomeImageHeading headingTitle={headingTitle ?? "service offering"} headingText={headingText ?? "Take a look at the service offerings offered by Faithlink in the power sector"} />
         <article className="max-md:overflow-x-scroll flex">
           {/* <div className="flex justify-between mt-8 gap-x-6 max-md:overflow-x-scroll max-md:cursor-grab select-none max-md:h-[calc(100vh-25%)]"> */}
           <div className="flex justify-between mt-4 gap-x-6 max-md:overflow-x-scroll max-md:cursor-grab select-none max-md:h-[calc(100vh-25%)] ]">
