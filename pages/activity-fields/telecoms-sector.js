@@ -17,7 +17,7 @@ function TelcomsSector() {
                         {/* <h1>TELECOMS SECTOR</h1> */}
                         <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
-                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] font-extrabold text-textGray max-md:w-full">
                                     TELECOMS DIVISION
                                 </h1>
                                 <p className="mt-6">
@@ -37,13 +37,15 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
                                     GREENFIELD SITE BUILD
                                 </h1>
                                 <p className="mt-6">
-                                    FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry. We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
-                                    FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.
+                                    FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry.</p>
+                                    <p> We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
                                 </p>
+                                <p>FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.</p>
+                                    
 
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="split-page-images-container">
                                     <img className="split-page-images" src="/pages/greenfield-1.jpg" alt="GREENFIELD FIRST IMAGE" />
@@ -51,7 +53,7 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
-                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
                                     TOWER AUDIT & MAINTENANCE
                                 </h1>
                                 <p className="mt-6">
@@ -64,11 +66,11 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
                                     RF INSTALLATION & MAINTENANCE
                                 </h1>
                                 <p className="mt-6">
-                                    FAITHLINK  execute RF installations of fiber transmission or feeder cable from RRU to nodal equipment on 2G, 3G, 4G & 5G platform networks as well as installation and commissioning of antenna (such as Katherin, CommScope, Prose, Huawei) and microwave links. We equally execute RF drive tests on networks and also pre and post-optimization analysis of drive test results.
+                                    FAITHLINK  execute RF installations of fiber transmission or feeder cable from RRU to nodal equipment on 2G, 3G, 4G & 5G platform networks as well as installation and commissioning of antenna and microwave links. We equally execute RF drive tests on networks and also pre and post-optimization analysis of drive test results.
 
                                 </p>
 
@@ -85,9 +87,9 @@ function TelcomsSector() {
                                 <div className="mt-12">
                                     <p>
                                         FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry. We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
-                                        FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.
+                                        </p>
+                                        // <p>FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.</p>   
 
-                                    </p>
                                     <p>
                                         Products, solutions, and services from Faithlink cover the entire value chain in these areas of activity. We help actively shape tthe future of energy and makke it a success story for all stakeholders.
                                     </p>
