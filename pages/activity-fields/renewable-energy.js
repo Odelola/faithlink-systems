@@ -35,26 +35,21 @@ function RenewableEnergy() {
                                 <p>
                                     We partner with clients to provide unique solutions such as Power as a Service and energy as a service to MNOs, Towercos, Banks
                                 </p>
+                                {/* <p>Power as a Service (PaaS) is a subscription-based energy service  offering of clean, quiet, and seamless power freeing businesses  from unreliable public energy providers and toxic diesel  generators.  </p> */}
                                 <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                                     <img className="basis-1/2" src="/pages/renewable-energy-1.jpg" alt="RENEWABLE ENERGY FIRST IMAGE" />
                                     <img className="basis-1/2" src="/pages/renewable-energy-2.jpg" alt="RENEWABLE ENERGY SECOND IMAGE" />
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <img className="w-full h-[300px] mb-4" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
-                                {/* <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
-                                    RENEWABLE ENERGY
-                                </h1> */}
-                                <p>Power as a Service (PaaS) is a subscription-based energy service  offering of clean, quiet, and seamless power freeing businesses  from unreliable public energy providers and toxic diesel  generators. </p>
-                                <p>PaaS offer a fixed Monthly fee Naira per site to the potential Offtaker. Additional energy above the threshold is prorated at agreed  cost/kwh</p>
-                                <p>FaithLink and the Offtaker signs a 10years power purchase  agreement. Offtaker provide Location/ sites for Solar  Hybrid Solution
-                                </p>
+                                <img className="w-full mb-4" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
+                                <p>PaaS offer a fixed Monthly fee Naira per site to the potential Offtaker. FaithLink and the Offtaker signs a 10years power purchase  agreement. Offtaker provide Location/ sites for Solar  Hybrid Solution.</p>
                             </aside>
                         </article>
                     </div>
                 </div>
             </section>
-            <SubPageNavigator leftLink="engineering services" rightLink="fibre optics" />
+            <SubPageNavigator leftLink="telecoms sector" rightLink="fibre optics" />
         </>
     )
 }
