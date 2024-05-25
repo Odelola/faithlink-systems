@@ -23,7 +23,7 @@ function Footer() {
   return (
 
     <footer className="bg-faintWhite mt-12 pt-16">
-      <div className="relative z-[1] top-[17px]">
+      <div className="relative z-[1] top-[17px] max-md:top-[0]">
         {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">
           <div className="container max-md:px-2">

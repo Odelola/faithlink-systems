@@ -53,7 +53,7 @@ function PowerSector() {
         <div className="container">
           <div className="container container-lg">
             <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
-              <aside className="basis-1/2">
+              <aside className="basis-1/2" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                 <h1 className="aos-init aos-animate text-[20px] text-textGray uppercase">
                   Demanding challenges, promising opportunities
                   {/* <br />
@@ -63,7 +63,7 @@ function PowerSector() {
 
                 </h1>
                 {/* <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="grid grid-cols-2 gap-x-2 w-full"> */}
-                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="grid w-full">
+                <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="grid w-full">
 
                   <img className="w-full h-[300px]" src="/pages/power-sector-big.jpg" alt="POWER SECTOR IMAGE" />
                   {/* <img className="basis-1/2" src="/pages/greenfield-1.jpg" alt="GREENFIELD IMAGE" /> */}
@@ -76,7 +76,7 @@ function PowerSector() {
                   While electrification and automation have provided a reliable basis for today&apos;s energy landscape, digitization and sustainability are key to mastering these new challenges.
                 </p> */}
               </aside>
-              <aside className="basis-1/2">
+              <aside className="basis-1/2" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
                 {/* <div className="mt-12"> */}
                 <div>
                   <p className="mt-6">

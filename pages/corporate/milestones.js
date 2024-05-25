@@ -85,7 +85,7 @@ function Milestones() {
                                 OVER 18 YEARS OF EXPERIENCE
                             </h1>
                         </div>
-                        <article className={`before:block before:absolute before:content-[""] before:left-1/2 before:top-[-20px]  before:w-3 before:h-3 before:bg-primary before:-translate-x-1/2 before:rotate-45  after:absolute after:top-0 after:left-1/2 after:context-[''] after:-translate-x-1/2 after:border after:border-dashed after:border-primary after:w-[1px] after:h-full flex flex-col relative`}>
+                        <article className={`before:block before:absolute before:content-[""] before:left-1/2 before:top-[-20px]  before:w-3 before:h-3 before:bg-primary before:-translate-x-1/2 before:rotate-45  after:absolute after:top-0 after:left-1/2  max-md:after:left-[-3px] after:context-[''] after:-translate-x-1/2 after:border after:border-dashed after:border-primary after:w-[1px] after:h-full flex flex-col relative`}>
                             <MilestonesCard milestonesData={MilestonesData} />
                         </article>
                     </div>

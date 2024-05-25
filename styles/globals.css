@@ -85,7 +85,7 @@ html {
   }
 
   .container {
-    @apply w-full max-w-[1800px] h-auto mx-auto px-5
+    @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-md:px-2
   }
 
   .container-lg {
@@ -101,5 +101,14 @@ html {
   }
   .section-top{
     @apply pt-24
+  }
+  .flex-col-md{
+    @apply max-md:flex-col
+  }
+  .split-page-images{
+    @apply basis-1/2  max-md:basis-full
+  }
+  .split-page-images-container{
+    @apply flex h-[150px] gap-2 max-md:flex-col max-md:w-full max-md:h-auto
   }
 }

@@ -17,7 +17,7 @@ function RenewableEnergy() {
                     <div className="container container-lg">
                         {/* <h1>PAAS AND EAAS</h1> */}
                         <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
-                            <aside className="basis-[45%]">
+                            <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     RENEWABLE ENERGY
                                 </h1>
@@ -35,12 +35,12 @@ function RenewableEnergy() {
                                 <p>
                                     We partner with clients to provide unique solutions such as Power as a Service and energy as a service to MNOs, Towercos, Banks
                                 </p>
-                                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="flex h-[150px] gap-x-2">
+                                <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                                     <img className="basis-1/2" src="/pages/renewable-energy-1.jpg" alt="RENEWABLE ENERGY FIRST IMAGE" />
                                     <img className="basis-1/2" src="/pages/renewable-energy-2.jpg" alt="RENEWABLE ENERGY SECOND IMAGE" />
                                 </div>
                             </aside>
-                            <aside className="basis-[45%]">
+                            <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
                                 <img className="w-full h-[300px] mb-4" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
                                 {/* <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     RENEWABLE ENERGY

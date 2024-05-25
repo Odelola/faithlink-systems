@@ -16,7 +16,7 @@ function About() {
             <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
-                    <article className="flex justify-between gap-x-14 flex-col md:flex-row">
+                    <article className="flex justify-between gap-x-14 gap-y-8 flex-col md:flex-row">
                         <aside className="basis-1/2 text-justify">
                             <h1 className="text-textGray text-[20px]">At Faithlink Systems, we pride ourselves on being a team of industry specialists
                                 operating within a privately owned company, effectively serving a global market
@@ -42,7 +42,7 @@ function About() {
                                     <li>Competitive Pricing</li>
                                     <li>Performance and Improvement</li>
                                 </ul>
-                                <p>Our consulting service offerings include strategies to reduce or shift electricity usage during peak periods in response to grid comditions or financial incentives</p>
+                                <p>Our consulting service offerings include strategies to reduce or shift electricity usage during peak periods in response to grid conditions or financial incentives</p>
                                 {/* <p>We offer Solutions to enhance the power grid'sefficiency, reliability, and flexibility through adcanced technologies and data analytics.</p> */}
                                 {/* <p>We also offer improvements to exisiting systems and infrastructure to enhance energy efficiency, automation systems for monitoring and controlling building services like lighting,
                                     HVAC and security.

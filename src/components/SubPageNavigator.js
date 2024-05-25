@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 function SubPageNavigator({ leftLink, rightLink }) {
     const router = useRouter();
     const { pathname } = router;
-    const linkStyles = "hover:bg-primary hover:text-white flex justify-center items-center basis-1/2  text-[16px] gap-x-4 group"
+    const linkStyles = "hover:bg-primary hover:text-white flex justify-center items-center basis-1/2  text-[16px] gap-x-4 group max-md:text-[8px]"
     const getTheLink = link => getRoute[link] == pathname ? "javascript:;" : getRoute[link]
     return (
         <div className="flex border border-[#ccdbe7] mt-20 h-[50px]">

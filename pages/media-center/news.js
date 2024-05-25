@@ -30,14 +30,14 @@ function News() {
         return (headlines.map((item, index) => {
             return (
 
-                <div key={index} className="flex flex-col gap-y-4">
-                    <div className="h-[350px]">
+                <div key={index} className="flex flex-col gap-y-4 relative">
+                    <div className=" min-h-[420px] relative">
 
-                    <img src={item.imgUrl} alt={`Image for ${item.title}`} />
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
+                        <img src={item.imgUrl} alt={`Image for ${item.title}`} className="mb-2" />
+                        <h3>{item.title}</h3>
+                        <p>{item.text}</p>
                     </div>
-                    <Link href={item.link} className="text-primary flex items-center gap-x-2">
+                    <Link href={item.link} className="text-primary flex items-center gap-x-2 absolute left-0 bottom-0">
                         <span class="link-item__span">DETAIL</span>
                         <i class="link-item__icon">
                             <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-primary">
@@ -60,7 +60,7 @@ function News() {
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        <article className="grid grid-cols-4 gap-x-6">
+                        <article className="grid md:grid-cols-3 grid-cols-1 gap-6">
                             <NewsCard headlines={newsHeadlines} />
                         </article>
                     </div>

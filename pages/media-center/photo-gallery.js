@@ -47,7 +47,7 @@ function PhotoGallery() {
         return (
             galleryDetail.map((item, index) => {
                 return (
-                    <div className="flex flex-col border-[#ccdbe7] border-b border-r [&:nth-child(5n)]:border-r-0 p-7  " data-filter={item.category} key={index} onClick={() => { setOpen(prev => prev = true); setIndex(prev => prev = index) }}>
+                    <div className="flex flex-col lg:border-[#ccdbe7] border-r max-md:border-r-0 [&:nth-child(5n)]:border-r-0 p-7  " data-filter={item.category} key={index} onClick={() => { setOpen(prev => prev = true); setIndex(prev => prev = index) }}>
                         <div className="flex justify-center items-center min-h-32  overflow-hidden mb-4 relative group">
                             <a href="javascript:;" data-fancybox="gallery" data-src={item.src}>
                                 <img src={item.src} alt={item.title} loading="lazy" className="group-hover:scale-110" />
@@ -79,7 +79,7 @@ function PhotoGallery() {
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        <article className="grid grid-cols-5 border border-[#ccdbe7]">
+                        <article className="grid lg:grid-cols-5 max-md:grid-cols-1 md:gap-4 border border-[#ccdbe7]">
                             <PhotoGalleryCard galleryDetail={galleryData} />
                         </article>
                     </div>
