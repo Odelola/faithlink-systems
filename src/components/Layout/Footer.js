@@ -86,7 +86,7 @@ function Footer() {
           <div className="container max-md:px-2">
             {/* <div className="flex pl-24 bg-white xxs:flex-col xxs:pl-4 xxs:sm-max:justify-center"> */}
             <div className="flex md:pl-24 bg-white md:flex-row flex-col xxs:pl-4 xxs:sm-max:justify-center border-t">
-              <div className="flex-1 py-7 md:border-r border-b border-[rgba(0,75,133,.2)]">
+              <div className="flex-1 pr-4 py-7 md:border-r border-b border-[rgba(0,75,133,.2)]">
                 <div className="flex flex-col gap-y-1">
                   <div>
                     <h3>HEAD OFFICE</h3>

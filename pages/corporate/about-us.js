@@ -32,7 +32,7 @@ function About() {
                                 successful every step of the way. Products, solutions, and services from Faithlink cover the entire value chain in these
                                 areas of activity. </p>
                             <p>We understand the unique needs of your projects and that&apos;s why we tailor our business and supply solutions to precisely meet those requirements. We make project easier for client by deploying the following.</p>
-                            <ul className="ml-3 mb-3 list-disc text-[12px]">
+                            <ul className="ml-3 mb-3 list-disc text-[14px]">
                                 <li>Innovation Solutions</li>
                                 <li>Expert Product Solutions</li>
                                 <li>Addressing Commercial Challenges</li>

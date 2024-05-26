@@ -2,7 +2,7 @@ import HomeImageHeading from "../../HomeImageHeading"
 import { PrimaryButton } from '../../Button';
 import { getRoute } from "../../utils";
 
-function ActivityFields({ data, headingTitle, headingText}) {
+function ActivityFields({ data, darkText=false, headingTitle, headingText}) {
 
   const activityData = [
     {
@@ -51,7 +51,7 @@ function ActivityFields({ data, headingTitle, headingText}) {
 </p> */}
                   <div>
                     <p className="text-[10px] max-md:text-[8px] mb-0">{introText}</p>
-                    <ul className="ml-3 mb-3 list-disc text-[12px]">
+                    <ul className="ml-3 mb-3 list-disc text-[14px]">
                       {/* {text.map((item, index) => (<li key={index}>{item}</li>))} */}
                     </ul>
                   </div>
@@ -69,7 +69,7 @@ function ActivityFields({ data, headingTitle, headingText}) {
   }
 
   return (
-    <section>
+    <section className={`${darkText && "text-textGray"}`}>
       {/* <div className="container"> */}
       <div className="">
         <HomeImageHeading headingTitle={headingTitle ?? "service offering"} headingText={headingText ?? "Take a look at the service offerings offered by Faithlink in the power sector"} />

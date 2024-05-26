@@ -22,7 +22,7 @@ function FibreOptics() {
                                 </h1>
                                 <p>Our services include the following;</p>
                                 
-                                <ul className="ml-3 mb-3 list-disc text-[12px]">
+                                <ul className="ml-3 mb-3 list-disc text-[14px]">
                                     <li>OSP ( Survey, Planning, Design)</li>
                                     <li>OSP Implementation (Last mile/Metro/Backbone)</li>
                                     <li>FTTH/FTTx</li>

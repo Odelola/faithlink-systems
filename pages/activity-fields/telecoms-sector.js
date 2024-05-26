@@ -23,7 +23,7 @@ function TelcomsSector() {
                                 <p className="mt-6">
                                     FAITHLINK Telecoms Division is primarily involved in the  construction, installation, management and maintenance of Base Station Transceiver (BTS) sites for the telecommunications, Towercos, commercial, Industrial, Oil and Gas sectors of the economy.  Our Product offering include the following
                                 </p>
-                                <ul className="ml-3 mb-3 list-disc text-[12px]">
+                                <ul className="ml-3 mb-3 list-disc text-[14px]">
                                     <li>Greenfield Site Build</li>
                                     <li>Site Upgrade</li>
                                     <li>RF Installation & Optimization</li>
@@ -99,7 +99,7 @@ function TelcomsSector() {
                     </div>
                 </div>
             </section>
-            <SubPageNavigator leftLink="power sector" rightLink="renewable energy" />
+            <SubPageNavigator leftLink="infra development" rightLink="renewable energy" />
         </>
     )
 }

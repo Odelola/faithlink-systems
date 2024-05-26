@@ -25,7 +25,7 @@ function RenewableEnergy() {
                                     FaithLink specializes in Renewable Energy engineering, procurement and construction. We also provide consultancy, electrical systems designs, and power system repairs and upgrades
                                     Our Renewable Integration includes the following:
                                 </p>
-                                <ul className="ml-3 mb-3 list-disc text-[12px]">
+                                <ul className="ml-3 mb-3 list-disc text-[14px]">
                                     <li>Captive Solar Power Plants</li>
                                     <li>Embedded Solar</li>
                                     <li>Grid Connected Solar</li>

@@ -22,7 +22,7 @@ function InfraDevelopment() {
                 <p className="mt-6">
                   In this division, we execute various projects, some of the projects includes:
                 </p>
-                <ul className="ml-3 mb-3 list-disc text-[12px]">
+                <ul className="ml-3 mb-4 list-disc text-[14px]">
                   <li> Road Construction And Maintenance </li>
                   <li>Building construction and maintenance </li>
                   <li>Drainage constructions</li>
@@ -30,9 +30,7 @@ function InfraDevelopment() {
                   <li>Internal And external electrification works</li>
                   <li>Procurements and General supplies</li>
                 </ul>
-                <p>
-                  We partner with clients to provide unique solutions such as Power as a Service and energy as a service to MNOs, Towercos, Banks
-                </p>
+                <p>Our philosophy is to constantly fulfil the expectation of our customers by delivering services that are top notch and above industry standard</p>
                 <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="flex h-[150px] gap-x-2">
                   <img className="basis-1/2" src="/pages/infra-development-1.jpg" alt="INFRASTRUCTURE DEVELOPMENT FIRST IMAGE" />
                   <img className="basis-1/2" src="/pages/infra-development-2.jpg" alt="INFRASTRUCTURE DEVELOPMENT SECOND IMAGE" />
@@ -40,13 +38,7 @@ function InfraDevelopment() {
               </aside>
               <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
                 <img className="w-full h-[300px] mb-4" src="/pages/infra-development.jpg" alt="INFRASTRUCTURE DEVELOPMENT IMAGE" />
-                {/* <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
-                                    INFRASTRUCTURE DEVELOPMENT
-                                </h1> */}
-                <p>Our philosophy is to constantly fulfil the expectation of our customers by delivering services that are top notch and above industry standard.
-
-
-                </p>
+                <p>Our Infrastructure development strategy involves the planning, design, and construction of essential facilities and systems that support economic growth and quality of life. The various techniques and approaches we use  in the development of infrastructure includes: <strong>Project Management Techniques, Financing Mechanisms and Innovative Construction Techniques </strong></p>
               </aside>
             </article>
           </div>
