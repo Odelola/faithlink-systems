@@ -58,7 +58,7 @@ function OurTeam() {
                     </article>
                 </div>
             </section>
-            <SubPageNavigator leftLink="our vision and values" rightLink="coo's message" />
+            <SubPageNavigator leftLink="our vision and values" rightLink="founder's message" />
 
         </>
     )

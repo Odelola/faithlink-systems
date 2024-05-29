@@ -19,15 +19,19 @@ export default function HomeCarousel() {
     //     clickable: true,
 
     // }
+    const h1Ref = useRef();
     const about_gallery_item = "grid gap-[20px]"
+    const _animateH1 = () => {
+        
+    }
     const carouselText = [
         {
             title: "WE KEEP INVESTING IN FAITH LINK",
             text: "Wind power plants (WPPs), resembling a wind rose with their aesthetic appearance, are an environmentally friendly and sustainable option as they produce energy from renewable resources but can be quite challenging to build."
         },
         {
-            title: "GREAT POWER TRANSFORMATION",
-            text: "We believe in the power of eenergy for all and renewable energy for all household. We believe in the power of eenergy for all and renewable energy for all household. We believe in the power of eenergy for all and renewable energy for all household."
+            title: "WELCOME TO FAITHLINK",
+            text: "We believe in the power of energy for all and renewable energy for all household."
         },
         {
             title: "GREAT POWER TRANSFORMATION",
@@ -37,7 +41,7 @@ export default function HomeCarousel() {
     function HomeCarouselText({ textItem }) {
         return (
             <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6 ">
-                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-swiper-animation="animate__fadeInLeft" data-duration=".9s" data-delay=".3s">
+                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-delay=".3s" ref={h1Ref}>
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
@@ -53,7 +57,7 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} autoplay={{ delay: 5000 }} effect='fade' grabCursor speed={2000} className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper }}>
+                    <Swiper pagination={true} modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} autoplay={{ delay: 5000 }} effect='fade' grabCursor speed={2000} className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper }} onSlideChangeTransitionStart={() => console.log("cow")}>
                         {/* <SwiperSlide>
                             <video
                                 playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay">

@@ -41,7 +41,7 @@ function Footer() {
                     CORPORATE
                   </h3>
                   <ul>
-                    <GetFooterLinks links={["about us", "our vision and values", "our team", "coo's message", "milestones",]} />
+                    <GetFooterLinks links={["about us", "our vision and values", "our team", "founder's message", "milestones",]} />
                   </ul>
                 </div>
                 <div className="basis-[17%]">
@@ -66,7 +66,7 @@ function Footer() {
                   </h3>
                   <ul>
                     {/* <GetFooterLinks links={["press releases", "press statements", "news", "photo gallery", "video gallery"]} /> */}
-                    <GetFooterLinks links={["press releases", "news", "photo gallery", "video gallery"]} />
+                    <GetFooterLinks links={["news", "photo gallery"]} />
                   </ul>
                   <div className="flex flex-col mt-14 gap-y-4 items-end md:items-start">
                     {/* <Link href="career" className="font-semibold text-[14px]">

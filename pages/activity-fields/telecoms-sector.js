@@ -17,7 +17,7 @@ function TelcomsSector() {
                         {/* <h1>TELECOMS SECTOR</h1> */}
                         <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
-                                <h1 className="aos-init aos-animate text-[20px] font-extrabold text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     TELECOMS DIVISION
                                 </h1>
                                 <p className="mt-6">
@@ -37,14 +37,19 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     GREENFIELD SITE BUILD
                                 </h1>
                                 <p className="mt-6">
                                     FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry.</p>
                                     <p> We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
                                 </p>
-                                <p>FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.</p>
+                                <p>FAITHLINK strongly believes and adopts the five principles of project management such as </p>
+                                <ul className="ml-3 mb-3 list-disc text-[14px]">
+                                        <li>Initiating</li>
+                                        <li>Planning and Execution</li>
+                                        <li>Monitoring & Control Closure.</li>
+                                    </ul>
                                     
 
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="split-page-images-container">
@@ -53,7 +58,7 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
-                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     TOWER AUDIT & MAINTENANCE
                                 </h1>
                                 <p className="mt-6">
@@ -66,7 +71,7 @@ function TelcomsSector() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <h1 className="aos-init aos-animate text-[20px] font-extrabold font-bold text-textGray max-md:w-full">
+                                <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     RF INSTALLATION & MAINTENANCE
                                 </h1>
                                 <p className="mt-6">

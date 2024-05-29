@@ -92,7 +92,7 @@ function Milestones() {
                     </div>
                 </div>
             </section>
-            <SubPageNavigator leftLink="coo's message" rightLink="milestones" />
+            <SubPageNavigator leftLink="founder's message" rightLink="milestones" />
 
         </>
     )

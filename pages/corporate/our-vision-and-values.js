@@ -73,6 +73,23 @@ function OurVisionandValues() {
     ]
 
 
+
+    function OVAVCard({ ovavData }) {
+        return  (ovavData.map((item, index) => (
+            <div key={index} className="flex flex-col gap-y-4 relative">
+                    <div className=" min-h-[420px] relative">
+
+                        <img src={item.image} alt={`Image for ${item.title}`} className="mb-2 h-[200px]" />
+                        <h3>{item.title}</h3>
+                        <p>{item.introText}</p>
+                    </div>
+                    </div>
+
+        )))
+    }
+
+
+    
     return (
         <>
             <Head>
@@ -109,7 +126,10 @@ function OurVisionandValues() {
                                 <p>Our Strategic Thrust is <strong>Do it right the first time.</strong></p>
                             </div>
                         </aside> */}
-                        <ActivityFields data={OVAVDATA} darkText={true} headingTitle="our vision and values" headingText="These are our vision and values" />
+                        {/* <ActivityFields data={OVAVDATA} darkText={true} headingTitle="our vision and values" headingText="These are our vision and values" /> */}
+                        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
+                            <OVAVCard ovavData={OVAVDATA}  />
+                        </div>
                     </article>
                 </div>
             </section>

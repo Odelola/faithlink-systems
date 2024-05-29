@@ -3,14 +3,14 @@ import PageSubheader from "../../src/components/PageSubheader";
 import SubPageNavigator from "../../src/components/SubPageNavigator"
 
 
-function CoosMessage() {
+function FoundersMessage() {
     return (
         <>
             <Head>
-                <title>COO&apos;S MESSAGE - Faith Link Systems Limited</title>
-                <meta name="description" content="MESSAGE FROM THE COO" />
+                <title>FOUNDER&apos;S MESSAGE - Faith Link Systems Limited</title>
+                <meta name="description" content="MESSAGE FROM THE FOUNDER" />
             </Head>
-            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="COO's message" alt="COO's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} />
+            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="founder's message" alt="FOUNDER's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} />
             <section className="section-top">
                 <div className="container text-justify">
                     <div className="container container-lg">
@@ -66,7 +66,7 @@ function CoosMessage() {
                             </aside>
                             <aside>
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                    <img className="w-[500px] h-[700px]" src="/pages/president.jpg" alt="COO'S MESSAGE" />
+                                    <img className="w-[500px] h-[700px]" src="/pages/president.jpg" alt="FOUNDER'S MESSAGE" />
                                 </div>
                             </aside>
                         </article>
@@ -79,4 +79,4 @@ function CoosMessage() {
     )
 }
 
-export default CoosMessage
+export default FoundersMessage
