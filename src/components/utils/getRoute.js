@@ -6,7 +6,7 @@ const getRoutes = {
     "founder's message": "/corporate/coos-message",
     "founder's message": "/corporate/founders-message",
     "milestones": "/corporate/milestones",
-    "our team": "our-team",
+    "our team": "/corporate/our-team",
     // "our story": "/corporate/our-story",
     "our vision and values": "/corporate/our-vision-and-values",
     "career": "/career",

@@ -26,8 +26,8 @@ export default function HomeCarousel() {
     }
     const carouselText = [
         {
-            title: "WE KEEP INVESTING IN FAITH LINK",
-            text: "Wind power plants (WPPs), resembling a wind rose with their aesthetic appearance, are an environmentally friendly and sustainable option as they produce energy from renewable resources but can be quite challenging to build."
+            title: "WE ARE FAITHLINK SYSTEMS    ",
+            text: "Specializing in Telcoms, Renewable Energy, Power Sector for 18 years, FaithLink is guaranteed to get large engineering projects done."
         },
         {
             title: "WELCOME TO FAITHLINK",
@@ -47,7 +47,7 @@ export default function HomeCarousel() {
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
                     {textItem.text}
                 </p>
-                <PrimaryButton href='/' />
+                <PrimaryButton href='/corporate/about-us' buttonText='ABOUT US' />
             </article>
         )
     }
@@ -58,14 +58,14 @@ export default function HomeCarousel() {
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
                     <Swiper pagination={true} modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} autoplay={{ delay: 5000 }} effect='fade' grabCursor speed={2000} className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper }} onSlideChangeTransitionStart={() => console.log("cow")}>
-                        {/* <SwiperSlide>
+                        <SwiperSlide>
                             <video
                                 playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay">
                                 <source type="video/mp4" src="/video_.mp4" 
                                 controlsList="nodownload" disablePictureInPicture />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} />
-                        </SwiperSlide> */}
+                        </SwiperSlide>
                         <SwiperSlide>
                             <img src="/pages/banner-1.jpg" alt="Banner Image 1 - Transmission Lines" />
                             <HomeCarouselText textItem={carouselText[1]} />

@@ -10,7 +10,8 @@ function InfraDevelopment() {
         <meta name="description" content="INFRA DEVELOPMENT" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <PageSubheader imgUrl="https://images.unsplash.com/photo-1551295022-de5522c94e08?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
+      {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1551295022-de5522c94e08?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
+      <PageSubheader imgUrl="/pages/_infra development_.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
       <section className="section-top">
         <div className="container">
           <div className="container container-lg">
@@ -37,7 +38,7 @@ function InfraDevelopment() {
                 </div>
               </aside>
               <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                <img className="w-full h-[300px] mb-4" src="/pages/infra-development.jpg" alt="INFRASTRUCTURE DEVELOPMENT IMAGE" />
+                <img className="w-full h-[300px] mb-4" src="/pages/_house-construction_.jpg" alt="INFRASTRUCTURE DEVELOPMENT IMAGE" />
                 <p>Our Infrastructure development strategy involves the planning, design, and construction of essential facilities and systems that support economic growth and quality of life. The various techniques and approaches we use  in the development of infrastructure includes: <strong>Project Management Techniques, Financing Mechanisms and Innovative Construction Techniques </strong></p>
               </aside>
             </article>
