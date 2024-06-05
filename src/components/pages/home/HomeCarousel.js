@@ -21,33 +21,42 @@ export default function HomeCarousel() {
     // }
     const h1Ref = useRef();
     const about_gallery_item = "grid gap-[20px]"
+    console.log(h1Ref)
     const _animateH1 = () => {
-        
+        h1Ref.current.style.display = "none"
     }
     const carouselText = [
         {
-            title: "WE ARE FAITHLINK SYSTEMS    ",
-            text: "Specializing in Telcoms, Renewable Energy, Power Sector for 18 years, FaithLink is guaranteed to get large engineering projects done."
+            title: "WE ARE FAITHLINK SYSTEMS",
+            text: "Specializing in Telcoms, Renewable Energy, Power Sector for 18 years, FaithLink is guaranteed to get large engineering projects done. At Faithlink Systems, we pride ourselves on being a team specialists operating on these services professionally",
+            linkText: "ABOUT US"
         },
         {
-            title: "WELCOME TO FAITHLINK",
-            text: "We believe in the power of energy for all and renewable energy for all household."
+            title: "TELECOMMUNICATIONS SECTOR",
+            text: "FAITHLINK Telecommunications Sector  is primarily focused on the construction, installation, management and maintenance of High Tension Cable and Radio Frequency Towers. We run RF drive tets on networks, pre-optimization and post-optimization analysis of its results",
+            linkText: "TELECOMS SECTOR"
         },
         {
-            title: "GREAT POWER TRANSFORMATION",
-            text: "We believe in the power of eenergy for all and renewable energy for all household. We believe in the power of eenergy for all and renewable energy for all household. We believe in the power of eenergy for all and renewable energy for all household."
+            title: "GENERATION & TRANSMISSION",
+            text: "Our Power Sector Services include transmission over 330KV and 132KV lines, embedded and captive power, Step Up and Step Down Transformer soil test and technical site survey, Energy Management and Energy Optimization.",
+            linkText: "POWER SECTOR"
+        },
+        {
+            title: "INFRASTRUCTURE DEVELOPMENT",
+            text: "We deal with Road Construction And Maintenance and Building construction and maintenance. Our Infrastructure development strategy involves the planning, design, and construction of essential facilities and systems that support economic growth and quality of life.",
+            linkText: "INFRA DEVELOPMENT"
         },
     ]
-    function HomeCarouselText({ textItem }) {
+    function HomeCarouselText({ textItem, index=3 }) {
         return (
-            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6 ">
-                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-delay=".3s" ref={h1Ref}>
+            <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6" data-aos="fade-up" data-duration=".9s">
+                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`} data ref={h1Ref}>
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
                     {textItem.text}
                 </p>
-                <PrimaryButton href='/corporate/about-us' buttonText='ABOUT US' />
+                <PrimaryButton href={getRoute[textItem.linkText.toLowerCase()]} buttonText={textItem.linkText} />
             </article>
         )
     }
@@ -57,30 +66,34 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper pagination={true} modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} autoplay={{ delay: 5000 }} effect='fade' grabCursor speed={2000} className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper }} onSlideChangeTransitionStart={() => console.log("cow")}>
+                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 1000 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; console.log("cow") }} onChange={() => _animateH1()} >
                         <SwiperSlide>
                             <video
                                 playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay">
                                 <source type="video/mp4" src="/video_.mp4" 
                                 controlsList="nodownload" disablePictureInPicture />
                             </video>
-                            <HomeCarouselText textItem={carouselText[0]} />
+                            <HomeCarouselText textItem={carouselText[0]} index={1} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/pages/banner-1.jpg" alt="Banner Image 1 - Transmission Lines" />
-                            <HomeCarouselText textItem={carouselText[1]} />
+                            <img src="/pages/banner-1.jpg" alt="Banner Image 1 - About Us" />
+                            <HomeCarouselText textItem={carouselText[1]} index={2} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner Image 2 - Power Lines" />
+                            <img src="https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner Image 2 - Telecommunications" />
                             <HomeCarouselText textItem={carouselText[2]} />
                         </SwiperSlide>
-                        <nav className="flex items-center border border-[rgba(2555,255,255,.5)] absolute bottom-20 right-20 z-10">
-                            <a className="flex justify-center items-center min-w-[50px] min-h-[50px] -rotate-180 hover:bg-primary" onClick={() => swiperRef.current.slidePrev()} tabIndex="0" role="button" ariaLabel="Previous slide">
+                        <SwiperSlide>
+                            <img src="/pages/_infra development_.jpg" alt="Banner Image 3 - GENERATION AND TRANSMISSION" />
+                            <HomeCarouselText textItem={carouselText[3]} />
+                        </SwiperSlide>
+                        <nav className="flex items-center absolute bottom-20 right-20 z-10">
+                            <a className="flex justify-center items-center min-w-[50px] min-h-[50px] -rotate-180 hover:bg-primary hover:border-primary border border-[rgba(2555,255,255,.5)] border-l-0" onClick={() => swiperRef.current.slidePrev()} tabIndex="0" role="button" ariaLabel="Previous slide">
                                 <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.99547 5.40301C5.97441 5.18645 5.88579 4.98168 5.74185 4.81693L1.89746 0.390283C1.80764 0.28092 1.69653 0.190426 1.5707 0.124141C1.44486 0.0578555 1.30684 0.0171222 1.16479 0.00434775C1.02274 -0.00842766 0.879538 0.00701424 0.743634 0.0497608C0.60773 0.0925064 0.481879 0.16169 0.373512 0.253229C0.265144 0.344768 0.176456 0.456806 0.112682 0.58273C0.0489074 0.708654 0.0113393 0.845912 0.0021959 0.986402C-0.00694753 1.12689 0.0125188 1.26777 0.0594454 1.40071C0.106372 1.53365 0.179808 1.65596 0.275419 1.76044L3.52599 5.50163L0.275419 9.2432C0.180586 9.34779 0.107875 9.47002 0.0615518 9.60272C0.015229 9.73542 -0.00377228 9.87592 0.00566298 10.016C0.0150982 10.156 0.0527804 10.2928 0.116497 10.4183C0.180214 10.5437 0.268683 10.6554 0.376712 10.7467C0.484741 10.838 0.610154 10.907 0.745592 10.9498C0.88103 10.9926 1.02376 11.0083 1.16542 10.9959C1.30707 10.9835 1.4448 10.9433 1.5705 10.8777C1.69621 10.8121 1.80737 10.7223 1.89746 10.6137L5.74185 6.18708C5.83525 6.07986 5.90584 5.95519 5.94941 5.82049C5.99299 5.68579 6.00865 5.54381 5.99547 5.40301Z" fill="white"></path>
                                 </svg>
                             </a>
-                            <a className="flex justify-center items-center min-w-[50px] min-h-[50px] hover:bg-primary" onClick={() => swiperRef.current.slideNext()} tabIndex="0" role="button" ariaLabel="Next slide">
+                            <a className="flex justify-center items-center min-w-[50px] min-h-[50px] hover:bg-primary hover:border-primary border border-[rgba(2555,255,255,.5)] border-l-0" onClick={() => swiperRef.current.slideNext()} tabIndex="0" role="button" ariaLabel="Next slide">
                                 <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.99547 5.40301C5.97441 5.18645 5.88579 4.98168 5.74185 4.81693L1.89746 0.390283C1.80764 0.28092 1.69653 0.190426 1.5707 0.124141C1.44486 0.0578555 1.30684 0.0171222 1.16479 0.00434775C1.02274 -0.00842766 0.879538 0.00701424 0.743634 0.0497608C0.60773 0.0925064 0.481879 0.16169 0.373512 0.253229C0.265144 0.344768 0.176456 0.456806 0.112682 0.58273C0.0489074 0.708654 0.0113393 0.845912 0.0021959 0.986402C-0.00694753 1.12689 0.0125188 1.26777 0.0594454 1.40071C0.106372 1.53365 0.179808 1.65596 0.275419 1.76044L3.52599 5.50163L0.275419 9.2432C0.180586 9.34779 0.107875 9.47002 0.0615518 9.60272C0.015229 9.73542 -0.00377228 9.87592 0.00566298 10.016C0.0150982 10.156 0.0527804 10.2928 0.116497 10.4183C0.180214 10.5437 0.268683 10.6554 0.376712 10.7467C0.484741 10.838 0.610154 10.907 0.745592 10.9498C0.88103 10.9926 1.02376 11.0083 1.16542 10.9959C1.30707 10.9835 1.4448 10.9433 1.5705 10.8777C1.69621 10.8121 1.80737 10.7223 1.89746 10.6137L5.74185 6.18708C5.83525 6.07986 5.90584 5.95519 5.94941 5.82049C5.99299 5.68579 6.00865 5.54381 5.99547 5.40301Z" fill="white"></path>
                                 </svg>

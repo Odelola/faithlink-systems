@@ -19,7 +19,7 @@ function PowerSector() {
       title: "TRANSMISSION",
       // text: "This consists of Transmission Cables, Soil test and Technical Site Survey, 760KV Super Grid, 330KV lines, 132KV lines, "
       introText: "We provide these transmission activities",
-      text: ["Transmission Cables", "Soil test and Technical Site Survey", "760KV Super Grid", "330KV lines", "132KV lines", "InjectionSubstation", "Pylons", "Switch Gears", "Civil works"]
+      text: ["Transmission Cables", "Soil test and Technical Site Survey", "760KV Super Grid", "330KV lines", "132KV lines", "Injection Substation", "Pylons", "Switch Gears", "Civil works"]
     },
     {
       //   image: "/pages/service-offering-distribution.jpg",
@@ -27,7 +27,7 @@ function PowerSector() {
       title: "DISTRIBUTION",
       // text: "Focusing its energy on distribution, Faithlink provides Soil test and Technical Site Survey, Step-down Transformers, 33/11kv Injector Substations, Smart Prepaid Meters"
       introText: "We provide these distribution activities",
-      text: ["Soil test and Technical Site Survey", "Step-down Transformers", "33/11kv Injector Substations", "Smart Prepaid Meters", "Distribution power lines", "Distribution fuse Assemblies", "Transformer Refurbishment ", "Feeder Pillars", "Substation fencing", "33/11kv Feeder Pillars", "Civil works"]
+      text: ["Step-down Transformers", "33/11kv Injector Substations", "Smart Prepaid Meters", "Distribution power lines", "Distribution fuse Assemblies", "Transformer Refurbishment ", "Feeder Pillars", "Substation fencing", "33/11kv Feeder Pillars", "Civil works"]
 
     },
     {

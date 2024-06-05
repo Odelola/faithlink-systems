@@ -5,9 +5,6 @@ import { ActivityFields, HomeCarousel, OtherDetails, Sustainability } from '../s
 
 export default function Home() {
   const router = useRouter();
-  // useEffect(() => {
-  //   router.push("/contact")
-  // }, [])
 
   return (
     <div>

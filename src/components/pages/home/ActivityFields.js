@@ -2,7 +2,7 @@ import HomeImageHeading from "../../HomeImageHeading"
 import { PrimaryButton } from '../../Button';
 import { getRoute } from "../../utils";
 
-function ActivityFields({ data, darkText=false, headingTitle, headingText}) {
+function ActivityFields({ data, darkText = false, headingTitle, headingText }) {
 
   const activityData = [
     {
@@ -31,7 +31,7 @@ function ActivityFields({ data, darkText=false, headingTitle, headingText}) {
     return (
       carouseldata.map(({ text, introText, title, image }, index) => {
         return (
-          <div class="card-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={300 * index} className="md:basis-[23%] max-md:basis-[70%]  max-md:flex-shrink-0 group ease-in" key={index} role="group" aria-label={`${index + 1} / 4`}>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={300 * index} className="aos-init aos-animate md:basis-[23%] max-md:basis-[70%]  max-md:flex-shrink-0 group ease-in" key={index} role="group" aria-label={`${index + 1} / 4`}>
             <div className="card-item aos-init aos-animate relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <figure className="w-full h-full relative">
                 <img src={image} className="rounded-md h-[400px]" loading="lazy" />
@@ -51,8 +51,8 @@ function ActivityFields({ data, darkText=false, headingTitle, headingText}) {
 </p> */}
                   <div>
                     <p className="text-[10px] max-md:text-[8px] mb-0">{introText}</p>
-                    <ul className="ml-3 mb-3 list-disc text-[14px]">
-                      {/* {text.map((item, index) => (<li key={index}>{item}</li>))} */}
+                    <ul className="ml-3 mb-3 list-disc text-[11px]">
+                      {text.map((item, index) => (<li key={index}>{item}</li>))}
                     </ul>
                   </div>
                   <div>

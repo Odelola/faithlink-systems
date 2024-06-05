@@ -91,6 +91,12 @@ html {
   .container-lg {
     @apply max-w-[1200px]
   }
+  .news-article-container{
+    @apply max-w-[860px]
+  }
+  .news-article-container a{
+    @apply text-primary
+  }
 
   img {
     @apply object-cover max-w-full align-middle h-auto

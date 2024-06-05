@@ -33,6 +33,7 @@ const getRoutes = {
     "integrated management system": "/sustainability/integrated-management-system",
     "reports": "/sustainability/reports-and-policies",
     "safe workplace": "/sustainability/safe-workplace",
+    "media center": "/media-center/news",
     "news": "/media-center/news",
     "press releases": "/media-center/press-releases",
     "photo gallery": "/media-center/photo-gallery",

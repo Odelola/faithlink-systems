@@ -44,7 +44,6 @@ function Milestones() {
 
     const MilestonesCard = ({ milestonesData }) => {
         return milestonesData.map((item, index) => {
-            console.log(index)
             return (
                 // <div className={`timeline__item aos-init aos-animate ${index % 2 == 0 ? "row-reverse": "row"}`} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300" key={index}>
                 <div className={`relative flex aos-init aos-animate [&:nth-child(even)]:flex-row-reverse`} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300" key={index}>

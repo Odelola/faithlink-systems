@@ -13,7 +13,6 @@ function Navbar() {
   // if(typeof window !== 'undefined'){
   // const [prevScroll, setPrevScroll] = useState(window?.scrollY);
   // const [top, setTop] = useState(0);
-  // console.log("top", top)
   // useEffect(() => {
 
 
