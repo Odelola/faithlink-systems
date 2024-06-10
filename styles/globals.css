@@ -14,6 +14,10 @@
   src: url("../public/fonts/termina/TerminaTest-Bold.otf");
 }
 
+:root{
+  --primary-color: #219D49;
+  --secondary-color: #75BD59;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
