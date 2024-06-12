@@ -2,13 +2,13 @@ import Link from "next/link"
 import { getRoute } from '../utils'
 
 function Footer() {
-
+const affliate_image_style = "hover:scale-110 w-[1500px]"
   // const social_list_item = "w-5 h-5 flex justify-center items-center border border-footerBlue p-4 hover:bg-footerBlue"
   function GetFooterLinks({ links }) {
     getRoute
     return (
       links.map(link => (
-        <li className="flex gap-x-2 mb-2 items-center" key={link}>
+        <li className="flex gap-x-2 mb-2 items-center font-termina" key={link}>
           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
             <path d="M5.99547 5.40301C5.97441 5.18645 5.88579 4.98168 5.74185 4.81693L1.89746 0.390283C1.80764 0.28092 1.69653 0.190426 1.5707 0.124141C1.44486 0.0578555 1.30684 0.0171222 1.16479 0.00434775C1.02274 -0.00842766 0.879538 0.00701424 0.743634 0.0497608C0.60773 0.0925064 0.481879 0.16169 0.373512 0.253229C0.265144 0.344768 0.176456 0.456806 0.112682 0.58273C0.0489074 0.708654 0.0113393 0.845912 0.0021959 0.986402C-0.00694753 1.12689 0.0125188 1.26777 0.0594454 1.40071C0.106372 1.53365 0.179808 1.65596 0.275419 1.76044L3.52599 5.50163L0.275419 9.2432C0.180586 9.34779 0.107875 9.47002 0.0615518 9.60272C0.015229 9.73542 -0.00377228 9.87592 0.00566298 10.016C0.0150982 10.156 0.0527804 10.2928 0.116497 10.4183C0.180214 10.5437 0.268683 10.6554 0.376712 10.7467C0.484741 10.838 0.610154 10.907 0.745592 10.9498C0.88103 10.9926 1.02376 11.0083 1.16542 10.9959C1.30707 10.9835 1.4448 10.9433 1.5705 10.8777C1.69621 10.8121 1.80737 10.7223 1.89746 10.6137L5.74185 6.18708C5.83525 6.07986 5.90584 5.95519 5.94941 5.82049C5.99299 5.68579 6.00865 5.54381 5.99547 5.40301Z" fill="#004B85" />
           </svg>
@@ -27,14 +27,14 @@ function Footer() {
         {/* <div className="relative z-[1] md:top-[35px] top-0"> */}
         <div className="pt-[50] relative">
           <div className="container max-md:px-2">
-            <div className="flex lg:flex-row md:justify-between lg:px-24 py-12 border-t-[24px] border-secondary bg-white rounded-[3px] flex-col px-4 gap-x-4 gap-y-3">
+            <div className="flex lg:flex-row py-12 slg:px-4 border-t-[24px] border-secondary bg-white rounded-[3px] flex-col px-4 gap-x-4 gap-y-3 md:justify-between lg:px-6">
               <div className="basis-[20%]">
                 <Link href="/" className="footer__brand">
                   {/* <h1>Faith Link Systems</h1> */}
                   <img src="/brandLogo.png" className="w-[200px] max-md:w-[150px]" alt="Brand Logo" />
                 </Link>
               </div>
-              <nav className="grid sm:grid-cols-2 xxs:grid-cols-1 md:grid-cols-4 md:basis-[80%] gap-y-6">
+              <nav className="grid sm:grid-cols-2 md:grid-cols-3 xxs:grid-cols-1 slg:grid-cols-4 md:basis-[80%] gap-y-6">
                 {/* <nav className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4"> */}
                 <div className="basis-[17%]">
                   <h3 className="text-textGray">
@@ -85,8 +85,8 @@ function Footer() {
         <div>
           <div className="container max-md:px-2">
             {/* <div className="flex pl-24 bg-white xxs:flex-col xxs:pl-4 xxs:sm-max:justify-center"> */}
-            <div className="flex md:pl-24 bg-white md:flex-row flex-col xxs:pl-4 xxs:sm-max:justify-center border-t">
-              <div className="flex-1 pr-4 py-7 md:border-r border-b border-[rgba(0,75,133,.2)]">
+            <div className="flex lg:pl-24 bg-white md:flex-row flex-col xxs:pl-4 xxs:sm-max:justify-center border-t md:max-lg:flex-wrap">
+              <div className="flex-1 pr-4 py-7 md:border-r border-b border-[rgba(0,75,133,.2)] md:max-lg:basis-1/2">
                 <div className="flex flex-col gap-y-1">
                   <div>
                     <h3>HEAD OFFICE</h3>
@@ -114,7 +114,7 @@ function Footer() {
                   <p className="text-[9px]">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
                 </div> */}
               </div>
-              <div className="md:border-r border-b flex flex-[.5] flex-col justify-center md:items-center items-start md:p-7 px-0 py-7 gap-y-4">
+              <div className="md:border-r border-b flex flex-[.5] flex-col justify-center md:items-center items-start md:p-7 px-0 py-7 gap-y-4 md:max-lg:basis-1/2">
                 <h3>SOCIAL MEDIA</h3>
                 <div className="flex items-center gap-x-4 mt-[-7px]">
                   <Link className="social_list_item" href="https://www.facebook.com" target="_blank">
@@ -158,29 +158,26 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-              {/* <div className="flex flex-[.5] flex-col justify-between md:items-center items-start md:p-7 px-0 py-7 pr-0 gap-y-4"> */}
-
-              {/* <div className="grid grid-cols-3 flex-[.5] content-center md:p-7 px-0 py-7 pr-0 gap-y-4 place-content-center place-items-center"> */}
-              <div className="flex-[.5] flex flex-col items-center md:p-7 max-md:px-2 py-7 pr-0 gap-y-4 place-content-center place-items-center">
+              <div className="flex-[.5] flex flex-col items-center md:p-7 max-md:px-2 py-7 pr-0 gap-y-4 place-content-center place-items-center md:max-lg:basis-full">
                 <div>
                   <h3>AFFLIATES</h3>
                 </div>
                 <div className="grid grid-cols-5 content-center place-items-center gap-x-4 gap-y-6">
                   <Link href="https://ekedp.com" target="_blank">
-                    <img src="/pages/ekedc.jpg" alt="EKEDC LOGO" className="hover:scale-110 w-[1500px]" />
+                    <img src="/pages/ekedc.jpg" alt="EKEDC LOGO" className={affliate_image_style} />
                   </Link>
 
                   <Link href="https://www.ikejaelectric.com" target="_blank">
-                    <img src="/pages/ikeja-electric.png" alt="IKEJA ELECTRIC LOGO" className="hover:scale-110 w-[1500px]" />
+                    <img src="/pages/ikeja-electric.png" alt="IKEJA ELECTRIC LOGO" className={affliate_image_style} />
                   </Link>
                   <Link href="https://ibedc.com" target="_blank">
-                    <img src="/pages/ibedc.png" alt="IBEDC LOGO" className="hover:scale-110 w-[1500px]" />
+                    <img src="/pages/ibedc.png" alt="IBEDC LOGO" className={affliate_image_style} />
                   </Link>
                   <Link href="https://kedcoerp.com" target="_blank">
-                    <img src="/pages/kedco.jpg" alt="KEDCO LOGO" className="hover:scale-110 w-[1500px] order-2" />
+                    <img src="/pages/kedco.jpg" alt="KEDCO LOGO" className={`${affliate_image_style} order-2`} />
                   </Link>
                   <Link href="https://nemsa.gov.ng" target="_blank">
-                    <img src="/pages/nemsa.jpeg" alt="NEMSA LOGO" className="hover:scale-110 w-[1500px]" />
+                    <img src="/pages/nemsa.jpeg" alt="NEMSA LOGO" className={affliate_image_style} />
                   </Link>
                 </div>
                 {/* <h3>EEDC, EKEDC</h3> */}
@@ -196,8 +193,8 @@ function Footer() {
       {/* <div className="flex items-end text-white md:mt-4 bg-primary py-3"> */}
       <div className="flex items-end text-white bg-secondary h-20">
         <div className="container">
-          <div className="flex justify-between md:px-24 sm:flex-row flex-col px-4">
-            <p className="font-bold xxs:max-md:text-center">
+          <div className="flex justify-between items-center md:px-24 max-slg:px-12 sm:flex-row flex-col px-4">
+            <p className="font-bold xxs:max-md:text-center mb-0">
               © {new Date().getFullYear()} FaithLink Systems. All rights reserved.
             </p>
             <div className="flex gap-x-10">

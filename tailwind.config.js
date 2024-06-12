@@ -26,7 +26,10 @@ module.exports = {
         "termina": ["Termina", "Montserrat", "sans-serif"],
         "terminamedium": ["TerminaMedium", "Montserrat", "sans-serif"],
         "terminabold": ["TerminaBold", "Montserrat", "sans-serif"],
-        "montserrat": ["Montserrat", "sans-serif"],
+        "poppins": ["Poppins", "Montserrat", "sans-serif"],
+        "poppinsmedium": ["PoppinsMedium", "Montserrat", "sans-serif"],
+        "poppinsbold": ["PoppinsBold", "Montserrat", "sans-serif"],
+        // "montserrat": ["Montserrat", "sans-serif"],
       },
       transitionProperty: {
         'height': 'height'
@@ -34,11 +37,20 @@ module.exports = {
       
     },
     screens: {
+      ...defaultTheme.screens,
       'xxs': '250px',
       'xs': '320px',
       'sm': '576px',
+      slg: '896px',
+      sxl: '1200px',
+      // 'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      // 'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      // '2xl': '1536px',
       // 'sm': {'min': '576px', 'max': '767px'},
-      ...defaultTheme.screens,
 
     }
     // screens: {

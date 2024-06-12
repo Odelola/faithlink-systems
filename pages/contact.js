@@ -47,7 +47,7 @@ function Contact() {
 
 
             {/* <div className="flex justify-between md:flex-col flex-col gap-y-3"> */}
-            <div className="grid grid-cols-[1fr_2fr] gap-36 max-md:grid-cols-1 mt-12 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">
+            <div className="grid grid-cols-[1fr_2fr] slg:gap-12 gap-36 max-slg:grid-cols-1 mt-12 max-md:mt-4 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">
               <div className='md:w-[250px] w-full hidden'>
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
@@ -59,7 +59,7 @@ function Contact() {
                   <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' />
                 </div>
                 {/* <div className="contact-form-item flex justify-between xs:max-sm:flex-col xs:max-sm:h-24"> */}
-                <div className="contact-form-item flex justify-between gap-x-4">
+                <div className="contact-form-item flex justify-between gap-x-4 max-md:flex-col max-md:gap-y-4">
                   {/* <label for="Name">Name</label> */}
                   <input type="text" placeholder="Your Name" id="Name" name="Name" required="required" className='contact-input' />
                   {/* <label for="Email">Email</label> */}
@@ -71,13 +71,11 @@ function Contact() {
                 </div>
                 <div className="form-item">
                   <input type="checkbox" id="confirm" name="confirm" className="hidden" required="required" />
-                  <label className="cb-container flex gap-x-2" for="confirm">
+                  <label className="cb-container flex items-center gap-x-2" for="confirm">
                     <span className="relative border w-5 h-5 flex-shrink-0"></span>
-
                     <div className='text-[10px]'>
                       Your personal data is processed in line with the <Link href="/privacy-notice" className='text-[11px] font-semibold'>Privacy Notice.</Link>
                       <br />
-
                       By clicking on Send, you confirm that you have read and accept the <Link href="/privacy-policy" className='text-[11px] font-semibold'>Privacy Notice</Link> and <Link href="/cookie-policy" className='text-[11px] font-semibold'>Cookie Policy</Link>
                     </div>
                   </label>
@@ -87,7 +85,7 @@ function Contact() {
                 </div>
               </form>
               <div className='bg-[rgba(245,245,245,.91)]'>
-                <div className='py-8 px-12'>
+                <div className='py-8 px-12 max-md:p-6'>
                   <h2 className='text-textGray text-[1em]'>CONTACT DETAILS</h2>
 <div className='flex flex-col gap-y-12'>
 

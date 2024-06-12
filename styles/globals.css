@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300..600&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); */
 @font-face {
   font-family: Termina;
   src: url("../public/fonts/termina/TerminaTest-Regular.otf");
@@ -13,6 +13,19 @@
   font-family: TerminaBold;
   src: url("../public/fonts/termina/TerminaTest-Bold.otf");
 }
+@font-face {
+  font-family: Poppins;
+  src: url("../public/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("../public/fonts/poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../public/fonts/poppins/Poppins-Bold.ttf");
+}
 
 :root{
   --primary-color: #219D49;
@@ -22,17 +35,34 @@
 @tailwind components;
 @tailwind utilities;
 
+*::selection{
+  color: #F8F8F8; 
+  background-color: var(--secondary-color);
+}
+/* Scrollbar Width */
+::-webkit-scrollbar {
+  width: 9.5px;
+}
 
-/* .slider-nav__button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 50px;
-	min-height: 50px;
-	transition: all .3s ease;
-} */
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  /* border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em; */
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+} 
 
 * {
   box-sizing: border-box;
@@ -61,7 +91,7 @@ html {
   } */
 
   body {
-    @apply text-darkBlue bg-white font-termina
+    @apply text-darkBlue bg-white font-poppins
   }
 
   /* p, h1, h2, h3, h4, h5, h6, div {
@@ -69,7 +99,7 @@ html {
   } */
 
   p {
-    @apply font-normal text-[14px] mb-[1rem] leading-[24px] text-justify
+    @apply font-normal text-[14px] md:max-slg:text-[12px] mb-[1rem] leading-[24px] text-justify
   }
 
   h1 {
@@ -89,7 +119,7 @@ html {
   }
 
   .container {
-    @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-md:px-2
+    @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-sm:px-2 max-md:px-3 max-slg:px-4
   }
 
   .container-lg {
