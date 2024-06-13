@@ -110,7 +110,7 @@ console.log("rendered again")
   return (
     <>
     {/*  ${scrollDirection === "down" ? "-top-24" : "top-0" }  */}
-      <header className={`fixed left-0 w-full z-[1000] bg-white transition-transform text-textGray`}  style={{ transition: "all .3s ease-in-out" }}>
+      <header className={`fixed left-0 w-full z-[1000] bg-white transition-transform text-textGray font-termina`}  style={{ transition: "all .3s ease-in-out" }}>
         <div className="justify-end bg-white max-slg:hidden">
           <div className="container">
             <div className="flex justify-end">

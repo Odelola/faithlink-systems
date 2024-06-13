@@ -83,7 +83,7 @@ html {
   }
 
   a {
-    @apply font-medium text-[10px]
+    @apply font-medium text-[10px] font-termina
   }
 
   /* span {
