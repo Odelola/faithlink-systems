@@ -76,7 +76,8 @@ function Milestones() {
             </Head>1
             {/* <PageSubheader imgUrl="https://media.istockphoto.com/id/528723134/photo/milestone-signpost.jpg?s=612x612&w=0&k=20&c=gmxRBVYPYmej1G23AfHZwSIVIIHpJBdLPKRg3BA0s_A=" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
             {/* <PageSubheader imgUrl="/pages/milestones-image.jpg" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
-            <PageSubheader imgUrl="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?q=80&w=1566&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
+            {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?q=80&w=1566&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
+            <PageSubheader imgUrl="/pages/balance-335980_1280.jpg" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
