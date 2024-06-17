@@ -15,7 +15,7 @@ function About() {
 
             {/* <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} /> */}
             {/* <PageSubheader imgUrl="/pages/_about-us_.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} /> */}
-            <PageSubheader imgUrl="/pages/engineer-1612104_1280.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
+            <PageSubheader imgUrl="/pages/engineer-1612104_1280 (1).jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 gap-y-8 flex-col md:flex-row">
