@@ -23,7 +23,7 @@ function IntegratedManagementSystem() {
                             </h1>
                             <p>
                                 FaithLink has a single set of policies and objectives that align with the strategic direction of the organization and address quality, environmental, and occupational health and safety (OHS) concerns.
-                                FaithLink Integrated Management System (IMS) combines ISO 14001 (Environmental Management), ISO 9001 (Quality Management), and ISO 45001 (Occupational Health and Safety) which offers a unified approach to managing the organization's processes and systems. The integration streamlines operations, reduces duplication of efforts, and enhances overall effectiveness.
+                                FaithLink Integrated Management System (IMS) combines ISO 14001 (Environmental Management), ISO 9001 (Quality Management), and ISO 45001 (Occupational Health and Safety) which offers a unified approach to managing the organization&apos;s processes and systems. The integration streamlines operations, reduces duplication of efforts, and enhances overall effectiveness.
                             </p>
                             <p>
                                 FaithLink maintains a single set of documentation, including manuals, procedures, and records, that complies with the requirements of ISO 14001, ISO 9001, and ISO 45001. 
