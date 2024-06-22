@@ -9,7 +9,6 @@ function Navbar() {
   const [mobileToggleId, setMobileToggleId] = useState(0);
 
 // const windowScroll = window.scrollY;
-console.log("rendered again")
   const [prevScroll, setPrevScroll] = useState(0);
   const [prevScrollNumber, setPrevScrollNumber] = useState("");
 

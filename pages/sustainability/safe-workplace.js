@@ -14,6 +14,7 @@ function SafeWorkplace() {
                 </Head>
                 <div>
                     <PageSubheader imgUrl="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={false} />
+                    {/* <PageSubheader imgUrl="/pages/_safe-workplace_.jpg" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={false} /> */}
                     {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1629196613836-0a7e2541990a?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAFE WORKPLACE Image" pageName="safe workplace" leadingRoutes={["homepage", "sustainability"]} greenOverlay={false} /> */}
                     <section className="pt-24 pb-0">
                         <div className="container container-lg text-justify">
@@ -31,7 +32,7 @@ function SafeWorkplace() {
                                     <h1 className="text-textGray text-[20px]">Our goal is to achieve zero fatality irrespective of the environment and terrain while performing services to our clients. To achieve this goal, Faithlink has put in place all the necessary safety and risk management structures in place with a room for improvement
                                     </h1>
                                     <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="grid w-full">
-                                        <img className="w-full" src="/pages/safe-workplace-2.jpg" alt="SAFE WORKPLACE IMAGE" />
+                                        <img className="w-full h-[350px]" src="/pages/_safe-workplace_.jpg" alt="SAFE WORKPLACE IMAGE" />
                                     </div>
                                 </aside>
                                 <aside className="basis-1/2 flex flex-col" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">

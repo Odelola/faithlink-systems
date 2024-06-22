@@ -4,12 +4,10 @@ import { getRoute } from './utils'
 
 function Breadcrumb({ leadingRoutes = ["homepage"] }) {
     const router = useRouter()
-    console.log(router)
     const nameOfRoute = Object.keys(router.query).length !== 0 ?  router.query.slug.split("-").join(" ").toUpperCase() : router.pathname.split("/").at(-1).toUpperCase();
     function GeneratePath({ leadingRoutes }) {
         return (
             leadingRoutes.map((item, index) => {
-                console.log(leadingRoutes[1])
                 return (
                     <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" className='list-item' key={item}>
                         <Link itemScope="" itemType="http://schema.org/Thing" itemProp="item" href={(index == 1) ? "#" : getRoute[item] }>

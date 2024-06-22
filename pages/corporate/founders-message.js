@@ -10,12 +10,13 @@ function FoundersMessage() {
                 <title>FOUNDER&apos;S MESSAGE - Faith Link Systems Limited</title>
                 <meta name="description" content="MESSAGE FROM THE FOUNDER" />
             </Head>
-            <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="founder's message" alt="FOUNDER's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} />
+            {/* <PageSubheader imgUrl="https://cengizholding.com.tr/content/images/uploads/baskanin-mesaji,32_big,1345_big.jpg" pageName="founder's message" alt="FOUNDER's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} /> */}
+            <PageSubheader imgUrl="/pages/_founders-message_.jpg" pageName="founder's message" alt="FOUNDER's message" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} />
             <section className="section-top">
                 <div className="container text-justify">
                     <div className="container container-lg">
                         <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
-                            <aside className="basis-1/2 text-justify" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
+                            <aside className="text-justify" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate mb-16 text-[20px] text-textGray" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">
                                     GIANT INVESTMENTS
                                     TOWARDS THE LEAGUE OF GLOBAL GIANTS...
@@ -64,11 +65,11 @@ function FoundersMessage() {
                                     <p className="text-[14px]">Chief Operating Officer</p>
                                 </div>
                             </aside>
-                            <aside>
+                            {/* <aside>
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
                                     <img className="w-[500px] h-[700px]" src="/pages/president.jpg" alt="FOUNDER'S MESSAGE" />
                                 </div>
-                            </aside>
+                            </aside> */}
                         </article>
                     </div>
                 </div>

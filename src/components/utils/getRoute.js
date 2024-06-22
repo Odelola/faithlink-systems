@@ -1,44 +1,36 @@
 const getRoutes = {
     "homepage": "/",
+    "career": "/career",
     "contact": "/contact",
+    "privacy policy": "/privacy-policy",
+    
     "corporate": "/corporate/about-us",
     "about us": "/corporate/about-us",
-    "founder's message": "/corporate/coos-message",
     "founder's message": "/corporate/founders-message",
     "milestones": "/corporate/milestones",
     "our team": "/corporate/our-team",
     // "our story": "/corporate/our-story",
     "our vision and values": "/corporate/our-vision-and-values",
-    "career": "/career",
-    "sustainability": "/sustainability",
+    
+    
     "activity fields": "/activity-fields/industry",
-    "generation": "/activity-fields/generation",
-    "transmission": "/activity-fields/transmission",
-    "distribution": "/activity-fields/distribution",
-    "automation": "/activity-fields/automation",
-    "automation and control": "/activity-fields/automation-and-control",
-    "industry": "/activity-fields/industry",
-    "power": "/activity-fields/power",
     "power sector": "/activity-fields/power-sector",
     "infra development": "/activity-fields/infra-development",
     "engineering services": "/activity-fields/engineering-services",
-    "telecomms services": "/activity-fields/telecomms-services",
     "telecoms sector": "/activity-fields/telecoms-sector",
     "renewable energy": "/activity-fields/renewable-energy",
     "fibre optics": "/activity-fields/fibre-optics",
+    
     "reports": "/safety-mission/reports",
-    // "hse policy": "/safety-mission/hse-policy",
+    
+    "sustainability": "/sustainability",
     "hse policy": "/sustainability/hse-policy",
-    "quality management system": "/sustainability/quality-management-system",
     "integrated management system": "/sustainability/integrated-management-system",
-    "reports": "/sustainability/reports-and-policies",
     "safe workplace": "/sustainability/safe-workplace",
+
     "media center": "/media-center/news",
     "news": "/media-center/news",
-    "press releases": "/media-center/press-releases",
     "photo gallery": "/media-center/photo-gallery",
-    "video gallery": "/media-center/video-gallery",
-    "privacy policy": "/privacy-policy"
 }
 
 export default getRoutes

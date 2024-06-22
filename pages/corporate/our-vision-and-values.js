@@ -79,7 +79,7 @@ function OurVisionandValues() {
             <div key={index} className="flex flex-col gap-y-4 relative">
                     <div className=" min-h-[420px] relative">
 
-                        <img src={item.image} alt={`Image for ${item.title}`} className="mb-2 h-[200px]" />
+                        <img src={item.image} alt={`Image for ${item.title}`} className="mb-2 h-[350px] w-full " />
                         <h3>{item.title}</h3>
                         <p>{item.introText}</p>
                     </div>
@@ -128,7 +128,7 @@ function OurVisionandValues() {
                             </div>
                         </aside> */}
                         {/* <ActivityFields data={OVAVDATA} darkText={true} headingTitle="our vision and values" headingText="These are our vision and values" /> */}
-                        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
                             <OVAVCard ovavData={OVAVDATA}  />
                         </div>
                     </article>

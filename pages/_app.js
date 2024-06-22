@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Router from "next/router"
+import Router, { useRouter } from "next/router"
 import Head from 'next/head'
 import AOS from 'aos'
 import "aos/dist//aos.css"
@@ -9,13 +9,33 @@ import '../styles/Swiper.css'
 import '../styles/Footer.css'
 import '../styles/Contact.css'
 import Layout from '../src/components/Layout'
-import Lenis from '@studio-freight/lenis'
 import NProgress from "nprogress"
+import { getRoute } from '../src/components/utils'
 
 
 function MyApp({ Component, pageProps }) {
 
+const router = useRouter();
+  useEffect(() => {
+    AOS.init();
+    AOS.init({ once: true });
+    AOS.refresh();
+    const handleRouteChange = async () => {
+      // Add your own logic here to check if the user is authenticated
+      // const userIsAuthenticated = checkUserAuthentication();
 
+      if (router.asPath === "/corporate") {
+        await router.replace("/");
+        // return null
+      }
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, []);
   NProgress.configure({ showSpinner: false })
 
   Router.events.on('routeChangeStart', () => {
@@ -26,20 +46,6 @@ function MyApp({ Component, pageProps }) {
     NProgress.done()
   })
 
-  useEffect(() => {
-    const lenis = new Lenis({ lerp: .8, duration: 3 })
-    const raf = (time) => {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-
-    AOS.init();
-    AOS.init({ once: true });
-    AOS.refresh();
-
-
-  }, [])
 
   return (
     <>

@@ -47,7 +47,7 @@ export default function HomeCarousel() {
     function HomeCarouselText({ textItem, index=3 }) {
         return (
             <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6 font-termina" data-aos="fade-up" data-duration=".9s">
-                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`} data ref={h1Ref}>
+                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`} ref={h1Ref}>
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
@@ -63,10 +63,10 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 1000 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; console.log("cow") }} onChange={() => _animateH1()} >
+                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 1000 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; }} onChange={() => _animateH1()} >
                         <SwiperSlide>
                             <video
-                                playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
                                 <source type="video/mp4" src="/solar-panel-video.mp4" 
                                 controlsList="nodownload" />
                             </video>
@@ -74,7 +74,7 @@ export default function HomeCarousel() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <video
-                                playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='/pages/banner-1.jpg'>
+                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='/pages/banner-1.jpg'>
                                 <source type="video/mp4" src="/telecommunications-video.mp4" 
                                 controlsList="nodownload" />
                             </video>
@@ -83,7 +83,7 @@ export default function HomeCarousel() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <video
-                                playsInline="playsinline" muted="muted" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
                                 <source type="video/mp4" src="/generation-video.mp4" 
                                 controlsList="nodownload"  />
                             </video>

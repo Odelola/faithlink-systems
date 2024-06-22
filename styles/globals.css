@@ -97,6 +97,9 @@ html {
   /* p, h1, h2, h3, h4, h5, h6, div {
 
   } */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-terminamedium
+  } 
 
   p {
     @apply font-normal text-[14px] md:max-slg:text-[12px] mb-[1rem] leading-[24px] text-justify
