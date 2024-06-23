@@ -7,32 +7,56 @@ function OurTeam() {
 
     const OurTeamDetails = [
         {
-            imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d618139da29c9182ea3878_team-main-02-p-500.jpg",
-            title: "JACK OLOYEDE",
+            // imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d618139da29c9182ea3878_team-main-02-p-500.jpg",
+            name: "SALIM ANDRAOS",
+            title: "Managing Partner",
+            text: "Co-founder Faithlink Systems Ltd. Previous General Manager at Younes Power Systems, Business Development Manager at BEL Impex Nigeria. He holds a Degree in Business Administration from America University of science and Technology, California, Advanced Diploma in Marketing from LCCI, London/Beirut. He has vast experience in international trade, business development and marketing.",
+        },
+        {
+            // imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d618130ccc37b64e1c7b90_team-main-03-p-500.jpg",
+            name: "SALIM JAZZAR",
+            title: "Managing Partner",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum est nesciunt tempora facere! Assumenda fugiat et minima vero rerum.",
         },
         {
-            imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d618130ccc37b64e1c7b90_team-main-03-p-500.jpg",
-            title: "MICHELLE KEHINDE",
+            // imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d61813fa812a72ef6163bd_team-main-01-p-500.jpg",
+            name: "LAWRENCE ONYEMA",
+            title: "Chief Operating Officer",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum est nesciunt tempora facere! Assumenda fugiat et minima vero rerum.",
         },
         {
-            imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d61813fa812a72ef6163bd_team-main-01-p-500.jpg",
-            title: "NATASHA OGUNDIRAN",
+            // imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d61813fa812a72ef6163bd_team-main-01-p-500.jpg",
+            name: "GOPAL TRIPATHI",
+            title: "Chief Technical Officer",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum est nesciunt tempora facere! Assumenda fugiat et minima vero rerum.",
+        },
+        {
+            // imgUrl: "https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d61813fa812a72ef6163bd_team-main-01-p-500.jpg",
+            name: "ASIM ATALF",
+            title: "Financial Controller",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum est nesciunt tempora facere! Assumenda fugiat et minima vero rerum.",
         },
     ]
     function OurTeamCard({ teamData }) {
-        return  (teamData.map((item, index) => (
+        return (teamData.map((item, index) => (
+            // <div key={index} className="flex flex-col gap-y-4 relative">
+            //         <div className=" min-h-[420px] relative">
+
+            //             <img src={item.imgUrl} alt={`Image for ${item.name}`} className="mb-2" />
+            //             <h3>{item.name}</h3>
+            //             <p>{item.title}</p>
+            //         </div>
+            //         </div>
+
             <div key={index} className="flex flex-col gap-y-4 relative">
-                    <div className=" min-h-[420px] relative">
-
-                        <img src={item.imgUrl} alt={`Image for ${item.title}`} className="mb-2" />
-                        <h3>{item.title}</h3>
-                        <p>{item.text}</p>
-                    </div>
-                    </div>
-
+                <div>
+                    <h3 className="text-center">{item.name}</h3>
+                    <p className="text-center">{item.title}</p>
+                </div>
+                <div>
+                    <p>{item.text}</p>
+                </div>
+            </div>
         )))
     }
     return (
@@ -49,13 +73,13 @@ function OurTeam() {
 
             <section className="section-top">
                 <div className="container container-lg">
-                {/* flex justify-between gap-x-14 flex-col md:flex-row items-center */}
+                    {/* flex justify-between gap-x-14 flex-col md:flex-row items-center */}
                     <article className="">
-                        <h1 className="text-textGray text-[30px] text-center">
+                        <h1 className="text-textGray text-[30px] text-center mb-16">
                             OUR MANAGEMENT
                         </h1>
-                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
-                            <OurTeamCard teamData={OurTeamDetails}  />
+                        <div className="grid lg:grid-cols-5 grid-cols-1 gap-3">
+                            <OurTeamCard teamData={OurTeamDetails} />
                         </div>
                     </article>
                 </div>

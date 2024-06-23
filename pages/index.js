@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from "next/router"
-import { ActivityFields, HomeCarousel, OtherDetails, Sustainability } from '../src/components/pages';
+import { ActivityFields, HomeCarousel, OtherDetails, Sustainability, PartnersMarquee } from '../src/components/pages';
 
 export default function Home() {
   const router = useRouter();
@@ -16,6 +16,7 @@ export default function Home() {
 
       <main>
         <HomeCarousel />
+        <PartnersMarquee />
         {/* <ActivityFields /> */}
         {/* <Sustainability /> */}
         {/* <OtherDetails /> */}

@@ -61,8 +61,8 @@ function FoundersMessage() {
                                     efficiency.
                                 </p>
                                 <div className="text-textGray mt-12 font-medium">
-                                    <p className="text-[20px]">LAWRENCE ONYEMA</p>
-                                    <p className="text-[14px]">Chief Operating Officer</p>
+                                    <p className="text-[20px]">SALIM ANDROUS & SALIM JAZZAR</p>
+                                    <p className="text-[14px]">The Founder</p>
                                 </div>
                             </aside>
                             {/* <aside>

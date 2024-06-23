@@ -32,7 +32,7 @@ function SafeWorkplace() {
                                     <h1 className="text-textGray text-[20px]">Our goal is to achieve zero fatality irrespective of the environment and terrain while performing services to our clients. To achieve this goal, Faithlink has put in place all the necessary safety and risk management structures in place with a room for improvement
                                     </h1>
                                     <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="grid w-full">
-                                        <img className="w-full h-[350px]" src="/pages/_safe-workplace_.jpg" alt="SAFE WORKPLACE IMAGE" />
+                                        <img className="w-full h-[300px]" src="/pages/_safe-workplace_.jpg" alt="SAFE WORKPLACE IMAGE" />
                                     </div>
                                 </aside>
                                 <aside className="basis-1/2 flex flex-col" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">

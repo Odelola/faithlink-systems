@@ -44,8 +44,7 @@ function TelcomsSector() {
                                 <p className="mt-6">
                                     FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry.</p>
                                     <p> We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
-                                </p>
-                                <p>FAITHLINK strongly believes and adopts the five principles of project management such as </p>
+                                <br />FAITHLINK strongly believes and adopts the five principles of project management such as </p>
                                 <ul className="ml-3 mb-3 list-disc text-[14px]">
                                         <li>Initiating</li>
                                         <li>Planning and Execution</li>
