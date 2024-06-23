@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Breadcrumb from '../src/components/Breadcrumb'
 import PageSubheader from '../src/components/PageSubheader'
-import { CompanyMap } from '../src/components/pages'
+import { Formik } from 'formik';
+
 
 
 function Contact() {
@@ -52,8 +52,10 @@ function Contact() {
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
-              <form action="#0" className='order-4'>
-              <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
+              <Formik>
+
+                            <form action="#0" className='order-4'>
+                <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
                   {/* <label for="Subject">Subject</label> */}
                   <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' />
@@ -84,24 +86,25 @@ function Contact() {
                   <button type="submit" className='contact-button'>SEND</button>
                 </div>
               </form>
+              </Formik>
               <div className='bg-[rgba(245,245,245,.91)]'>
                 <div className='py-8 px-12 max-md:p-6'>
                   <h2 className='text-textGray text-[1em]'>CONTACT DETAILS</h2>
-<div className='flex flex-col gap-y-12'>
+                  <div className='flex flex-col gap-y-12'>
 
-                  <div>
-                    <h3 className='text-primary'>HEAD OFFICE</h3>
-                    <p className="mb-0">
-                      29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island, Lagos, Nigeria
-                    </p>
+                    <div>
+                      <h3 className='text-primary'>HEAD OFFICE</h3>
+                      <p className="mb-0">
+                        29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island, Lagos, Nigeria
+                      </p>
                       <a href="mailto:info@faithlinkltd.com" className='hover:underline'>info@faithlinkltd.com</a>
+                    </div>
+                    <div>
+                      <h3 className='text-primary'>BRANCH OFFICES</h3>
+                      <p className="">Kano Branch: 3, Mallam Jumbo Road Kano State</p>
+                      <p className="">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className='text-primary'>BRANCH OFFICES</h3>
-                    <p className="">Kano Branch: 3, Mallam Jumbo Road Kano State</p>
-                  <p className="">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
-                  </div>
-</div>
 
                   <div className='text-[13px] hidden'>
                     <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
