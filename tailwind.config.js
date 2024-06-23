@@ -10,6 +10,7 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
       colors: {
         // "primary": "#8DECB4",
@@ -33,32 +34,31 @@ module.exports = {
       },
       transitionProperty: {
         'height': 'height'
+      },
+      screens: {
+        ...defaultTheme.screens,
+        'xxs': '250px',
+        'xs': '320px',
+        'sm': '576px',
+        slg: '896px',
+        sxl: '1200px',
+        // 'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        // 'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        // '2xl': '1536px',
+        // 'sm': {'min': '576px', 'max': '767px'},
+
       }
-      
+      // screens: {
+      //   'xxs': {'min': '250px', 'max': '319px'},
+      //   'xs': {'min': '320px', 'max': '575px'},
+      //   'sm': {'min': '576px', 'max': '767px'}
+      // }
     },
-    screens: {
-      ...defaultTheme.screens,
-      'xxs': '250px',
-      'xs': '320px',
-      'sm': '576px',
-      slg: '896px',
-      sxl: '1200px',
-      // 'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+    plugins: [],
+  }
 
-      // 'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      // '2xl': '1536px',
-      // 'sm': {'min': '576px', 'max': '767px'},
-
-    }
-    // screens: {
-    //   'xxs': {'min': '250px', 'max': '319px'},
-    //   'xs': {'min': '320px', 'max': '575px'},
-    //   'sm': {'min': '576px', 'max': '767px'}
-    // }
-  },
-  plugins: [],
 }
-

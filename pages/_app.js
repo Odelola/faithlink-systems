@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
 import Router, { useRouter } from "next/router"
 import Head from 'next/head'
+import Script from 'next/script'
+
+
 import AOS from 'aos'
 import "aos/dist//aos.css"
 import '../styles/globals.css'
@@ -46,12 +49,13 @@ const router = useRouter();
     NProgress.done()
   })
 
-
   return (
     <>
       <Head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/marqueee@latest/style.css" />
         <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
       </Head>
+      <Script src="https://cdn.jsdelivr.net/npm/marqueee@latest/marquee-slider.min.js" />
       <Layout>
         <Component {...pageProps} />
       </Layout>

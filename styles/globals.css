@@ -155,3 +155,20 @@ html {
     @apply flex h-[150px] gap-2 max-md:flex-col max-md:w-full max-md:h-auto
   }
 }
+
+
+.marquee-slider-wrapper{
+  display: flex;
+  
+  position: relative;
+
+}
+.marquee-slider-slides-wrapper{
+  display: flex;
+  position: relative;
+  
+}
+
+.marquee-slider-slide{
+width: fit-content;
+}
