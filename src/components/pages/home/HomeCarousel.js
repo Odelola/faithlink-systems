@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-import Link from 'next/link'
 import { PrimaryButton, SecondaryButton } from '../../Button';
 import { getRoute } from "../../utils"
 import { useRef } from 'react';
@@ -73,21 +72,21 @@ export default function HomeCarousel() {
                             <HomeCarouselText textItem={carouselText[0]} index={1} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <video
+                            {/* <video
                                 playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='/pages/banner-1.jpg'>
                                 <source type="video/mp4" src="/telecommunications-video.mp4" 
                                 controlsList="nodownload" />
-                            </video>
-                            {/* <img src="/pages/banner-1.jpg" alt="Banner Image 1 - About Us" /> */}
+                            </video> */}
+                            <img src="/pages/_telecommunications-sector_.jpg" alt="Banner Image 1 - Telecommunications Sector" />
                             <HomeCarouselText textItem={carouselText[1]} index={2} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <video
+                            {/* <video
                                 playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
                                 <source type="video/mp4" src="/generation-video.mp4" 
                                 controlsList="nodownload"  />
-                            </video>
-                            {/* <img src="https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner Image 2 - Telecommunications" /> */}
+                            </video> */}
+                            <img src="/pages/_generation-and-transmission_.jpg" alt="Banner Image 2 - Generation and Transmission" />
                             <HomeCarouselText textItem={carouselText[2]} />
                         </SwiperSlide>
                         <SwiperSlide>

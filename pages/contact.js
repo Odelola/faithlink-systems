@@ -1,11 +1,41 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import PageSubheader from '../src/components/PageSubheader'
-import { Formik } from 'formik';
+import { useFormik } from 'formik';
+import { contactFormSchema } from '../src/schema/contact-schema';
+
 
 
 
 function Contact() {
+
+  const onSubmit = async (values, actions) => {
+    console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
+  };
+
+
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit } = useFormik({
+      initialValues: {
+        subject: "",
+        name: "",
+        email: "",
+        message: "",
+      },
+      // validationSchema: contactFormSchema,
+      onSubmit
+    })
+
+    console.log(values, "values")
   return (
     <div>
       <Head>
@@ -52,24 +82,31 @@ function Contact() {
                 {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
-              <Formik>
 
-                            <form action="#0" className='order-4'>
+              <form onSubmit={handleSubmit} className='order-4' autoComplete='off'>
                 <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
                   {/* <label for="Subject">Subject</label> */}
-                  <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' />
+                  <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' onBlur={handleBlur} onChange={handleChange(values.subject)} value={values.subject} />
+                  {errors.subject && touched.subject && <p className="error">{errors.subject}</p>}
+
                 </div>
                 {/* <div className="contact-form-item flex justify-between xs:max-sm:flex-col xs:max-sm:h-24"> */}
                 <div className="contact-form-item flex justify-between gap-x-4 max-md:flex-col max-md:gap-y-4">
                   {/* <label for="Name">Name</label> */}
-                  <input type="text" placeholder="Your Name" id="Name" name="Name" required="required" className='contact-input' />
+                  <input type="text" placeholder="Your Name" id="Name" name="Name" required="required" className='contact-input' value={values.name} onChange={handleChange} onBlur={handleBlur} />
+                  {errors.name && touched.name && <p className="error">{errors.name}</p>}
+
                   {/* <label for="Email">Email</label> */}
-                  <input type="text" placeholder="Enter your email address" id="Email" name="Email" required="required" className='contact-input' />
+                  <input type="text" placeholder="Enter your email address" id="Email" name="Email" required="required" className='contact-input' value={values.email} onChange={handleChange} />
+                  {errors.email && touched.email && <p className="error">{errors.email}</p>}
+
                 </div>
                 <div className="contact-form-item">
                   {/* <label for="Message">Your Message</label> */}
-                  <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'></textarea>
+                  <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'  onBlur={handleBlur} onChange={handleChange} ></textarea>
+                  {errors.message && touched.message && <p className="error">{errors.message}</p>}
+
                 </div>
                 <div className="form-item">
                   <input type="checkbox" id="confirm" name="confirm" className="hidden" required="required" />
@@ -83,10 +120,9 @@ function Contact() {
                   </label>
                 </div>
                 <div className='w-[250px] mt-2'>
-                  <button type="submit" className='contact-button'>SEND</button>
+                  <button type="submit" disabled={isSubmitting} className='contact-button'>SEND</button>
                 </div>
               </form>
-              </Formik>
               <div className='bg-[rgba(245,245,245,.91)]'>
                 <div className='py-8 px-12 max-md:p-6'>
                   <h2 className='text-textGray text-[1em]'>CONTACT DETAILS</h2>
