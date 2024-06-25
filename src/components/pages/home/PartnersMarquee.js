@@ -1,5 +1,4 @@
 import Marquee from "react-fast-marquee";
-import { useEffect } from "react";
 
 function PartnersMarquee() {
     function PartnersImageContainer() {

@@ -44,7 +44,7 @@ function PowerSector() {
       <Head>
         <title>POWER SECTOR - Faith Link Systems Limited</title>
         <meta name="description" content="POWER SECTOR" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        
       </Head>
       {/* <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} /> */}
       <PageSubheader imgUrl="/pages/power-lines-1868352_1280.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />

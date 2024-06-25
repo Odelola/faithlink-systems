@@ -1,14 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 export default function Document() {
     return (
         <Html>
             <Head>
-                <link rel="stylesheet" href="..." />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300@500&display=swap" rel="stylesheet" />
+                <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
             </Head>
             <body>
                 <Main />

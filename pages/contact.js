@@ -4,9 +4,6 @@ import PageSubheader from '../src/components/PageSubheader'
 import { useFormik } from 'formik';
 import { contactFormSchema } from '../src/schema/contact-schema';
 
-
-
-
 function Contact() {
 
   const onSubmit = async (values, actions) => {

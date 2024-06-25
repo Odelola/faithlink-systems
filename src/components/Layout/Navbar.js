@@ -8,36 +8,6 @@ function Navbar() {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [mobileToggleId, setMobileToggleId] = useState(0);
 
-// const windowScroll = window.scrollY;
-  const [prevScroll, setPrevScroll] = useState(0);
-  const [prevScrollNumber, setPrevScrollNumber] = useState("");
-
-  // function useScrollDirection() {
-  //   const [scrollDirection, setScrollDirection] = useState(null);
-  
-  //   useEffect(() => {
-  //     let lastScrollY = window.scrollY;
-  //     setPrevScrollNumber(lastScrollY)
-  //     const updateScrollDirection = () => {
-  //       const scrollY = window.scrollY;
-  //       const direction = scrollY > lastScrollY ? "down" : "up";
-  //       if (direction !== scrollDirection && (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)) {
-  //         setScrollDirection(direction);
-  //       }
-  //       lastScrollY = scrollY > 0 ? scrollY : 0;
-  //     };
-  //     window.addEventListener("scroll", updateScrollDirection); // add event listener
-  //     return () => {
-  //       window.removeEventListener("scroll", updateScrollDirection); // clean up
-  //     }
-  //   }, []);
-    
-  //   return scrollDirection;
-  // };
-  
-  // header component
-  // const scrollDirection = useMemo(() => useScrollDirection) 
-
   function MenuLinks({ linkName, subLinks }) {
     return (
       <li className="relative group max-md:px-0 h-full flex items-center">
@@ -80,36 +50,10 @@ function Navbar() {
     )
   }
 
-  function InnerSubMenu({ subLinks = ["engineering services"] }) {
-    return (
-      <ul className={"absolute left-0 z-50 invisible opacity-0 transition-all group-hover:visible group-hover:opacity-100 max-md:hidden"}>
-        {subLinks?.map((item, index) => (
-          <li key={item} className={`opacity-0 invisble group-hover:visible group-hover:opacity-100 group-hover:delay-${75 * index}`} style={{ transition: "all .3s ease-in-out" }}>
-            <Link href={getRoute[item] ?? "/"}
-
-              className="flex items-center justify-between w-full py-4 px-5 gap-x-4 bg-white hover:bg-[#f3f3f3] -translate-x-8 opacity-0 invisble group-hover:visible group-hover:opacity-100 group-hover:delay-${75 * index} group-hover:translate-x-0" style={{ transition: "all .3s ease-in-out" }}>
-              <figure className="flex items-center gap-[17px]">
-                <figcaption className="text-nowrap">
-                  {item.toUpperCase()}
-                </figcaption>
-              </figure>
-              <i className="menu-card__icon">
-                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.99547 5.40301C5.97441 5.18645 5.88579 4.98168 5.74185 4.81693L1.89746 0.390283C1.80764 0.28092 1.69653 0.190426 1.5707 0.124141C1.44486 0.0578555 1.30684 0.0171222 1.16479 0.00434775C1.02274 -0.00842766 0.879538 0.00701424 0.743634 0.0497608C0.60773 0.0925064 0.481879 0.16169 0.373512 0.253229C0.265144 0.344768 0.176456 0.456806 0.112682 0.58273C0.0489074 0.708654 0.0113393 0.845912 0.0021959 0.986402C-0.00694753 1.12689 0.0125188 1.26777 0.0594454 1.40071C0.106372 1.53365 0.179808 1.65596 0.275419 1.76044L3.52599 5.50163L0.275419 9.2432C0.180586 9.34779 0.107875 9.47002 0.0615518 9.60272C0.015229 9.73542 -0.00377228 9.87592 0.00566298 10.016C0.0150982 10.156 0.0527804 10.2928 0.116497 10.4183C0.180214 10.5437 0.268683 10.6554 0.376712 10.7467C0.484741 10.838 0.610154 10.907 0.745592 10.9498C0.88103 10.9926 1.02376 11.0083 1.16542 10.9959C1.30707 10.9835 1.4448 10.9433 1.5705 10.8777C1.69621 10.8121 1.80737 10.7223 1.89746 10.6137L5.74185 6.18708C5.83525 6.07986 5.90584 5.95519 5.94941 5.82049C5.99299 5.68579 6.00865 5.54381 5.99547 5.40301Z" fill="#004B85"></path>
-                </svg>
-              </i>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    )
-  }
-
 
   return (
     <>
-    {/*  ${scrollDirection === "down" ? "-top-24" : "top-0" }  */}
-      <header className={`fixed left-0 w-full z-[1000] bg-white transition-transform text-textGray font-termina`}  style={{ transition: "all .3s ease-in-out" }}>
+      <header className={`fixed left-0 w-full z-[1000] bg-white transition-transform text-textGray font-termina`} style={{ transition: "all .3s ease-in-out" }}>
         <div className="justify-end bg-white max-slg:hidden">
           <div className="container">
             <div className="flex justify-end">
@@ -118,19 +62,14 @@ function Navbar() {
                   <li className="info-nav__item">
                     <Link href="/contact" className='p-1'>CONTACT</Link>
                   </li>
-                  {/* <li className="info-nav__item">
                   <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
-                  </li> */}
                   <li className="info-nav__item border-l-[1px] border-l-[rgba(255,255,255,.2)]">
-
                     <a href="mailto:info@faithlinkltd.com" className='p-1 flex gap-x-2 items-center'>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                       </svg>
-
                       info@faithlinkltd.com
                     </a>
-
                   </li>
                 </ul>
               </nav>
@@ -228,7 +167,6 @@ function Navbar() {
 function MobileSubMenu({ subLinks, mobileToggle, setMobileToggle, setToggle }) {
   return (
     <ul className={`mx-7 mt-24 absolute top-0 w-full h-full bg-primary ${mobileToggle ? "left-0" : "left-[200%]"}`}>
-
       <li onClick={() => { setMobileToggle(prev => prev = false) }} className={`flex items-center gap-x-1 border-b pb-5 border-[rgba(225,225,225,.5)]`}>
         <i className="rotate-180">
           <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +181,6 @@ function MobileSubMenu({ subLinks, mobileToggle, setMobileToggle, setToggle }) {
           <Link href={getRoute[item] ?? "/"} className='flex justify-between text-white py-5 text-[16px]' onClick={() => { setMobileToggle(prev => prev = false); setToggle(prev => prev = false) }}>
             {item.toUpperCase()}
           </Link>
-
         </li>
       ))}
     </ul>

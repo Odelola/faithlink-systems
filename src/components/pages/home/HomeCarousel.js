@@ -11,16 +11,7 @@ import { useRef } from 'react';
 
 
 export default function HomeCarousel() {
-    // const pagination = {
-    //     clickable: true,
-
-    // }
-    const h1Ref = useRef();
     const about_gallery_item = "grid gap-[20px]"
-    console.log(h1Ref)
-    const _animateH1 = () => {
-        h1Ref.current.style.display = "none"
-    }
     const carouselText = [
         {
             title: "WE ARE FAITHLINK SYSTEMS",
@@ -46,7 +37,7 @@ export default function HomeCarousel() {
     function HomeCarouselText({ textItem, index=3 }) {
         return (
             <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 select-none text-white max-md:w-full max-sm:py-6 font-termina" data-aos="fade-up" data-duration=".9s">
-                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`} ref={h1Ref}>
+                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`}>
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
@@ -62,7 +53,7 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 1000 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; }} onChange={() => _animateH1()} >
+                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 1000 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; }} >
                         <SwiperSlide>
                             <video
                                 playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>

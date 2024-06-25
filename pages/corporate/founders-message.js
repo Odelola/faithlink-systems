@@ -2,7 +2,6 @@ import Head from "next/head";
 import PageSubheader from "../../src/components/PageSubheader";
 import SubPageNavigator from "../../src/components/SubPageNavigator"
 
-
 function FoundersMessage() {
     return (
         <>

@@ -13,9 +13,7 @@ module.exports = {
     
     extend: {
       colors: {
-        // "primary": "#8DECB4",
         "primary": "#219D49",
-        // "secondary": "#004b85",
         "secondary": "#75BD59",
         "faintWhite": "#f3f3f3",
         "blueLinkColor": "#00b1e8",
@@ -30,7 +28,6 @@ module.exports = {
         "poppins": ["Poppins", "Montserrat", "sans-serif"],
         "poppinsmedium": ["PoppinsMedium", "Montserrat", "sans-serif"],
         "poppinsbold": ["PoppinsBold", "Montserrat", "sans-serif"],
-        // "montserrat": ["Montserrat", "sans-serif"],
       },
       transitionProperty: {
         'height': 'height'
@@ -43,14 +40,9 @@ module.exports = {
         slg: '896px',
         sxl: '1200px',
         // 'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-
         // 'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-
         // '2xl': '1536px',
         // 'sm': {'min': '576px', 'max': '767px'},
-
       }
       // screens: {
       //   'xxs': {'min': '250px', 'max': '319px'},

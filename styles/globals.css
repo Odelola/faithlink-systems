@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300..600&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); */
 @font-face {
   font-family: Termina;
   src: url("../public/fonts/termina/TerminaTest-Regular.otf");
@@ -154,21 +152,4 @@ html {
   .split-page-images-container{
     @apply flex h-[150px] gap-2 max-md:flex-col max-md:w-full max-md:h-auto
   }
-}
-
-
-.marquee-slider-wrapper{
-  display: flex;
-  
-  position: relative;
-
-}
-.marquee-slider-slides-wrapper{
-  display: flex;
-  position: relative;
-  
-}
-
-.marquee-slider-slide{
-width: fit-content;
 }

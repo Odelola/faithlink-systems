@@ -8,7 +8,7 @@ function TelcomsSector() {
             <Head>
                 <title>TELECOMS SECTOR - Faith Link Systems Limited</title>
                 <meta name="description" content="Telcoms Sector" />
-                {/* <link rel="icon" href="/favicon.ico" /> */}
+                
             </Head>
             {/* <PageSubheader imgUrl="/pages/telecoms-sector.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} /> */}
             <PageSubheader imgUrl="/pages/aerial-1880873_1280.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} />

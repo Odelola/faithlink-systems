@@ -8,7 +8,7 @@ function InfraDevelopment() {
       <Head>
         <title>INFRA DEVELOPMENT - Faith Link Systems Limited</title>
         <meta name="description" content="INFRA DEVELOPMENT" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        
       </Head>
       {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1551295022-de5522c94e08?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
       {/* <PageSubheader imgUrl="/pages/sunset-4924334_1280.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
@@ -16,7 +16,7 @@ function InfraDevelopment() {
       <section className="section-top">
         <div className="container">
           <div className="container container-lg">
-            <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
+            <article className="flex flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
               <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                   INFRASTRUCTURE DEVELOPMENT
