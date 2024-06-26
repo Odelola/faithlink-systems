@@ -5,8 +5,7 @@ import SubPageNavigator from "../../src/components/SubPageNavigator"
 function SafeWorkplace() {
     return (
         <>
-            <section className="">
-
+            <section>
                 <Head>
                     <title>SAFE WORKPLACE - Faith Link Systems Limited</title>
                     <meta name="description" content="SAFE WORKPLACE- Faithlink Systems" />

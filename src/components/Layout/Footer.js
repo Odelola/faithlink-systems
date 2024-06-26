@@ -193,7 +193,6 @@ const affliate_image_style = "hover:scale-110 w-[1500px]"
             </p>
             <div className="flex gap-x-10">
               <Link href="/privacy-notice">PRIVACY NOTICE</Link>
-                INFORMATION SOCIETY SERVICES
             </div>
           </div>
         </div>

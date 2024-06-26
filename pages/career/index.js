@@ -27,8 +27,8 @@ function Career() {
                             <p className="text-center">Apply to join the Faithlink Systems Limited expert team</p>
 
                             <h3><em>No vacancy</em></h3>
-                            <p className="text-center">Contact: <a href="tel:+234 818 600 2214" className="text-primary">+234 818 600 0000</a>, </p>
-                            <p className="text-center">Email: <a href="mailto:info@faithlinkltd.com" className="text-primary">info@faithlinkltd.com</a></p>
+                            {/* <p className="text-center">Contact: <a href="tel:+234 818 600 2214" className="text-primary">+234 818 600 0000</a>, </p>
+                            <p className="text-center">Email: <a href="mailto:info@faithlinkltd.com" className="text-primary">info@faithlinkltd.com</a></p> */}
                         </div>
                     </article>
                 </div>

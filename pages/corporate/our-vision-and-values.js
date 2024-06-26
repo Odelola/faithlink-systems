@@ -127,7 +127,7 @@ function OurVisionandValues() {
                             </div>
                         </aside> */}
                         {/* <ActivityFields data={OVAVDATA} darkText={true} headingTitle="our vision and values" headingText="These are our vision and values" /> */}
-                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
+                        <div className="grid grid-cols-2 max-slg:grid-cols-1 gap-8">
                             <OVAVCard ovavData={OVAVDATA}  />
                         </div>
                     </article>

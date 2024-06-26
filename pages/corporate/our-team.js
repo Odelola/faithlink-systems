@@ -52,7 +52,7 @@ function OurTeam() {
             //         </div>
 
             <div key={index} className="flex flex-col gap-y-4 relative">
-                <img src={item.imgUrl} alt={`Image for ${item.name}`} className="mb-2 h-[350px]" />
+                <img src={item.imgUrl} alt={`Image for ${item.name}`} className="mb-2" />
                 <div>
                     <h3 className="text-center">{item.name}</h3>
                     <p className="text-center mb-0">{item.title}</p>
@@ -83,7 +83,7 @@ function OurTeam() {
                         <h1 className="text-textGray text-[30px] text-center mb-16">
                             OUR MANAGEMENT
                         </h1>
-                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                        <div className="grid grid-cols-3 max-slg:grid-cols-2 max-md:grid-cols-1 gap-4">
                             <OurTeamCard teamData={OurTeamDetails} />
                         </div>
                     </article>
