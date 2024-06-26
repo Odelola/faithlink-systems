@@ -26,12 +26,12 @@ function Milestones() {
             "description": "Internal Electrification Work at Black diamond Hotel",
         },
         {
-            "imgUrl": "/pages/milestones/milestones-1.jpg",
+            "imgUrl": "/pages/milestones/milestones-4.jpg",
             "year/client": "",
             "description": "Internal & External Electrification Work for existing & new Warehouse Facility 300kva Substation",
         },
         {
-            "imgUrl": "/pages/milestones/milestones-2.jpg",
+            "imgUrl": "/pages/milestones/milestones-5.jpg",
             "year/client": "",
             "description": "Transformers Rehabilitation 50kva / repairs/ and testing (457Unit)",
         },
@@ -72,9 +72,8 @@ function Milestones() {
             <Head>
                 <title>MILESTONES - Faith Link Systems Limited</title>
                 <meta name="description" content="Milestones" />
-                
-            </Head>1
-            <PageSubheader imgUrl="/pages/_milestones_.jpg" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
+            </Head>
+            <PageSubheader imgUrl="/pages/_milestones_.jpg" alt="Milestones Image" pageName="MILESTONES" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

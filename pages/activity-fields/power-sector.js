@@ -47,8 +47,8 @@ function PowerSector() {
         
       </Head>
       {/* <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} /> */}
-      <PageSubheader imgUrl="/pages/power-lines-1868352_1280.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
-      {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1509390559807-3144e7d29097?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} /> */}
+      <PageSubheader imgUrl="/pages/power-lines-1868352_1280.jpg" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} />
+      {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1509390559807-3144e7d29097?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="power sector" leadingRoutes={["homepage", "activity fields"]} /> */}
 
       <section className="section-top">
         <div className="container">

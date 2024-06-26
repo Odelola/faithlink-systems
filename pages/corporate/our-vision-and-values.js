@@ -7,7 +7,8 @@ function OurVisionandValues() {
     const OVAVDATA = [
         {
             //   image: "/pages/service-offering-generation.jpg",
-            image: "https://media.istockphoto.com/id/186226463/photo/vision-background.jpg?s=612x612&w=0&k=20&c=wIrmJyfXsjolqQGZNJ18c809kdbsJz66xjDHOxKrxNQ=",
+            // image: "https://media.istockphoto.com/id/186226463/photo/vision-background.jpg?s=612x612&w=0&k=20&c=wIrmJyfXsjolqQGZNJ18c809kdbsJz66xjDHOxKrxNQ=",
+            image: "/pages/our-vision-and-values.jpg",
             title: "OUR VISION",
             introText: "To be a leading Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects",
             //   introText: "To be a leading Infrastructure,"
@@ -16,21 +17,24 @@ function OurVisionandValues() {
         },
         {
             //   image: "/pages/service-offering-generation.jpg",
-            image: "https://images.unsplash.com/photo-1610540604745-3e96fba9ccef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            // image: "https://images.unsplash.com/photo-1610540604745-3e96fba9ccef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "https://cdn.pixabay.com/photo/2022/02/08/06/34/leadership-7000851_1280.png",
             title: "OUR MISSION",
             // text: "Faithlink provides Embedded Power, Captive Power, Step-up Transformer and Turbine Engines"
             introText: "To be a leading Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects",
             text: ["Embedded Power", "Captive Power", "Step-up Transformer", "Turbine Engines"],
         },
         {
-            image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            // image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "https://cdn.pixabay.com/photo/2021/12/30/19/46/audit-6904474_1280.png",
             title: "OUR BUSINESS FOCUS",
             // text: "Faithlink provides Embedded Power, Captive Power, Step-up Transformer and Turbine Engines"
             introText: "Power, Telecoms and Infrastructure Development.",
             text: ["Embedded Power", "Captive Power", "Step-up Transformer", "Turbine Engines"],
         },
         {
-            image: "https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?q=80&w=1714&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            // image: "https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?q=80&w=1714&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "https://cdn.pixabay.com/photo/2019/04/26/18/14/strategy-4158204_1280.png",
             title: "STRATEGIC THRUST",
             introText: "Do it right the first time.",
             text: ["Embedded Power", "Captive Power", "Step-up Transformer", "Turbine Engines"],
@@ -93,8 +97,8 @@ function OurVisionandValues() {
                 
             </Head>
             {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} /> */}
-            {/* <PageSubheader imgUrl="/pages/our-vision-and-values-4.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} /> */}
-            <PageSubheader imgUrl="/pages/_our-vision-and-values_.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} greenOverlay={false} />
+            {/* <PageSubheader imgUrl="/pages/our-vision-and-values-4.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} /> */}
+            <PageSubheader imgUrl="/pages/_our-vision-and-values_.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 flex-col md:flex-row items-center">

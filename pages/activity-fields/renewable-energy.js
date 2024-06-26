@@ -11,7 +11,7 @@ function RenewableEnergy() {
                 
             </Head>
             {/* <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} /> */}
-            <PageSubheader imgUrl="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} greenOverlay={false} />
+            <PageSubheader imgUrl="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">

@@ -21,10 +21,9 @@ const getRoutes = {
     "renewable energy": "/activity-fields/renewable-energy",
     "fibre optics": "/activity-fields/fibre-optics",
     
-    "reports": "/safety-mission/reports",
     
     "sustainability": "/sustainability",
-    "hse policy": "/sustainability/hse-policy",
+    // "hse policy": "/sustainability/hse-policy",
     "integrated management system": "/sustainability/integrated-management-system",
     "safe workplace": "/sustainability/safe-workplace",
 
