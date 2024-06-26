@@ -16,7 +16,7 @@ function TelcomsSector() {
                 <div className="container">
                     <div className="container container-lg">
                         {/* <h1>TELECOMS SECTOR</h1> */}
-                        <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
+                        <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-lg:flex-col">
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     TELECOMS DIVISION

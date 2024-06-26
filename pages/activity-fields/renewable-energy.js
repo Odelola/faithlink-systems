@@ -16,7 +16,7 @@ function RenewableEnergy() {
                 <div className="container">
                     <div className="container container-lg">
                         {/* <h1>PAAS AND EAAS</h1> */}
-                        <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-md:flex-col">
+                        <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-slg:flex-col">
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">
                                     RENEWABLE ENERGY
@@ -42,7 +42,7 @@ function RenewableEnergy() {
                                 </div>
                             </aside>
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400">
-                                <img className="w-full mb-4" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
+                                <img className="w-full mb-4 max-slg:h-[400px]" src="/pages/paas-and-eaas.png" alt="RENEWABLE ENERGY IMAGE" />
                                 <p>PaaS offer a fixed Monthly fee Naira per site to the potential Offtaker. FaithLink and the Offtaker signs a 10years power purchase  agreement. Offtaker provide Location/ sites for Solar  Hybrid Solution.</p>
                             </aside>
                         </article>
