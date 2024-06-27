@@ -44,15 +44,15 @@ function About() {
 
 
     function OVAVCard({ ovavData }) {
-        return  (ovavData.map((item, index) => (
+        return (ovavData.map((item, index) => (
             <div key={index} className="flex flex-col gap-y-4 relative">
-                    <div className=" min-h-[420px] relative">
+                <div className=" min-h-[420px] relative">
 
-                        <img src={item.image} alt={`Image for ${item.title}`} className="mb-2 h-[350px] w-full " />
-                        <h3>{item.title}</h3>
-                        <p>{item.introText}</p>
-                    </div>
-                    </div>
+                    {/* <img src={item.image} alt={`Image for ${item.title}`} className="mb-2 h-[350px] w-full " /> */}
+                    <h3>{item.title}</h3>
+                    <p>{item.introText}</p>
+                </div>
+            </div>
 
         )))
     }
@@ -70,9 +70,9 @@ function About() {
             {/* <PageSubheader imgUrl="/pages/engineer-1612104_1280 (1).jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} /> */}
             <section className="section-top">
                 <div className="container container-lg">
-                <div className="grid grid-cols-2 max-slg:grid-cols-1 gap-8 mb-24">
-                            <OVAVCard ovavData={OVAVDATA}  />
-                        </div>
+                    <div className="grid grid-cols-4 max-slg:grid-cols-2 gap-8 mb-6">
+                        <OVAVCard ovavData={OVAVDATA} />
+                    </div>
                     <article className="flex justify-between gap-x-14 gap-y-8 flex-col md:flex-row">
                         <aside className="basis-1/2 text-justify" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                             <h1 className="text-textGray text-[20px]">At Faithlink Systems, we pride ourselves on being a team of industry specialists
