@@ -28,11 +28,10 @@ function Contact() {
         email: "",
         message: "",
       },
-      // validationSchema: contactFormSchema,
+      validationSchema: contactFormSchema,
       onSubmit
     })
 
-    console.log(values, "values")
   return (
     <div>
       <Head>
@@ -84,7 +83,7 @@ function Contact() {
                 <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
                   {/* <label for="Subject">Subject</label> */}
-                  <input type="text" placeholder="Subject" id="Subject" name="Subject" required="required" className='contact-input' onBlur={handleBlur} onChange={handleChange(values.subject)} value={values.subject} />
+                  <input type="text" placeholder="Subject" id="Subject" name="Subject" className='contact-input' onBlur={handleBlur} onChange={handleChange(values.subject)} value={values.subject} />
                   {errors.subject && touched.subject && <p className="error">{errors.subject}</p>}
 
                 </div>
@@ -101,11 +100,11 @@ function Contact() {
                 </div>
                 <div className="contact-form-item">
                   {/* <label for="Message">Your Message</label> */}
-                  <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'  onBlur={handleBlur} onChange={handleChange} ></textarea>
+                  <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'  onChange={handleChange} onBlur={handleBlur} value={values.message} ></textarea>
                   {errors.message && touched.message && <p className="error">{errors.message}</p>}
 
                 </div>
-                <div className="form-item">
+                {/* <div className="form-item">
                   <input type="checkbox" id="confirm" name="confirm" className="hidden" required="required" />
                   <label className="cb-container flex items-center gap-x-2" for="confirm">
                     <span className="relative border w-5 h-5 flex-shrink-0"></span>
@@ -115,7 +114,7 @@ function Contact() {
                       By clicking on Send, you confirm that you have read and accept the <Link href="/privacy-policy" className='text-[11px] font-semibold'>Privacy Notice</Link> and <Link href="/cookie-policy" className='text-[11px] font-semibold'>Cookie Policy</Link>
                     </div>
                   </label>
-                </div>
+                </div> */}
                 <div className='w-[250px] mt-2'>
                   <button type="submit" disabled={isSubmitting} className='contact-button'>SEND</button>
                 </div>
