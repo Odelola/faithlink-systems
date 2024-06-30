@@ -8,7 +8,7 @@ function OurVisionandValues() {
     const commonBlobStyles = {
         blob: "text-2xl text-white text-uppercase  size-[15vw]  rounded-full flex justify-center items-center mx-auto",
         heading: "mb-0 text-[2vw]",
-        articleCards: "border-t-[1px] border-l-[1px] w-[15vw] absolute bg-white"
+        articleCards: "border-t-[1px] border-l-[1px] w-[15vw] max-xl:w-[20vw] absolute bg-white"
     }
 
     return (
@@ -22,26 +22,26 @@ function OurVisionandValues() {
             {/* <PageSubheader imgUrl="/pages/our-vision-and-values-4.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} /> */}
             <PageSubheader imgUrl="/pages/_our-vision-and-values_.jpg" alt="Our Vision and Values Image" pageName="OUR VISION AND VALUES" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top min-h-[125vh]">
-                <div className="container container-lg">
+                <div className="container w-[90vw]">
                     <article className="flex justify-between gap-x-14 flex-col md:flex-row items-center">
 
                         <article className="w-full relative">
 
-                                <div className={`${commonBlobStyles.articleCards} left-[75%] top-[0%]`}>
+                                <div className={`${commonBlobStyles.articleCards} left-[65%] top-[0%] max-slg:w-[25vw]`}>
                                     <div className="p-2">
                                         
                                     <h2>OUR MISSION</h2>
-                                    <p className="mb-0">to provide exceptional service delivery to customers that is infused with high level of professionalism, safety and operational efficiency </p>
+                                    <p className="mb-0">To provide exceptional service delivery to customers that is infused with high level of professionalism, safety and operational efficiency </p>
                                     </div>
                                 </div>
-                                    <div className={`${commonBlobStyles.articleCards} left-[-5%] top-[35%]`}>
+                                    <div className={`${commonBlobStyles.articleCards} left-[20%] top-[15%] max-xl:left-[15%] max-sxl:left-[10%] max-sxl:w-[25vw] max-slg:left-[0%]`}>
                                         <div className="p-2">
 
                                         <h2>OUR VALUES</h2>
                                         <p className="mb-0">Being a team of industry specialists operating within a privately owned company, effectively serving a global market while maintaining a local presence. </p>
                                         </div>
                                     </div>
-                                    <div className={`${commonBlobStyles.articleCards} left-[50%] top-[110%] -translate-x-1/2`}>
+                                    <div className={`${commonBlobStyles.articleCards} left-[95%] top-[50%] -translate-x-1/2 max-sxl:top-[65%] max-slg:left-[90%] max-slg:w-[25%] max-slg:top-[70%]`}>
                                         <div className="p-2">
 
                                         <h2>OUR VISION</h2>
@@ -54,7 +54,7 @@ function OurVisionandValues() {
                                     <h2 className={`${commonBlobStyles.heading}`}>MISSION</h2>
                                 </div>
                             </div>
-                            <aside className="flex justify-evenly items-center mt-12">
+                            <aside className="flex justify-evenly items-center mt-[20vh] max-slg:mt-[25vh] max-xl:justify-center max-xl:gap-x-[15vw]">
                                 <div className="relative flex">
                                     <div className={`${commonBlobStyles.blob} bg-green-400`}>
                                         <h2 className={`${commonBlobStyles.heading}`}>VALUES</h2>

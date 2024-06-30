@@ -104,22 +104,10 @@ function Navbar() {
         </div>
         <section className={`lg:hidden w-full min-h-screen mb-0 fixed ${toggle ? "left-0" : "-left-[100%]"} top-0 z-[2000] bg-primary overflow-x-hidden overflow-y-scroll`}>
           <div className="relative">
-            <nav className="pt-4">
+            <nav>
               {/* <ul className={`mx-7 mt-16 ${mobileToggle ? "translate-x-0" : "-translate-x-[100%]"}`}> */}
               {/* <ul className={`mx-7 mt-16 ${mobileToggle ? "absolute left-[-100%]" : "static"}`}> */}
-              <ul className={`mx-7 mt-16`}>
-                <li className="flex items-center text-white text-[8px] gap-x-2">
-                  <Link href="/contact" className='p-1'>CONTACT</Link>
-                  <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
-                  <div className="info-nav__item border-l-[1px] border-l-[rgba(255,255,255,.2)]">
-                    <a href="mailto:info@faithlinkltd.com" className='p-1 flex gap-x-2 items-center'>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                      </svg>
-                      info@faithlinkltd.com
-                    </a>
-                  </div>
-                </li>
+              <ul className={`mx-7 mt-12`}>
                 <li className='border-b border-[rgba(225,225,225,.5)]'>
                   <Link href="javascript:;" onClick={() => { setMobileToggle(prev => !prev); setMobileToggleId(prev => prev = 0); }} className='flex justify-between items-center text-white py-5 text-[16px]'>
                     CORPORATE
@@ -164,6 +152,20 @@ function Navbar() {
                   </Link>
                   {mobileToggleId == 4 && <MobileSubMenu subLinks={["news", "photo gallery"]} mobileToggle={mobileToggle} setToggle={setToggle} setMobileToggle={setMobileToggle} />}
                 </li>
+                <li className="flex flex-col items-center text-white text-[8px] gap-x-2 mt-6">
+                  <div className='flex items-center'>
+                  <Link href="/contact" className='p-1'>CONTACT</Link>
+                  <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
+                  </div>
+                  <div className="info-nav__item border-l-[1px] border-l-[rgba(255,255,255,.2)]">
+                    <a href="mailto:info@faithlinkltd.com" className='p-1 flex gap-x-2 items-center'>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>
+                      info@faithlinkltd.com
+                    </a>
+                  </div>
+                </li>
               </ul>
             </nav>
           </div>
@@ -178,7 +180,7 @@ function Navbar() {
 
 function MobileSubMenu({ subLinks, mobileToggle, setMobileToggle, setToggle }) {
   return (
-    <ul className={`mx-7 mt-24 absolute top-0 w-full h-full bg-primary ${mobileToggle ? "left-0" : "left-[200%]"}`}>
+    <ul className={`mx-7 mt-0 absolute top-0 w-full h-full pt-12 bg-primary ${mobileToggle ? "left-0" : "left-[200%]"}`}>
       <li onClick={() => { setMobileToggle(prev => prev = false) }} className={`flex items-center gap-x-1 border-b pb-5 border-[rgba(225,225,225,.5)]`}>
         <i className="rotate-180">
           <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
