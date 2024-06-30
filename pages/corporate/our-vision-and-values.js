@@ -34,7 +34,7 @@ function OurVisionandValues() {
                                     <p className="mb-0">To provide exceptional service delivery to customers that is infused with high level of professionalism, safety and operational efficiency </p>
                                     </div>
                                 </div>
-                                    <div className={`${commonBlobStyles.articleCards} left-[20%] top-[15%] max-xl:left-[15%] max-sxl:left-[10%] max-sxl:w-[25vw] max-slg:left-[0%]`}>
+                                    <div className={`${commonBlobStyles.articleCards} left-[20%] top-[25%] max-xl:left-[15%] max-sxl:left-[10%] max-sxl:w-[25vw] max-slg:left-[0%]`}>
                                         <div className="p-2">
 
                                         <h2>OUR VALUES</h2>
