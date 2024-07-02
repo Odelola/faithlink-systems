@@ -10,7 +10,7 @@
 }
 
 .contact-input {
-    @apply bg-[rgba(245,245,245,.91)] border border-[#ccdbe7]  h-12 px-[18px] text-black resize-none leading-6 w-full outline-none max-md:placeholder:text-[8px]  shadow-sm focus:border-primary rounded-md placeholder:text-[13px]
+    @apply bg-[rgba(245,245,245,.91)] border border-[#ccdbe7]  h-12 px-[18px] text-black resize-none leading-6 w-full outline-none max-md:placeholder:text-[10px]  shadow-sm focus:border-primary rounded-md placeholder:text-[13px]
 }
 
 .contact-disclaimer {

@@ -13,7 +13,7 @@ function FoundersMessage() {
             <PageSubheader imgUrl="/pages/_founders-message_.jpg" pageName="founder's message" alt="FOUNDER's message" leadingRoutes={["homepage", "corporate"]} />
             <section className="section-top">
                 <div className="container text-justify">
-                    <div className="container max-w-[860px]x">
+                    <div className="container max-w-[860px]">
                         <article className="flex gap-x-16 max-md:gap-x-0 max-md:flex-col">
                             <aside className="text-center" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate mb-16 text-[20px] text-textGray" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">

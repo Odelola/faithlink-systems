@@ -7,8 +7,7 @@ import { contactFormSchema } from '../src/schema/contact-schema';
 function Contact() {
 
   const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
+    console.log(values, "values");
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
   };
@@ -18,20 +17,24 @@ function Contact() {
     values,
     errors,
     touched,
+    isValid,
     isSubmitting,
     handleBlur,
     handleChange,
-    handleSubmit } = useFormik({
-      initialValues: {
-        subject: "",
-        name: "",
-        email: "",
-        message: "",
-      },
-      validationSchema: contactFormSchema,
-      onSubmit
-    })
+    handleSubmit,
+    resetForm
+  } = useFormik({
+    initialValues: {
+      subject: "",
+      name: "",
+      email: "",
+      message: "",
+    },
+    validationSchema: contactFormSchema,
+    onSubmit
+  })
 
+  console.log(errors)
   return (
     <div>
       <Head>
@@ -79,33 +82,51 @@ function Contact() {
                 <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
               </div>
 
-              <form onSubmit={handleSubmit} className='order-4' autoComplete='off'>
+              <form className='order-4' autoComplete='off' onSubmit={handleSubmit}>
                 <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
                   {/* <label for="Subject">Subject</label> */}
-                  <input type="text" placeholder="Subject" id="Subject" name="Subject" className='contact-input' onBlur={handleBlur} onChange={handleChange(values.subject)} value={values.subject} />
-                  {errors.subject && touched.subject && <p className="error">{errors.subject}</p>}
+                  <input type="text" placeholder="Subject" id="Subject" name="subject" value={values.subject}
+                    className={`contact-input ${errors.subject && touched.subject ? "!border-red-600" : ""}`} onBlur={handleBlur} onChange={handleChange} />
+                  {errors.subject && touched.subject && (<small className="text-red-600">{errors.subject}</small>)}
 
                 </div>
-                {/* <div className="contact-form-item flex justify-between xs:max-sm:flex-col xs:max-sm:h-24"> */}
+
                 <div className="contact-form-item flex justify-between gap-x-4 max-md:flex-col max-md:gap-y-4">
-                  {/* <label for="Name">Name</label> */}
-                  <input type="text" placeholder="Your Name" id="Name" name="Name" required="required" className='contact-input' value={values.name} onChange={handleChange} onBlur={handleBlur} />
-                  {errors.name && touched.name && <p className="error">{errors.name}</p>}
+                  <div className='basis-[50%]'>
 
-                  {/* <label for="Email">Email</label> */}
-                  <input type="text" placeholder="Enter your email address" id="Email" name="Email" required="required" className='contact-input' value={values.email} onChange={handleChange} />
-                  {errors.email && touched.email && <p className="error">{errors.email}</p>}
+                    {/* <label for="Name">Name</label> */}
+                    <input type="text" placeholder="Your Name" id="Name" name="name" className={`contact-input ${errors.name && touched.name ? "!border-red-600" : ""}`} value={values.name} onChange={handleChange} onBlur={handleBlur} />
+                    {errors.name && touched.name && (<small className="text-red-600">{errors.name}</small>)}
+                  </div>
+                  <div className='basis-[50%]'>
+                    {/* <label for="Email">Email</label> */}
+                    <input type="email" placeholder="Enter your email address" id="Email" name="email" className={`contact-input ${errors.email && touched.email ? "!border-red-600" : ""}`} value={values.email} onChange={handleChange} onBlur={handleBlur} />
+                    {errors.email && touched.email && (<small className="text-red-600">{errors.email}</small>)}
 
+                  </div>
                 </div>
+
                 <div className="contact-form-item">
                   {/* <label for="Message">Your Message</label> */}
-                  <textarea placeholder="Type your message" id="Message" name="Message" required="required" className='contact-input !h-[150px] pt-4'  onChange={handleChange} onBlur={handleBlur} value={values.message} ></textarea>
-                  {errors.message && touched.message && <p className="error">{errors.message}</p>}
+                  <textarea placeholder="Type your message" id="Message" name="message" className={`contact-input !h-[150px] pt-4 ${errors.message && touched.message ? "!border-red-600" : ""}`} onChange={handleChange} onBlur={handleBlur} value={values.message} ></textarea>
+                  {errors.message && touched.message && (<small className="text-red-600">{errors.message}</small>)}
 
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
                 {/* <div className="form-item">
-                  <input type="checkbox" id="confirm" name="confirm" className="hidden" required="required" />
+                  <input type="checkbox" id="confirm" name="confirm" className="hidden" />
                   <label className="cb-container flex items-center gap-x-2" for="confirm">
                     <span className="relative border w-5 h-5 flex-shrink-0"></span>
                     <div className='text-[10px]'>
@@ -129,7 +150,7 @@ function Contact() {
                       <p className="mb-0">
                         29 Fatai Durusinmi Crescent off Ligali Ayorinde Victoria Island, Lagos, Nigeria
                       </p>
-                      <a href="mailto:info@faithlinkltd.com" className='hover:underline'>info@faithlinkltd.com</a>
+                      <a href="mailto:info@faithlinkltd.com" className='hover:underline text-primary'>info@faithlinkltd.com</a>
                     </div>
                     <div>
                       <h3 className='text-primary'>BRANCH OFFICES</h3>
