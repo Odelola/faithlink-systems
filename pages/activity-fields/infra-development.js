@@ -8,7 +8,7 @@ function InfraDevelopment() {
       <Head>
         <title>INFRA DEVELOPMENT - Faith Link Systems Limited</title>
         <meta name="description" content="INFRA DEVELOPMENT" />
-        
+
       </Head>
       {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1551295022-de5522c94e08?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
       {/* <PageSubheader imgUrl="/pages/sunset-4924334_1280.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
@@ -33,7 +33,7 @@ function InfraDevelopment() {
                   <li>Procurements and General supplies</li>
                 </ul>
                 <p>Our philosophy is to constantly fulfil the expectation of our customers by delivering services that are top notch and above industry standard</p>
-                <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="flex h-[150px] gap-x-2">
+                <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="400" className="split-page-images-container">
                   <img className="basis-1/2" src="/pages/infra-development-1.jpg" alt="INFRASTRUCTURE DEVELOPMENT FIRST IMAGE" />
                   <img className="basis-1/2" src="/pages/infra-development-2.jpg" alt="INFRASTRUCTURE DEVELOPMENT SECOND IMAGE" />
                 </div>
