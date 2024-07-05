@@ -7,10 +7,12 @@
   font-family: TerminaMedium;
   src: url("../public/fonts/termina/TerminaTest-Medium.otf");
 }
+
 @font-face {
   font-family: TerminaBold;
   src: url("../public/fonts/termina/TerminaTest-Bold.otf");
 }
+
 @font-face {
   font-family: Poppins;
   src: url("../public/fonts/poppins/Poppins-Regular.ttf");
@@ -20,23 +22,26 @@
   font-family: PoppinsMedium;
   src: url("../public/fonts/poppins/Poppins-Medium.ttf");
 }
+
 @font-face {
   font-family: PoppinsBold;
   src: url("../public/fonts/poppins/Poppins-Bold.ttf");
 }
 
-:root{
+:root {
   --primary-color: #219D49;
   --secondary-color: #75BD59;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*::selection{
-  color: #F8F8F8; 
+*::selection {
+  color: #F8F8F8;
   background-color: var(--secondary-color);
 }
+
 /* Scrollbar Width */
 ::-webkit-scrollbar {
   width: 9.5px;
@@ -60,9 +65,9 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
-} 
+}
 
-.no-scrollbar{
+.no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -102,7 +107,7 @@ html {
   } */
   h1, h2, h3, h4, h5, h6 {
     @apply font-terminamedium
-  } 
+  }
 
   p {
     @apply font-normal text-[14px] md:max-slg:text-[12px] mb-[1rem] leading-[24px] text-justify
@@ -125,16 +130,19 @@ html {
   }
 
   .container {
-    @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-sm:px-2 max-md:px-3 max-slg:px-4
+    /* @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-sm:px-2 max-md:px-3 max-slg:px-4 */
+    @apply w-full max-w-[1800px] h-auto mx-auto px-5 max-md:px-3 max-slg:px-4
   }
 
   .container-lg {
     @apply max-w-[1200px]
   }
-  .news-article-container{
+
+  .news-article-container {
     @apply max-w-[860px]
   }
-  .news-article-container a{
+
+  .news-article-container a {
     @apply text-primary
   }
 
@@ -145,16 +153,20 @@ html {
   section {
     @apply pb-20
   }
-  .section-top{
+
+  .section-top {
     @apply pt-24
   }
-  .flex-col-md{
+
+  .flex-col-md {
     @apply max-md:flex-col
   }
-  .split-page-images{
-    @apply basis-1/2  max-md:basis-full
+
+  .split-page-images {
+    @apply basis-1/2 max-md:basis-full
   }
-  .split-page-images-container{
+
+  .split-page-images-container {
     @apply flex h-[150px] gap-2 max-md:flex-col max-md:w-full max-md:h-auto
   }
 }

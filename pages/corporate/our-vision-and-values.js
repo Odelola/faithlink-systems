@@ -27,29 +27,31 @@ function OurVisionandValues() {
 
                         <article className="w-full relative">
 
-                                <div className={`${commonBlobStyles.articleCards} left-[65%] top-[0%] max-slg:w-[25vw]`}>
-                                    <div className="p-2">
-                                        
+                            <div className={`${commonBlobStyles.articleCards} left-[65%] top-[0%] max-slg:w-[25vw]`}>
+                                <div className="p-2">
+
                                     <h2>OUR MISSION</h2>
                                     <p className="mb-0">To provide exceptional service delivery to customers that is infused with high level of professionalism, safety and operational efficiency </p>
-                                    </div>
                                 </div>
-                                    <div className={`${commonBlobStyles.articleCards} left-[20%] top-[25%] max-xl:left-[15%] max-sxl:left-[5%] max-sxl:top-[10%]  max-sxl:w-[25vw] max-slg:left-[0%] max-slg:top-[40%]`}>
-                                        <div className="p-2">
+                            </div>
+                            {/* <div className={`${commonBlobStyles.articleCards} left-[20%] top-[25%] max-xl:left-[15%] max-sxl:left-[5%] max-sxl:top-[10%]  max-sxl:w-[25vw] max-slg:left-[0%] max-slg:top-[40%]`}> */}
+                            <div className={`${commonBlobStyles.articleCards} left-[0%] top-[60%] max-xl:left-[15%]max-sxl:w-[25vw] max-slg:left-[0%] max-slg:top-[40%]`}>
+                                <div className="p-2">
 
-                                        <h2>OUR VALUES</h2>
-                                        <p className="mb-0">Being a team of industry specialists operating within a privately owned company, effectively serving a global market while maintaining a local presence. </p>
-                                        </div>
-                                    </div>
-                                    <div className={`${commonBlobStyles.articleCards} left-[95%] top-[50%] -translate-x-1/2 max-sxl:top-[65%] max-slg:left-[80%] max-slg:w-[25%] max-slg:top-[70%] max-sm:translate-x-0 max-sm:top-[80%]`}>
-                                        <div className="p-2">
+                                    <h2>OUR VALUES</h2>
+                                    <p className="mb-0">Being a team of industry specialists operating within a privately owned company, effectively serving a global market while maintaining a local presence. </p>
+                                </div>
+                            </div>
+                            {/* <div className={`${commonBlobStyles.articleCards} left-[95%] top-[50%] -translate-x-1/2 max-sxl:top-[65%] max-slg:left-[80%] max-slg:w-[25%] max-slg:top-[70%] max-sm:translate-x-0 max-sm:top-[80%]`}> */}
+                            <div className={`${commonBlobStyles.articleCards} left-[90%] top-[65%] -translate-x-1/2 max-sxl:top-[65%] max-slg:left-[80%] max-slg:w-[25%] max-slg:top-[70%] max-sm:translate-x-0 max-sm:top-[80%]`}>
+                                <div className="p-2">
 
-                                        <h2>OUR VISION</h2>
-                                        <p className="mb-0">To be a leading Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects</p>
-                                        </div>
-                                    </div>
+                                    <h2>OUR VISION</h2>
+                                    <p className="mb-0">To be a leading Infrastructure, Engineering and Renewable energy company, committed to enhancing stakeholder value through quality and timely completion of projects</p>
+                                </div>
+                            </div>
                             <div className="relative flex">
-                                    {/* <div className={`${commonBlobStyles.articleCards} left-[-15%] top-[-75%]`}> */}
+                                {/* <div className={`${commonBlobStyles.articleCards} left-[-15%] top-[-75%]`}> */}
                                 <div className={`${commonBlobStyles.blob} bg-red-800 `}>
                                     <h2 className={`${commonBlobStyles.heading}`}>MISSION</h2>
                                 </div>
