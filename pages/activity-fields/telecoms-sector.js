@@ -8,10 +8,9 @@ function TelcomsSector() {
             <Head>
                 <title>TELECOMS SECTOR - Faith Link Systems Limited</title>
                 <meta name="description" content="Telcoms Sector" />
-                
+
             </Head>
-            {/* <PageSubheader imgUrl="/pages/telecoms-sector.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} /> */}
-            <PageSubheader imgUrl="/pages/aerial-1880873_1280.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="/pages/_telecoms-sector_.jpg" alt="Telcoms Sector Image" pageName="Telcoms Sector" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
@@ -43,14 +42,14 @@ function TelcomsSector() {
                                 </h1>
                                 <p className="mt-6">
                                     FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry.</p>
-                                    <p> We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
-                                <br />FAITHLINK strongly believes and adopts the five principles of project management such as </p>
+                                <p> We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
+                                    <br />FAITHLINK strongly believes and adopts the five principles of project management such as </p>
                                 <ul className="ml-3 mb-3 list-disc text-[14px]">
-                                        <li>Initiating</li>
-                                        <li>Planning and Execution</li>
-                                        <li>Monitoring & Control Closure.</li>
-                                    </ul>
-                                    
+                                    <li>Initiating</li>
+                                    <li>Planning and Execution</li>
+                                    <li>Monitoring & Control Closure.</li>
+                                </ul>
+
 
                                 <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="split-page-images-container">
                                     <img className="split-page-images" src="/pages/greenfield-1.jpg" alt="GREENFIELD FIRST IMAGE" />
@@ -84,22 +83,6 @@ function TelcomsSector() {
                                     <img className="split-page-images" src="/pages/rf-installation-2.jpg" alt="RF INSTALLATION SECOND IMAGE" />
                                 </div>
                             </aside>
-                            {/* <aside className="split-page-images">
-                                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="400" className="grid grid-cols-2 gap-x-2 w-full">
-                                    <img className="split-page-images" src="/pages/greenfield-1.jpg" alt="GREENFIELD IMAGE" />
-                                    <img className="split-page-images" src="/pages/greenfield-2.jpg" alt="GREENFIELD IMAGE" />
-                                </div>
-                                <div className="mt-12">
-                                    <p>
-                                        FAITHLINK has the requisite experience and expertise in the delivery of Greenfield and Brownfield Site Build for Telecom Operators and Towercos Providers. Our ability to deliver sites within 45 days has ensured that our services remain ever relevant in the telecom industry. We also execute In Building Solution (IBS) Site audit and Site upgrade as required by our clients.
-                                        </p>
-                                        // <p>FAITHLINK strongly believes and adopts the five principles of project management such as Initiating, Planning, Execution, Monitoring & Control and Closure.</p>   
-
-                                    <p>
-                                        Products, solutions, and services from Faithlink cover the entire value chain in these areas of activity. We help actively shape tthe future of energy and makke it a success story for all stakeholders.
-                                    </p>
-                                </div>
-                            </aside> */}
                         </article>
                     </div>
                 </div>

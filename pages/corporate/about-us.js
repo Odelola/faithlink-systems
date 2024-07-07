@@ -11,11 +11,7 @@ function About() {
                 <meta name="description" content="ABOUT US" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* <PageSubheader imgUrl="/pages/infra-development-banner.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
-
-            {/* <PageSubheader imgUrl="/pages/paas-eaas.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} /> */}
             <PageSubheader imgUrl="/pages/_about-us_.jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} />
-            {/* <PageSubheader imgUrl="/pages/engineer-1612104_1280 (1).jpg" alt="About Image" pageName="about us" leadingRoutes={["homepage", "corporate"]} /> */}
             <section className="section-top">
                 <div className="container container-lg">
                     <article className="flex justify-between gap-x-14 gap-y-8 flex-col md:flex-row">
@@ -56,8 +52,6 @@ function About() {
                 </div>
             </section>
             <SubPageNavigator leftLink="about us" rightLink="our vision and values" />
-
-
         </main>
     )
 }

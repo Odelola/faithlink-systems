@@ -42,7 +42,6 @@ function PhotoGallery() {
         },
     ]
 
-    // https://images.unsplash.com/photo-1623150502742-6a849aa94be4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
     const PhotoGalleryCard = ({ galleryDetail }) => {
         return (
             galleryDetail.map((item, index) => {
@@ -73,9 +72,9 @@ function PhotoGallery() {
             <Head>
                 <title>PHOTO GALLERY - Faith Link Systems Limited</title>
                 <meta name="description" content="Photo Gallery" />
-                
+
             </Head>
-            <PageSubheader imgUrl="https://images.unsplash.com/photo-1547296017-978c31e1c124?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo Gallery Image" pageName="Photo Gallery" leadingRoutes={["homepage", "media center"]} pageText="You can download the images of our plants in high -resolution JPEG FORMAT" />
+            <PageSubheader imgUrl="_photo gallery_.jpg" alt="Photo Gallery Image" pageName="Photo Gallery" leadingRoutes={["homepage", "media center"]} pageText="You can download the images of our plants in high -resolution JPEG FORMAT" />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
@@ -91,7 +90,7 @@ function PhotoGallery() {
                 plugins={[Download, Thumbnails, Zoom,]}
                 slides={galleryData}
                 open={open}
-                close={() => {setOpen(prev => prev = false); setIndex(prev => prev = -1)}}
+                close={() => { setOpen(prev => prev = false); setIndex(prev => prev = -1) }}
 
             />
         </>

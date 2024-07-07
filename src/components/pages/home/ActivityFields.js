@@ -42,13 +42,7 @@ function ActivityFields({ data, darkText = false, headingTitle, headingText }) {
                   <h2 className="text-[16px] max-md:text-[13px] mb-0 text-nowrap font-semibold">
                     {title}
                   </h2>
-
                   <p className="group-hover:hidden text-[10px] max-md:text-[8px] mb-0">{introText}</p>
-                  {/* <p className="mb-4 max-md:text-[10px]"></p> */}
-                  {/* <p className="hidden group-hover:block  text-[10px] max-md:text-[8px]">
-
-{text}
-</p> */}
                   <div>
                     <p className="text-[10px] max-md:text-[8px] mb-0">{introText}</p>
                     <ul className="ml-3 mb-3 list-disc text-[11px]">

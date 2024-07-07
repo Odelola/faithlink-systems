@@ -43,7 +43,6 @@ function Navbar() {
                 </svg>
               </i>
             </Link>
-            {/* <InnerSubMenu /> */}
           </li>
         ))}
       </ul>
@@ -85,7 +84,6 @@ function Navbar() {
             </div>
           </div>
           <div className="flex items-center gap-x-4 self-stretch">
-            {/* <nav className="max-md:w-full max-md:h-screen max-md:fixed max-md:left-0 max-md:top-0 max-md:z-[999] bg-primaryColor max-md:overflow-y-scroll max-md:hidden" aria-label="Main"> */}
             <nav className="max-md:w-full max-md:h-screen max-md:fixed max-md:left-0 max-md:top-0 max-md:overflow-y-scroll max-slg:hidden h-full" aria-label="Main">
               <ul className="flex items-center max-md:flex-col max-md:w-full max-md:h-full max-md:py-[10%] max-md:justify-between max-md:items-start h-full">
                 <MenuLinks linkName="CORPORATE" subLinks={["about us", "our vision and values", "our team", "founder's message", "milestones",]} />
@@ -105,8 +103,6 @@ function Navbar() {
         <section className={`lg:hidden w-full no-scrollbar min-h-screen overflow-y-scroll mb-0 fixed ${toggle ? "left-0" : "-left-[100%]"} top-0 z-[2000] bg-primary overflow-x-hidden overflow-y-scroll`}>
           <div className="relative">
             <nav>
-              {/* <ul className={`mx-7 mt-16 ${mobileToggle ? "translate-x-0" : "-translate-x-[100%]"}`}> */}
-              {/* <ul className={`mx-7 mt-16 ${mobileToggle ? "absolute left-[-100%]" : "static"}`}> */}
               <ul className={`mx-7 mt-12`}>
                 <li className='border-b border-[rgba(225,225,225,.5)]'>
                   <Link href="javascript:;" onClick={() => { setMobileToggle(prev => !prev); setMobileToggleId(prev => prev = 0); }} className='flex justify-between items-center text-white py-5 text-[16px]'>
@@ -138,9 +134,6 @@ function Navbar() {
                 <li className='border-b border-[rgba(225,225,225,.5)]'>
                   <Link href="/career" onClick={() => { setToggle(prev => prev = false) }} className='flex justify-between items-center text-white py-5 text-[16px]'>
                     CAREER
-                    {/* <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.99547 5.40398C5.97441 5.18743 5.88579 4.98266 5.74185 4.81791L1.89746 0.391259C1.80764 0.281897 1.69653 0.191402 1.5707 0.125117C1.44486 0.0588321 1.30684 0.0180988 1.16479 0.00532431C1.02274 -0.0074511 0.879538 0.0079908 0.743634 0.0507373C0.60773 0.0934829 0.481879 0.162666 0.373512 0.254206C0.265144 0.345744 0.176456 0.457783 0.112682 0.583707C0.0489074 0.709631 0.0113393 0.846889 0.0021959 0.987378C-0.00694753 1.12787 0.0125188 1.26874 0.0594454 1.40168C0.106372 1.53463 0.179808 1.65694 0.275419 1.76141L3.52599 5.50261L0.275419 9.24417C0.180586 9.34877 0.107875 9.471 0.0615518 9.6037C0.015229 9.7364 -0.00377228 9.8769 0.00566298 10.0169C0.0150982 10.157 0.0527804 10.2938 0.116497 10.4192C0.180214 10.5447 0.268683 10.6564 0.376712 10.7477C0.484741 10.8389 0.610154 10.908 0.745592 10.9508C0.88103 10.9936 1.02376 11.0092 1.16542 10.9969C1.30707 10.9845 1.4448 10.9443 1.5705 10.8787C1.69621 10.813 1.80737 10.7233 1.89746 10.6147L5.74185 6.18806C5.83525 6.08084 5.90584 5.95617 5.94941 5.82147C5.99299 5.68676 6.00865 5.54479 5.99547 5.40398Z" fill="white"></path>
-                    </svg> */}
                   </Link>
                 </li>
                 <li className='border-b border-[rgba(225,225,225,.5)]'>
@@ -154,8 +147,8 @@ function Navbar() {
                 </li>
                 <li className="flex flex-col items-center text-white text-[8px] gap-x-2 mt-6">
                   <div className='flex items-center'>
-                  <Link href="/contact" className='p-1'>CONTACT</Link>
-                  <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
+                    <Link href="/contact" className='p-1'>CONTACT</Link>
+                    <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
                   </div>
                   <div className="info-nav__item border-l-[1px] border-l-[rgba(255,255,255,.2)]">
                     <a href="mailto:info@faithlinkltd.com" className='p-1 flex gap-x-2 items-center'>
@@ -169,9 +162,7 @@ function Navbar() {
               </ul>
             </nav>
           </div>
-          {/* </div> */}
         </section>
-        {/* <section className={`md:hidden w-full h-screen ${toggle ? "left-0" : "-left-[100%]"} mb-0 fixed top-0 bottom-0 z-[2000] bg-primary`}> */}
       </header>
     </>
   )

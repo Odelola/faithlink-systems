@@ -8,14 +8,11 @@ function RenewableEnergy() {
             <Head>
                 <title>RENEWABLE ENERGY - Faith Link Systems Limited</title>
                 <meta name="description" content="RENEWABLE ENERGY" />
-                
             </Head>
-            {/* <PageSubheader imgUrl="/pages/power-sector.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} /> */}
-            <PageSubheader imgUrl="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
+            <PageSubheader imgUrl="_renewable energy_.jpg" alt="Power Sector Image" pageName="RENEWABLE ENERGY" leadingRoutes={["homepage", "activity fields"]} />
             <section className="section-top">
                 <div className="container">
                     <div className="container container-lg">
-                        {/* <h1>PAAS AND EAAS</h1> */}
                         <article className="flex  flex-row flex-wrap gap-16 max-md:gap-x-0 max-slg:flex-col">
                             <aside className="basis-[45%]" data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
                                 <h1 className="aos-init aos-animate text-[20px] text-textGray max-md:w-full">

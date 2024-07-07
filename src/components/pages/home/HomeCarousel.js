@@ -34,10 +34,10 @@ export default function HomeCarousel() {
             linkText: "INFRA DEVELOPMENT"
         },
     ]
-    function HomeCarouselText({ textItem, index=3 }) {
+    function HomeCarouselText({ textItem, index = 3 }) {
         return (
             <article className="px-8 py-20 w-[60%] absolute left-0 bottom-0 max-md:bottom-6 select-none text-white max-md:w-full max-sm:py-6 font-termina" data-aos="fade-up" data-duration=".9s">
-                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index*5000}`}>
+                <h1 className="text-[2em] mb-4 max-md:text-[1.4em] max-sm:text-[1.1em]" data-aos="fade-up" data-duration=".9s" data-aos-delay={`${index * 5000}`}>
                     {textItem.title}
                 </h1>
                 <p className='my-6 max-sm:my-2 max-sm:text-[9px]'>
@@ -53,30 +53,20 @@ export default function HomeCarousel() {
         <>
             <section className='h-[calc(100vh-90px)] max-h-[800px] pb-0 mb-20 w-full'>
                 <div className="container h-full max-md:px-0">
-                    <Swiper pagination={true}  modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 4500 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; }} >
+                    <Swiper pagination={true} modules={[Navigation, Autoplay, EffectFade, Pagination]} loop={true} speed={5000} autoplay={{ delay: 4500 }} effect='fade' grabCursor className="cursor-grab" onSwiper={(swiper) => { swiperRef.current = swiper; }} >
                         <SwiperSlide>
                             <video
-                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
-                                <source type="video/mp4" src="/solar-panel-video.mp4" 
-                                controlsList="nodownload" />
+                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster="/pages/solar-panel-image.jpg">
+                                <source type="video/mp4" src="/solar-panel-video.mp4"
+                                    controlsList="nodownload" />
                             </video>
                             <HomeCarouselText textItem={carouselText[0]} index={1} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            {/* <video
-                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='/pages/banner-1.jpg'>
-                                <source type="video/mp4" src="/telecommunications-video.mp4" 
-                                controlsList="nodownload" />
-                            </video> */}
                             <img src="/pages/antenna-498438_960_720.jpg" alt="Banner Image 1 - Telecommunications Sector" />
                             <HomeCarouselText textItem={carouselText[1]} index={2} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            {/* <video
-                                playsInline="playsinline" muted="true" loop="loop" autoPlay="autoPlay" disablePictureInPicture poster='https://images.unsplash.com/photo-1554050546-c125a25df013?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
-                                <source type="video/mp4" src="/generation-video.mp4" 
-                                controlsList="nodownload"  />
-                            </video> */}
                             <img src="/pages/_generation-and-transmission_.jpg" alt="Banner Image 2 - Generation and Transmission" />
                             <HomeCarouselText textItem={carouselText[2]} />
                         </SwiperSlide>
@@ -99,7 +89,7 @@ export default function HomeCarousel() {
                     </Swiper>
                 </div>
             </section>
-            <section className="hidden">
+            <section className="">
                 <div className="container">
                     <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1'>
                         <aside className='max-md:flex max-md:flex-col-reverse'>

@@ -17,7 +17,6 @@ function Contact() {
     values,
     errors,
     touched,
-    isValid,
     isSubmitting,
     handleBlur,
     handleChange,
@@ -47,45 +46,10 @@ function Contact() {
         <PageSubheader imgUrl="/pages/contact_us.jpg" alt="Contact Image" pageName="contact" leadingRoutes={["homepage"]} />
         <section className='pt-24'>
           <div className="container container-lg">
-            <div>
-              {/* <h1 className="text-center text-textGray text-[22px]">CONTACT</h1> */}
-              {/* <h1 className="text-center text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1> */}
-            </div>
-
-            <div className='hidden justify-center'>
-              <div>
-                <h2>Phone</h2>
-                <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
-              </div>
-              <div>
-                <h2>Email</h2>
-                <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
-              </div>
-              <div>
-
-                <h2>Social Media</h2>
-                <div>
-                  <Link href="https://www.facebook.com" target="_blank">
-                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 2.64662V0.000488281H5.68066C4.79851 0.000488281 3.95249 0.354403 3.32871 0.984375C2.70493 1.61435 2.35449 2.46876 2.35449 3.35968V5.78095H0V8.54247H2.35449V15.0005H5.22754V8.50006H7.37598L7.78613 5.75728H5.22754V3.80448C5.22806 3.49721 5.34928 3.20272 5.5646 2.98563C5.77992 2.76854 6.07173 2.64661 6.37598 2.64662H8Z" fill="#004B85"></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-            {/* <div className="flex justify-between md:flex-col flex-col gap-y-3"> */}
             <div className="grid grid-cols-[1fr_2fr] slg:gap-12 gap-36 max-slg:grid-cols-1 mt-12 max-md:mt-4 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">
-              <div className='md:w-[250px] w-full hidden'>
-                {/* <h2 className='text-[20px] leading-8'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2> */}
-                <h2 className='text-[20px] leading-8 hidden'>Selecting the right subject is essential to have your message delivered to the right person. Please double-check before sending.</h2>
-              </div>
-
               <form className='order-4' autoComplete='off' onSubmit={handleSubmit}>
                 <h1 className="text-textGray aos-init aos-animate" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">CONTACT FORM</h1>
                 <div className="contact-form-item">
-                  {/* <label for="Subject">Subject</label> */}
                   <input type="text" placeholder="Subject" id="Subject" name="subject" value={values.subject}
                     className={`contact-input ${errors.subject && touched.subject ? "!border-red-600" : ""}`} onBlur={handleBlur} onChange={handleChange} />
                   {errors.subject && touched.subject && (<small className="text-red-600">{errors.subject}</small>)}
@@ -94,36 +58,20 @@ function Contact() {
 
                 <div className="contact-form-item flex justify-between gap-x-4 max-md:flex-col max-md:gap-y-4">
                   <div className='basis-[50%]'>
-
-                    {/* <label for="Name">Name</label> */}
                     <input type="text" placeholder="Your Name" id="Name" name="name" className={`contact-input ${errors.name && touched.name ? "!border-red-600" : ""}`} value={values.name} onChange={handleChange} onBlur={handleBlur} />
                     {errors.name && touched.name && (<small className="text-red-600">{errors.name}</small>)}
                   </div>
                   <div className='basis-[50%]'>
-                    {/* <label for="Email">Email</label> */}
                     <input type="email" placeholder="Enter your email address" id="Email" name="email" className={`contact-input ${errors.email && touched.email ? "!border-red-600" : ""}`} value={values.email} onChange={handleChange} onBlur={handleBlur} />
                     {errors.email && touched.email && (<small className="text-red-600">{errors.email}</small>)}
-
                   </div>
                 </div>
 
                 <div className="contact-form-item">
-                  {/* <label for="Message">Your Message</label> */}
                   <textarea placeholder="Type your message" id="Message" name="message" className={`contact-input !h-[150px] pt-4 ${errors.message && touched.message ? "!border-red-600" : ""}`} onChange={handleChange} onBlur={handleBlur} value={values.message} ></textarea>
                   {errors.message && touched.message && (<small className="text-red-600">{errors.message}</small>)}
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
                 {/* <div className="form-item">
                   <input type="checkbox" id="confirm" name="confirm" className="hidden" />
@@ -157,11 +105,6 @@ function Contact() {
                       <p className="">Kano Branch: 3, Mallam Jumbo Road Kano State</p>
                       <p className="">Benin Branch: 4, Atoe Close, GRA Benin, Edo State</p>
                     </div>
-                  </div>
-
-                  <div className='text-[13px] hidden'>
-                    <a href="mailto:info@faithlinkltd.com">info@faithlinkltd.com</a>
-                    <a href="tel:+234 818 600 0000">+234 (818) 600 0000</a>
                   </div>
                 </div>
               </div>

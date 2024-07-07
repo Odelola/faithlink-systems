@@ -40,16 +40,14 @@ function Milestones() {
     const MilestonesCard = ({ milestonesData }) => {
         return milestonesData.map((item, index) => {
             return (
-                // <div className={`timeline__item aos-init aos-animate ${index % 2 == 0 ? "row-reverse": "row"}`} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300" key={index}>
                 <div className={`relative flex aos-init aos-animate [&:nth-child(even)]:flex-row-reverse`} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="300" key={index}>
                     <div className={`flex flex-col w-[450px]`}>
                         {/* <div className={`flex flex-col w-[450px] relative before:absolute before:content-[""] before:w-[130px] before:h-[1px] before:top-[250px] before:border-primary before:border before:border-dashed ${index % 2 == 0 ? "before:left-[100%]" : "before:right-[100%]"}`}> */}
                         <div className="h-[250px] mb-10 relative">
                             <img src={item.imgUrl} className="w-full h-full" />
                             <div className={`absolute w-[130px] h-[1px] right-[100%] border-primary border border-dashed ${index % 2 == 0 ? "left-[100%] before:left-[calc(100%-5px)]" : "right-[100%] before:right-[5px]"} before:relative before:block before:content-[""] before:w-[10px] before:h-[10px] before:top-[-5px] before:bg-primary z-[2] `} />
-
                             <div className={`absolute w-[150px] h-[40px] bg-primary bottom-[-20px] ${index % 2 == 0 ? "left-[calc(100%-150px)]" : "right-[calc(100%-150px)]"} flex justify-center items-center`}>
-                               <p className="text-white mb-0 text-[20px]">{item.year}</p>
+                                <p className="text-white mb-0 text-[20px]">{item.year}</p>
                             </div>
                         </div>
                         <div>
@@ -61,8 +59,6 @@ function Milestones() {
         })
 
     }
-
-
 
     return (
         <>

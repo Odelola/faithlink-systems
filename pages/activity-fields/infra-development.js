@@ -10,8 +10,6 @@ function InfraDevelopment() {
         <meta name="description" content="INFRA DEVELOPMENT" />
 
       </Head>
-      {/* <PageSubheader imgUrl="https://images.unsplash.com/photo-1551295022-de5522c94e08?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
-      {/* <PageSubheader imgUrl="/pages/sunset-4924334_1280.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} /> */}
       <PageSubheader imgUrl="/pages/_infra development_.jpg" alt="INFRASTRUCTURE DEVELOPMENT image" pageName="infrastructure development" leadingRoutes={["homepage", "activity fields"]} />
       <section className="section-top">
         <div className="container">
