@@ -89,7 +89,7 @@ export default function HomeCarousel() {
                     </Swiper>
                 </div>
             </section>
-            <section className="">
+            <section className="hidden">
                 <div className="container">
                     <article className='grid grid-cols-[2.2fr_1fr] gap-[45px] pr-[200px] pb-[180px] pl-8 max-md:p-0 max-md:grid-cols-1'>
                         <aside className='max-md:flex max-md:flex-col-reverse'>

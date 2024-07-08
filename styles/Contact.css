@@ -5,12 +5,13 @@
 .contact-form-item {
     @apply w-full mb-3
 }
-.contact-form-item label{
+
+.contact-form-item label {
     @apply text-[12.5px]
 }
 
 .contact-input {
-    @apply bg-[rgba(245,245,245,.91)] border border-[#ccdbe7]  h-12 px-[18px] text-black resize-none leading-6 w-full outline-none max-md:placeholder:text-[10px]  shadow-sm focus:border-primary rounded-md placeholder:text-[13px]
+    @apply bg-[rgba(245,245,245,.91)] border border-[#ccdbe7] h-12 px-[18px] text-black resize-none leading-6 w-full outline-none max-md:placeholder:text-[10px] shadow-sm focus:border-primary rounded-md placeholder:text-[13px]
 }
 
 .contact-disclaimer {
@@ -22,10 +23,9 @@
 }
 
 .contact-button {
-    @apply flex items-center justify-center w-[170px] h-[50px] bg-secondary border border-secondary text-center text-white leading-3 hover:bg-white hover:text-secondary
+    @apply flex items-center justify-center w-[170px] h-[50px] bg-secondary border border-secondary text-center text-white leading-3 hover:bg-white hover:text-secondary disabled:opacity-50 disabled:cursor-not-allowed
 }
 
-#confirm:checked + label span{
+#confirm:checked+label span {
     @apply after:absolute after:content-[''] after:w-[10px] after:h-[10px] after:left-1/2 after:top-1/2 after:bg-primary after:rounded-sm after:-translate-x-1/2 after:-translate-y-1/2
-
 }
