@@ -94,9 +94,6 @@ html {
     @apply font-medium text-[10px] font-termina
   }
 
-  /* span {
-    @apply font-nunito
-  } */
 
   body {
     @apply text-darkBlue bg-white font-poppins
